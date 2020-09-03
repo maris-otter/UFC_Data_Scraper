@@ -2,79 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-class fight_details:
-    #fight summary
-    finish = "DATA NOT AVAILABLE"
-    round = -1
-    time = ()#################
-    ref = ""
-    weight_class = "DATA NOT AVAILABLE"
-
-
-
-
-    #fight tracking stats
-    kd = -1
-    significant_strikes = -1
-    sig_strikes_percentage = -1
-    total_str = -1
-    sub_attempts = -1
-    passes = -1
-    rev = -1
-    #ratio stats tuple ? of ?
-    head = ()
-    body = ()
-    leg = ()
-    distance = ()
-    clinch = ()
-    ground = ()
-
-
-class f_history:
-    wins = -1
-    loss = -1
-    no_contest = -1
-
-class career_stats:
-    splm = 0
-    sig_acc = 0
-    sig_absorbed = 0
-    sig_strike_defense = 0
-    average_takedown = 0
-    takedown_acc = 0
-    takedown_defense = 0
-    sub_average = 0
-
-class Fighter:
-    name = ""
-    height = ()
-    weight = 0
-    reach = 0
-    stance = 0 # 1 = orthodox 2 = southpaw
-    DOB = ()
-    history = f_history()
-    career_stat = career_stats()
-
-    def print(self):
-        print( "Fighter name: " + self.name)
-        print(str(self.history.wins)  + "-" + str(self.history.loss) + "-" + str(self.history.no_contest))
-        print( str(self.height))
-        print("Weight: " + str(self.weight))
-        print("Reach: " + str(self.reach))
-        print("Stance: " + str(self.stance))
-        print(self.DOB)
-        print("Sig strike per minute: " + self.career_stat.splm)
-        print("Sig strike acc: " + str(self.career_stat.sig_acc))
-        print("Sig strike absorbed: " + str(self.career_stat.sig_absorbed))
-        print("Sig strike defense: " + str(self.career_stat.sig_strike_defense))
-        print("Average Takedowns: " + self.career_stat.average_takedown)
-        print("Takedown acc: " + str(self.career_stat.takedown_acc))
-        print("Takedown defense: " + str(self.career_stat.takedown_defense))
-        print("Sub average: " + self.career_stat.sub_average)
-        print("---------------------------------\n")
-
-
-
 #stores html into local directory
 def save_html(html, path):
     with open(path, 'wb') as f:
@@ -234,6 +161,8 @@ def get_fighter_stats(http_page):
         fighter.stance = 1  #orthodox
     elif stance == "Southpaw":
         fighter.stance = 2 # southpaw
+    elif stance == "Switch":
+        fighter.stance = 3
     else:
         fighter.stance = 0 #Error parsing if executed
 
@@ -403,9 +332,18 @@ def get_fight_history_http(http_page):
 
 
 
-# get_fight_history_http("fighter_data_https/Fighter 15")
 
 def parse_table_rows(http):
+    """
+    parses all fight data from html file into a list that splits both individual
+    fight data and specific row data
+    args:
+        http - fight-details http from ufcstats.com
+
+    returns: 2d list; 1st index is 0 or 1 representing one of the two fighters
+    in the fight. 2nd index represent a row of data from page.
+
+    """
     page = open_html(http)
 
     soup = BeautifulSoup(page, 'html.parser')
@@ -423,8 +361,9 @@ def parse_table_rows(http):
     #Get table columns and add to list for further parsing
     stat_col = []
     for tag in soup.find_all('td', class_="b-fight-details__table-col"):
-        for anchor in tag.find_all('p'):
+        for anchor in tag.find_all(class_="b-fight-details__table-text"):
             stat_col.append(anchor.text)
+
 
     fighter_1 = []
     fighter_2 = []
@@ -441,51 +380,108 @@ def parse_table_rows(http):
 
         x += 1
 
-    #2d list
-    stat_rows = [seperate_fight_data(fighter_1), seperate_fight_data(fighter_2)]
-
-    for items in stat_rows:
-        for index in items:
-            print(index)
-
-
-
-
-
-
-
-
-
-def seperate_fight_data(fighter_1): #seperates each row of fighter data to a indexed list
-
-    #Find the index of the start of each row of stats
-    stat_rows_index = []#mark everytime fighter name appears (start of new row)
-    stat_rows = []
-    x = 0
-    for items in fighter_1:
-        if items == fighter_1[0]:
-            stat_rows_index.append(x)
-
-        x += 1
-
-    #Create a list of each row of data
-    i = 0
-    for index in range(0, len(stat_rows_index)-1):
-        sub_index_1 = stat_rows_index[i]
-        sub_index_2 = stat_rows_index[i+1]
-
-        stat_rows.append(fighter_1[sub_index_1:sub_index_2])
-
-        i+=1
+    stat_rows = [split_html_data_list(fighter_1,fighter_1[0]),
+                split_html_data_list(fighter_2,fighter_2[0])]
 
     return stat_rows
 
 
 
+def split_html_data_list(collection, fighter_name):
+    """Splits the list of parsed html data into smaller chunks.
+
+    Splits the list of parsed html data based on the fighter's name, which
+    is the mod that starts a new row.
+    """
+    indices = [i for i, x in enumerate(collection) if x == fighter_name]
+    collection_of_collections = [None] * (len(indices))
+    for i in range(len(indices)):
+        if i == len(indices) - 1 :
+            collection_of_collections[i] = collection[indices[i]:]
+        else:
+            collection_of_collections[i] = collection[indices[i]:indices[i+1]]
+    return collection_of_collections
+
+def organize_fight_data(fight_history_collection, http):
+    """Seperate round data from "Totals" and "Significant strikes" data.
+
+    args: fight_history_collection - list from parse_table_rows function
+    http: fight stat http page in relation to collection
+    """
+    #Get the round the fight was finished in
+    page = open_html(http)
+    soup = BeautifulSoup(page, 'html.parser')
+
+    #Find finishing round; convert to int
+    round = soup.body.find("i", class_="b-fight-details__text-item")
+    round = round.text
+    round = " ".join(round.split())
+    round = round[7:]
+    round = int(round)
+
+    #totals fighter one
+    #   : [0][0]
+    #   : [1][0]
+
+    #sig strikes totals
+    #   : [0][num_of_rounds + 1]
+    #   : [1][num_of_rounds + 1]
+    #
+    # # print("Totals for fighter one are:")
+    # print(fight_history_collection[0][0])
+    # print("Totals for fighter two are:")
+    # print(fight_history_collection[1][0])
+    # print("---------------------------\n\n")
+    #
+    # print("Sig totals for fighter one are: ")
+    # print(fight_history_collection[0][round+1])
+    # print("Sig totals for fighter two are:")
+    # print(fight_history_collection[1][round+1])
+    # print("---------------------------\n\n")
+
+    totals = [fight_history_collection[0][0:round+1], fight_history_collection[1][0:round+1]]
+    sig_strikes = [fight_history_collection[0][round+1:], fight_history_collection[1][round+1:]]
+
+    assign_fight_data(totals, sig_strikes)
+
+def assign_fight_data(totals_collection, sig_strike_collection):
+    """turns collection data into proper format and assigns to fight_details
+    object.
+
+    args:
+        totals_collection: collection produced from organize_fight_data from
+            parse_table_rows = [fighter][row][column]
+        sig_strike_collection: collection produced from organize_fight_data
+                                = [fighter][row][column]
+    """
+    #assign totals-------------------
+
+    #Assign names to fight_details
+
+    #clean and Assign knock downs
+
+    #clean and assign sig sig_strikes
+
+    # clean and assign sig strike percentage
+
+    #clean and assign  total strikes
+
+    #clean and assign TD
+
+    #C & A TD %
+
+    #C & A SUB att
+
+    #C & A pass
+
+    #C & A REV
+
+    # print(totals_collection[0][0][2])
+    ratio_regex = re.compile('\d{1,3}')
+    ratio = ratio_regex.findall(totals_collection[0][0][2])
 
 
-x = 0
-for num in range(0,9):
-    parse_table_rows("fight_history/Fight %d" % x)
+fight_history_path = "/Users/nathankrieger/Desktop/Projects/ufc_scraper/fight_history"
 
-    x += 1
+organize_fight_data(parse_table_rows("%s/Fight 7" % fight_history_path),
+                                    "%s/Fight 7" % fight_history_path)
