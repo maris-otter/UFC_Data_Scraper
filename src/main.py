@@ -476,6 +476,9 @@ def assign_fight_data(totals_collection, sig_strike_collection):
 
     #C & A REV
 
+
+    #C & A other
+
     # print(totals_collection[0][0][2])
     ratio_regex = re.compile('\d{1,3}')
     ratio = ratio_regex.findall(totals_collection[0][0][2])
