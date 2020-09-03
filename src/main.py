@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
+
+
 #stores html into local directory
 def save_html(html, path):
     with open(path, 'wb') as f:
@@ -15,6 +17,8 @@ def open_html(path):
 
 #returns each fighters webpage link in a list to be parsed
 def get_fighter_links():
+    """puts all fighter links into a list from ufcstat.com
+    """
     #Get Wiki webpage of UFC fighters and save into object "r"
     url = "http://www.ufcstats.com/statistics/fighters?char=a&page=all"
 
@@ -454,10 +458,13 @@ def assign_fight_data(totals_collection, sig_strike_collection):
         sig_strike_collection: collection produced from organize_fight_data
                                 = [fighter][row][column]
     """
+
+    fight = fight_details()
     #assign totals-------------------
 
     #Assign names to fight_details
-
+    fight.fighter_1 = totals_collection[0][0]
+    print(fight.fighter_1)
     #clean and Assign knock downs
 
     #clean and assign sig sig_strikes

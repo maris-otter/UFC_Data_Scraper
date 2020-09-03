@@ -47,7 +47,7 @@ class fight_details:
     round_data = [] # 3d "totals" round data list. [fighter][round][metrics]
 
     #fight tracking stats
-    sig_strike_data[] #3d [fighter][round][metrics]
+    sig_strike_data = [] #3d [fighter][round][metrics]
 
 
 class f_history:
