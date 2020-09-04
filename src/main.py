@@ -305,7 +305,7 @@ def get_fighter_stats(http_page):
 
     fighter.career_stat.sub_average = sub_average
 
-    fighter.print()
+    return fighter
 
 
 #Targets fight history detail links and saves each one to the directory fight_history
@@ -345,8 +345,7 @@ def parse_table_rows(http):
     args:
         http - fight-details http from ufcstats.com
 
-    returns: 2d list; 1st index is 0 or 1 representing one of the two fighters
-    in the fight. 2nd index represent a row of data from page.
+    returns: 2d list; [fighter][data row]
 
     """
     page = open_html(http)
@@ -424,26 +423,6 @@ def organize_fight_data(fight_history_collection, http):
     round = round[7:]
     round = int(round)
 
-    #totals fighter one
-    #   : [0][0]
-    #   : [1][0]
-
-    #sig strikes totals
-    #   : [0][num_of_rounds + 1]
-    #   : [1][num_of_rounds + 1]
-    #
-    # # print("Totals for fighter one are:")
-    # print(fight_history_collection[0][0])
-    # print("Totals for fighter two are:")
-    # print(fight_history_collection[1][0])
-    # print("---------------------------\n\n")
-    #
-    # print("Sig totals for fighter one are: ")
-    # print(fight_history_collection[0][round+1])
-    # print("Sig totals for fighter two are:")
-    # print(fight_history_collection[1][round+1])
-    # print("---------------------------\n\n")
-
     totals = [fight_history_collection[0][0:round+1], fight_history_collection[1][0:round+1]]
     sig_strikes = [fight_history_collection[0][round+1:], fight_history_collection[1][round+1:]]
 
@@ -458,33 +437,56 @@ def assign_fight_data(totals_collection, sig_strike_collection):
             parse_table_rows = [fighter][row][column]
         sig_strike_collection: collection produced from organize_fight_data
                                 = [fighter][row][column]
+    returns: a fight_details object
     """
+    #First row is totals of fight so the following rows are round data.
+    finish_round = len(totals_collection[0])-1
 
     fight = fight_details()
+    fighter1_round_data = total_round_data()
+    fighter2_round_data = total_round_data()
+    fighter1_sig_strik_data = sig_strik_round_data()
+    fighter2_sig_strik_data = sig_strik_round_data()
     #assign totals-------------------
 
+#########append fighter1_round_data at each end of the row
+# each total round data index represents one round or total
+
     #Assign names to fight_details
-    fight.fighter_1 = totals_collection[0][0]
-    print(fight.fighter_1)
-    #clean and Assign knock downs
+    fight.fighter_1 = totals_collection[0][0][0]
+    fight.fighter_2 = totals_collection[1][0][0]
+    #Assign finishing round:
+    fight.round = finish_round
+    #clean and assign knock downs
+    fighter1_round_data.kd = int(totals_collection[0][0][1])
+    fighter2_round_data.kd = int(totals_collection[1][0][1])
 
-    #clean and assign sig sig_strikes
+    #clean sig sig_strikes
+        #Fighter 1
+    ratio_regex = re.compile('\d{1,3}')
+    ratio = ratio_regex.findall(totals_collection[0][0][2])
+    fighter1_round_data.sig_stikes = (ratio[0],ratio[1])
 
-    # clean and assign sig strike percentage
+        #fighter 2
+    ratio =   ratio_regex.findall(totals_collection[1][0][2])
+    fighter2_round_data.sig_stikes = (ratio[0],ratio[1])
+    print(fighter2_round_data.sig_stikes)
+    
+    # clean sig strike percentage
 
-    #clean and assign  total strikes
+    #clean total strikes
 
-    #clean and assign TD
+    #clean  TD
 
-    #C & A TD %
+    #C  TD %
 
-    #C & A SUB att
+    #C SUB att
 
-    #C & A pass
+    #C pass
 
-    #C & A REV
+    #C REV
 
-    #C & A other
+    #C other
 
     # print(totals_collection[0][0][2])
     ratio_regex = re.compile('\d{1,3}')

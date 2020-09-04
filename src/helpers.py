@@ -1,6 +1,7 @@
 class total_round_data:#
     kd = -1
     sig_strikes = ()
+    total_strikes = ()
     sig_strikes_percentage = -1
     take_downs = -1
     sub_att = -1
@@ -44,10 +45,12 @@ class fight_details:
     time = ()#################
     ref = ""
     weight_class = "DATA NOT AVAILABLE"
-    round_data = [] # 3d "totals" round data list. [fighter][round][metrics]
+    fighter1_round_data = [] #  "totals" round data list.
+    fighter2_round_data = [] #  "totals" round data list. 
 
     #fight tracking stats
-    sig_strike_data = [] #3d [fighter][round][metrics]
+    fighter1_sig_strike_data = [] #3d [fighter][round][metrics]
+    fighter1_sig_strike_data = [] #3d [fighter][round][metrics]
 
 
 class f_history:
