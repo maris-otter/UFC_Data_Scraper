@@ -1,4 +1,5 @@
 class total_round_data:#
+    round = -1 #tracks the round or if the object is a total
     kd = -1
     sig_strikes = ()
     total_strikes = ()
@@ -46,7 +47,7 @@ class fight_details:
     ref = ""
     weight_class = "DATA NOT AVAILABLE"
     fighter1_round_data = [] #  "totals" round data list.
-    fighter2_round_data = [] #  "totals" round data list. 
+    fighter2_round_data = [] #  "totals" round data list.
 
     #fight tracking stats
     fighter1_sig_strike_data = [] #3d [fighter][round][metrics]

@@ -310,6 +310,12 @@ def get_fighter_stats(http_page):
 
 #Targets fight history detail links and saves each one to the directory fight_history
 def get_fight_history_http(http_page):
+    """
+    saves all https of fight history from ufcstats.com in directory
+    fight_history for further parsing
+
+    args: http_page - any fighters page from "fighter-details" site directory
+    """
     page = open_html(http_page)
 
     soup = BeautifulSoup(page, 'html.parser')
@@ -426,71 +432,43 @@ def organize_fight_data(fight_history_collection, http):
     totals = [fight_history_collection[0][0:round+1], fight_history_collection[1][0:round+1]]
     sig_strikes = [fight_history_collection[0][round+1:], fight_history_collection[1][round+1:]]
 
-    assign_fight_data(totals, sig_strikes)
+    round_total_assign(totals[0][0])
 
-def assign_fight_data(totals_collection, sig_strike_collection):
-    """turns collection data into proper format and assigns to fight_details
-    object.
+def round_total_assign(totals_collection):
+    """
+    cleans and assigns a row of data from totals produced in organize_fight_data
 
     args:
-        totals_collection: collection produced from organize_fight_data from
-            parse_table_rows = [fighter][row][column]
-        sig_strike_collection: collection produced from organize_fight_data
-                                = [fighter][row][column]
-    returns: a fight_details object
+        totals_collection - a single row or round of fight data from totals
+
+    return:
+        total_round_data object with all attributes entered excluding round
+        finished
     """
-    #First row is totals of fight so the following rows are round data.
-    finish_round = len(totals_collection[0])-1
+    round_data_return = total_round_data()
 
-    fight = fight_details()
-    fighter1_round_data = total_round_data()
-    fighter2_round_data = total_round_data()
-    fighter1_sig_strik_data = sig_strik_round_data()
-    fighter2_sig_strik_data = sig_strik_round_data()
-    #assign totals-------------------
+    #Ignore first index - this is name
 
-#########append fighter1_round_data at each end of the row
-# each total round data index represents one round or total
-
-    #Assign names to fight_details
-    fight.fighter_1 = totals_collection[0][0][0]
-    fight.fighter_2 = totals_collection[1][0][0]
-    #Assign finishing round:
-    fight.round = finish_round
     #clean and assign knock downs
-    fighter1_round_data.kd = int(totals_collection[0][0][1])
-    fighter2_round_data.kd = int(totals_collection[1][0][1])
+    round_data_return.kd = int(totals_collection[1])
 
-    #clean sig sig_strikes
-        #Fighter 1
+    #clean and assign sig_strike totals
     ratio_regex = re.compile('\d{1,3}')
-    ratio = ratio_regex.findall(totals_collection[0][0][2])
-    fighter1_round_data.sig_stikes = (ratio[0],ratio[1])
+    ratio = ratio_regex.findall(totals_collection[2])
+    round_data_return.sig_stikes = (int(ratio[0]),int(ratio[1]))
 
-        #fighter 2
-    ratio =   ratio_regex.findall(totals_collection[1][0][2])
-    fighter2_round_data.sig_stikes = (ratio[0],ratio[1])
-    print(fighter2_round_data.sig_stikes)
+    #clean and assign sig strike percentage
     
-    # clean sig strike percentage
 
-    #clean total strikes
 
-    #clean  TD
 
-    #C  TD %
 
-    #C SUB att
 
-    #C pass
 
-    #C REV
 
-    #C other
 
-    # print(totals_collection[0][0][2])
-    ratio_regex = re.compile('\d{1,3}')
-    ratio = ratio_regex.findall(totals_collection[0][0][2])
+
+
 
 
 fight_history_path = "/Users/nathankrieger/Desktop/Projects/ufc_scraper/fight_history"
