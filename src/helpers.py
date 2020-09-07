@@ -11,16 +11,17 @@ class total_round_data:#
     rev = -1
 
     def print(self):
-        print(self.round)
-        print(self.kd)
-        print(self.sig_stikes)
-        print(self.sig_strikes_percentage)
-        print(self.total_strikes)
-        print(self.take_downs)
-        print(self.take_down_percentage)
-        print(self.sub_att)
-        print(self.passes)
-        print(self.rev)
+
+        # print(self.round)
+        print("KD: " + str(self.kd))
+        print("Sig Strikes: %s" % (self.sig_stikes,))
+        print("Sig strike percentage: %s%%" % str(self.sig_strikes_percentage))
+        print("Total strikes: %s" % (self.total_strikes,))
+        print("Take downs: %s" % (self.take_downs,))
+        print("TD percentage: %s%%" % str(self.take_down_percentage))
+        print("Sub att: %s" % str(self.sub_att))
+        print("Passes: %s" % str(self.passes))
+        print("REV: %s" % str(self.rev))
 
 class sig_strik_round_data: #helper class
     sig_stikes = ()
@@ -31,6 +32,18 @@ class sig_strik_round_data: #helper class
     distance = ()
     clinch = ()
     ground = ()
+
+    def print(self):
+        print("Sig Strikes: %s" % (self.sig_stikes,))
+        print("Sig Strike %%: %s%%" % (self.sig_strikes_percentage,))
+        print("Head Strikes: %s" % (self.head,))
+        print("Body: %s" % (self.body,))
+        print("Leg: %s" % (self.leg,))
+        print("Distance: %s" % (self.distance,))
+        print("Clinch: %s" % (self.clinch,))
+        print("Ground: %s" % (self.ground,))
+
+
 
 
 class f_history:
