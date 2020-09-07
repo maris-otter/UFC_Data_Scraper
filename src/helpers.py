@@ -4,10 +4,23 @@ class total_round_data:#
     sig_strikes = ()
     total_strikes = ()
     sig_strikes_percentage = -1
-    take_downs = -1
+    take_downs = ()
+    take_down_percentage = ()
     sub_att = -1
     passes = -1
     rev = -1
+
+    def print(self):
+        print(self.round)
+        print(self.kd)
+        print(self.sig_stikes)
+        print(self.sig_strikes_percentage)
+        print(self.total_strikes)
+        print(self.take_downs)
+        print(self.take_down_percentage)
+        print(self.sub_att)
+        print(self.passes)
+        print(self.rev)
 
 class sig_strik_round_data: #helper class
     sig_stikes = ()

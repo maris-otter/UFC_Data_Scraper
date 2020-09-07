@@ -432,6 +432,8 @@ def organize_fight_data(fight_history_collection, http):
     totals = [fight_history_collection[0][0:round+1], fight_history_collection[1][0:round+1]]
     sig_strikes = [fight_history_collection[0][round+1:], fight_history_collection[1][round+1:]]
 
+
+
     round_total_assign(totals[0][0])
 
 def round_total_assign(totals_collection):
@@ -455,19 +457,52 @@ def round_total_assign(totals_collection):
     #clean and assign sig_strike totals
     ratio_regex = re.compile('\d{1,3}')
     ratio = ratio_regex.findall(totals_collection[2])
-    round_data_return.sig_stikes = (int(ratio[0]),int(ratio[1]))
+    try:
+        round_data_return.sig_stikes = (int(ratio[0]),int(ratio[1]))
+    except Exception:
+        round_data_return.sig_stikes = (-1,-1)
 
     #clean and assign sig strike percentage
-    
+    ratio_regex = re.compile('\d{1,2}')
+    ratio = ratio_regex.search(totals_collection[3])
+    try:
+        round_data_return.sig_strikes_percentage = ratio.group()
+    except Exception:
+        round_data_return.sig_strikes_percentage = -1
 
+    #Clean and assign total strikes
+    ratio_regex = re.compile('\d{1,3}')
+    ratio = ratio_regex.findall(totals_collection[4])
+    try:
+        round_data_return.total_strikes = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        round_data_return.total_strikes = (-1,-1)
 
+    #Clean and assign TD
+    ratio = ratio_regex.findall(totals_collection[5])
+    try:
+        round_data_return.take_downs = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        round_data_return.take_downs = (-1,-1)
 
+    #clean and assign take down percentage
+    ratio_regex = re.compile('\d{1,2}')
+    ratio = ratio_regex.search(totals_collection[6])
+    try:
+         round_data_return.take_down_percentage = int(ratio.group())
+    except Exception:
+         round_data_return.take_down_percentage = -1
 
+    #clean and assign sub attributes
+    round_data_return.sub_att = totals_collection[7]
 
+    #Clean and assign pass
+    round_data_return.passes = totals_collection[8]
 
+    #Clean and assign rev
+    round_data_return.rev = totals_collection[8]
 
-
-
+    round_data_return.print()
 
 
 
