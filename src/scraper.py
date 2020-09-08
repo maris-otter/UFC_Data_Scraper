@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import re
-from helpers import *
+# from helpers import *
+import os
 
 
 
@@ -16,9 +17,10 @@ def open_html(path):
         return f.read()
 
 
-#returns each fighters webpage link in a list to be parsed
 def get_fighter_links():
-    """puts all fighter links into a list from ufcstat.com
+    """creates a list of links to fighter pages from ufcstat.com
+
+    return: list of fighter links
     """
     #Get Wiki webpage of UFC fighters and save into object "r"
     url = "http://www.ufcstats.com/statistics/fighters?char=a&page=all"
@@ -46,23 +48,38 @@ def get_fighter_links():
     return links
 
 
-#request the http of each fighter and returns list of links
+
 def get_fighter_http():
+    """
+    Save the html page of each fighter in get_fighter_links
+
+    return: list of each fighters http page
+    """
     links = get_fighter_links()
-    list_of_links = []
+    list_of_https = []
 
     x = 1 #tracks index of for loop below
     for link in links:
         print("Requesting: " + link)
         r = requests.get(link)
-        list_of_links.append(r.content)
+        list_of_https.append(r.content)
         save_html(r.content, "fighter_data_https/Fighter %d" % x)
         x += 1
 
-    return list_of_links
+    return list_of_https
 
 #Takes a http from page and creates a fighter object with stats filled
 def get_fighter_stats(http_page):
+    """
+    populates a Fighter() class object with all attributes available on given
+    http_page.
+
+    args:
+        http_page - a fighter http page with base domain
+        "http://www.ufcstats.com/fighter-details/"
+
+    returns: Fighter object
+    """
     #Create fighter object
     fighter = Fighter()
 
@@ -313,8 +330,7 @@ def get_fighter_stats(http_page):
 #Targets fight history detail links and saves each one to the directory fight_history
 def get_fight_history_http(http_page):
     """
-    saves all https of fight history from ufcstats.com in directory
-    fight_history for further parsing
+    requests and saves all https of fights a fighter has had
 
     args: http_page - any fighters page from "fighter-details" site directory
     """
@@ -404,6 +420,7 @@ def split_html_data_list(collection, fighter_name):
 
     Splits the list of parsed html data based on the fighter's name, which
     is the mod that starts a new row.
+
     """
     indices = [i for i, x in enumerate(collection) if x == fighter_name]
     collection_of_collections = [None] * (len(indices))
@@ -622,6 +639,19 @@ def assign_sig_data(sig_collection):
 
     return sig_round_data
 
+    def update_fight_history():
+        """Deletes all old fight history https in dir and re requests
+        saves new updated ones from site
+
+        """
+        pass
+
+    def update_fighter_https():
+        """deleted old https in dir and download new ones
+
+        """
+        pass
+
 
 
 # fight_history_path = "/Users/nathankrieger/Desktop/Projects/ufc_scraper/fight_history"
@@ -631,10 +661,45 @@ def assign_sig_data(sig_collection):
 # fighter_history_path = "/Users/nathankrieger/Desktop/Projects/ufc_scraper/fighter_data_https/Fighter"
 # get_fighter_stats("%s 15" % fighter_history_path)
 
+def create_file_structure():
+    """
+    sees if program has correct structure if so returns true.
+    If not creates correct dirs and returns false
+    """
+    verify_dir = ["fight_history", "fighter_data_https"]
+    missing_dir = []
+    dir_exist = False
 
-#main function that connects functions together
+    #check to see if fighter_data_https dir exist and fight_history dir exists
 
 
+        #see if current working directory is correct. If not exit
+    current_dir = os.getcwd()
+    regex = re.search('src', current_dir)
+
+    if regex is None:
+        exit("Fatal error. Current working directory not correct.")
+
+    #go back a dir and see if two dirs exists
+    os.chdir("..")
+    for i in verify_dir:
+        if not os.path.isdir(i):
+            print(i + " .....MISSING!")
+            missing_dir.append(i)
+        else:
+            print(i + ".....exists")
+
+    #Free memory
+    if len(missing_dir) == 0:
+        return True
+    else:
+        dir_exist = False
+
+    #if they don't exist create dirs
+    if not dir_exist:
+        for i in verify_dir:
+            print("Creating Directory: %s" % i)
+            os.mkdir(i)
 
 
-#Function that connects to database
+    return False
