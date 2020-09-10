@@ -395,6 +395,8 @@ def get_fight_history_http(http_page = 'None', requests_url = 'None'):
 
     args: http_page - any fighters page from "fighter-details" site directory
         requests_url - a url to an event-details page
+
+    raise: Both optional arguments are used
     """
     if requests_url == 'None':
         page = open_html(http_page)
