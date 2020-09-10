@@ -7,11 +7,15 @@ import os
 from pathlib import Path
 import time
 
-
+#Constants
+DEFAULT_DIRECTORY = "ufc_scraper/src"
 #stores html into local directory
 def save_html(html, path):
-    with open(path, 'wb') as f:
-        f.write(html)
+    try:
+        with open(path, 'wb') as f:
+            f.write(html)
+    except Exception:
+        print("\n\nAn Exception occured while trying to save %s" % path)
 
 #opens a local html file and returns it as an object
 def open_html(path):
@@ -326,12 +330,7 @@ def get_fighter_stats(http_page):
 
     return fighter
 
-def get_all_fight_history_links():
-    """From ufcstat website finds all completed fights and saves
-    the http into the current working directory
-
-    """
-    url = "http://www.ufcstats.com/statistics/events/completed?page=all"
+def get_all_a_tags(url):
     page = requests.get(url)
 
     soup = BeautifulSoup(page.content, 'html.parser')
@@ -340,6 +339,17 @@ def get_all_fight_history_links():
     parsed_a_tags = soup.find_all('a', href=True)
     href_collection = [a['href'] for a in parsed_a_tags]
 
+    return href_collection
+
+
+def get_all_event_history_links():
+    """From ufcstat website finds all completed fights and saves
+    the http into the current working directory
+
+    """
+    url = "http://www.ufcstats.com/statistics/events/completed?page=all"
+
+    href_collection = get_all_a_tags(url)
     #Add all links to list that have event-details in them
     links = []
     for i in href_collection:
@@ -351,16 +361,51 @@ def get_all_fight_history_links():
 
     return links
 
+
+
+def scrape_all_fights(links):
+    wanted_working_dir = 'src/test'
+
+    links = get_all_event_history_links()
+
+    if not is_dir_correct(wanted_working_dir):
+        exit("Incorrect starting directory. Exiting...")
+
+    #for every event find all of the fights in that event and save the html of
+    #that fight to the cwd
+    for link in tqdm(links): #tqdm is open source progress bar on for loop
+        try:
+            get_fight_history_http(requests_url = link)
+        except Exception:
+            print("No links found in %s" % link)
+            print("Moving to next link")
+            pass
+
+
+
+
+
+
+
 #Targets fight history detail links and saves each one to the directory fight_history
-def get_fight_history_http(http_page):
+def get_fight_history_http(http_page = 'None', requests_url = 'None'):
     """
-    requests and saves all https of fights a fighter has had
+    requests and saves all https of fights a fighter has had. Takes either a url
+    or a http page file path
 
     args: http_page - any fighters page from "fighter-details" site directory
+        requests_url - a url to an event-details page
     """
-    page = open_html(http_page)
+    if requests_url == 'None':
+        page = open_html(http_page)
+        soup = BeautifulSoup(page, 'html.parser')
 
-    soup = BeautifulSoup(page, 'html.parser')
+    elif requests_url != 'None':
+        page = requests.get(requests_url)
+        soup = BeautifulSoup(page.content, 'html.parser')
+    else:
+        print("get_fight_history_http used incorrectly. Only one argument")
+        raise
 
     #Start parsing the file
     #Target every link within each row
@@ -383,47 +428,9 @@ def get_fight_history_http(http_page):
     x = 0
     for item in links:
         r = requests.get(item)
-        print("Status code: %s" % r.status_code)
-        save_html(r.content, "Fight %d.html" % (x))
+        save_name = item[-16:]
+        save_html(r.content, "%s" % save_name)
         x += 1
-
-def get_all_fight_history():
-    links = get_all_fight_history_links()
-
-    #Remove before actual use. Protection
-    current_dir = os.getcwd()
-    safe_dir = 'test'
-    dir_pattern = re.search(safe_dir, current_dir)
-
-    if dir_pattern is None:
-        exit("unsafe testing directory")
-
-    total_links = len(links)
-    print("Total links are %d. Press enter to continue" % total_links)
-    input()
-
-    #request each link and find link that goes to fight_history
-    x = 0
-    for link in links:
-        print("Saving site: %s" % link)
-        site = requests.get(link)
-        site.raise_for_status()
-        save_html(site.content,"event %d" % x)
-
-        print("Parsing..........")
-        try:
-            get_fight_history_http("event %d" % x)
-        except:
-            print("Unable to find links")
-            print(link)
-            pass
-        # print("event %s parsed. Now removing event http" % x)
-        os.remove("event %d" % x)
-        x += 1
-
-    total_fights = x + 1
-    print("total fights: %d" % (total_fights))
-    input("Press any key to acknowledge")
 
 def parse_table_rows(http):
     """
@@ -681,9 +688,9 @@ def assign_sig_data(sig_collection):
 
     return sig_round_data
 
-def is_dir_correct():
+def is_dir_correct(dir):
     starting_dir = os.getcwd()
-    regex = re.search('ufc_scraper/src', str(starting_dir))
+    regex = re.search(dir, str(starting_dir))
 
     if regex is None:
         return False
@@ -697,7 +704,7 @@ def update_fight_history():
     verify_dir = ["fight_history", "fighter_data_https"]
     #only update if in current file structure
 
-    if not is_dir_correct():
+    if not is_dir_correct(DEFAULT_DIRECTORY):
         exit("File structure incorrect. Exiting Program.")
 
     os.chdir('..')#Go back one Directory
@@ -762,3 +769,5 @@ def create_file_structure():
 
 
     return False
+
+scrape_all_fights(get_all_event_history_links())
