@@ -1,9 +1,11 @@
 from bs4 import BeautifulSoup
+from tqdm import tqdm #progress bar from github
 import requests
 import re
 # from helpers import *
 import os
-
+from pathlib import Path
+import time
 
 
 #stores html into local directory
@@ -15,7 +17,6 @@ def save_html(html, path):
 def open_html(path):
     with open(path, 'rb') as f:
         return f.read()
-
 
 def get_fighter_links():
     """creates a list of links to fighter pages from ufcstat.com
@@ -47,8 +48,6 @@ def get_fighter_links():
 
     return links
 
-
-
 def get_fighter_http():
     """
     Save the html page of each fighter in get_fighter_links
@@ -63,7 +62,8 @@ def get_fighter_http():
         print("Requesting: " + link)
         r = requests.get(link)
         list_of_https.append(r.content)
-        save_html(r.content, "fighter_data_https/Fighter %d" % x)
+        print("Saving Fighter %d" % x)
+        save_html(r.content, "Fighter %d" % x)
         x += 1
 
     return list_of_https
@@ -326,6 +326,30 @@ def get_fighter_stats(http_page):
 
     return fighter
 
+def get_all_fight_history_links():
+    """From ufcstat website finds all completed fights and saves
+    the http into the current working directory
+
+    """
+    url = "http://www.ufcstats.com/statistics/events/completed?page=all"
+    page = requests.get(url)
+
+    soup = BeautifulSoup(page.content, 'html.parser')
+
+    #Get all links on the page
+    parsed_a_tags = soup.find_all('a', href=True)
+    href_collection = [a['href'] for a in parsed_a_tags]
+
+    #Add all links to list that have event-details in them
+    links = []
+    for i in href_collection:
+        site_regex = re.search('event-details', i)
+        if site_regex is not None:
+            links.append(i)
+
+    links = list(dict.fromkeys(links))
+
+    return links
 
 #Targets fight history detail links and saves each one to the directory fight_history
 def get_fight_history_http(http_page):
@@ -351,16 +375,55 @@ def get_fight_history_http(http_page):
         if "fight-details" in item:
             links.append(item)
 
+    if len(links) == 0:
+        raise
+
     #Removes duplicate links
     links = list(dict.fromkeys(links))
     x = 0
     for item in links:
         r = requests.get(item)
-        save_html(r.content, "fight_history/Fight %d" % (x))
-        x+=1
+        print("Status code: %s" % r.status_code)
+        save_html(r.content, "Fight %d.html" % (x))
+        x += 1
 
+def get_all_fight_history():
+    links = get_all_fight_history_links()
 
+    #Remove before actual use. Protection
+    current_dir = os.getcwd()
+    safe_dir = 'test'
+    dir_pattern = re.search(safe_dir, current_dir)
 
+    if dir_pattern is None:
+        exit("unsafe testing directory")
+
+    total_links = len(links)
+    print("Total links are %d. Press enter to continue" % total_links)
+    input()
+
+    #request each link and find link that goes to fight_history
+    x = 0
+    for link in links:
+        print("Saving site: %s" % link)
+        site = requests.get(link)
+        site.raise_for_status()
+        save_html(site.content,"event %d" % x)
+
+        print("Parsing..........")
+        try:
+            get_fight_history_http("event %d" % x)
+        except:
+            print("Unable to find links")
+            print(link)
+            pass
+        # print("event %s parsed. Now removing event http" % x)
+        os.remove("event %d" % x)
+        x += 1
+
+    total_fights = x + 1
+    print("total fights: %d" % (total_fights))
+    input("Press any key to acknowledge")
 
 def parse_table_rows(http):
     """
@@ -413,8 +476,6 @@ def parse_table_rows(http):
 
     return stat_rows
 
-
-
 def split_html_data_list(collection, fighter_name):
     """Splits the list of parsed html data into smaller chunks.
 
@@ -454,36 +515,17 @@ def organize_fight_data(fight_history_collection, http):
     fighters = len(sig_strikes)
     rows = len(sig_strikes[0])
 
+    # for fighters in range(fighters):
+        # print("===================Fighter %s===============" % totals[fighters][0][0])
+        # for rows in range(rows):
+        #     print("Round: %d------------------"% rows)
+        #     sig = assign_sig_data(sig_strikes[fighters][rows])
+        #     sig.print()
+        #
+        #
+        #
+        #     print("---------------------------\n")
     round = len(totals[0]) - 1
-
-# #
-# #####Diag code to show the all the fighter data being assinged to round data
-# #doesn't include last row for some reason. THe data is correctly assigned however
-#     for fighters in range(fighters):
-#         print("===================Fighter %s===============" % totals[fighters][0][0])
-#         for rows in range(rows):
-#             print("Round: %d------------------"% rows)
-#             rounds = round_total_assign(totals[fighters][rows])
-#
-#
-#             rounds.print()
-#             print("---------------------------\n")
-
-
-    for fighters in range(fighters):
-        print("===================Fighter %s===============" % totals[fighters][0][0])
-        for rows in range(rows):
-            print("Round: %d------------------"% rows)
-            sig = assign_sig_data(sig_strikes[fighters][rows])
-            sig.print()
-
-
-
-            print("---------------------------\n")
-
-    # assign_sig_data(sig_strikes[0][0])
-
-    # round_total_assign(totals[0][0])
 
 def round_total_assign(totals_collection):
     """
@@ -639,27 +681,44 @@ def assign_sig_data(sig_collection):
 
     return sig_round_data
 
-    def update_fight_history():
-        """Deletes all old fight history https in dir and re requests
-        saves new updated ones from site
+def is_dir_correct():
+    starting_dir = os.getcwd()
+    regex = re.search('ufc_scraper/src', str(starting_dir))
 
-        """
-        pass
+    if regex is None:
+        return False
 
-    def update_fighter_https():
-        """deleted old https in dir and download new ones
+    return True
 
-        """
-        pass
+def update_fight_history():
+    """Deletes all old fight history https in dir and re requests
+    saves new updated ones from site
+    """
+    verify_dir = ["fight_history", "fighter_data_https"]
+    #only update if in current file structure
 
+    if not is_dir_correct():
+        exit("File structure incorrect. Exiting Program.")
 
+    os.chdir('..')#Go back one Directory
+    os.chdir('fight_history')
 
-# fight_history_path = "/Users/nathankrieger/Desktop/Projects/ufc_scraper/fight_history"
-#
-# organize_fight_data(parse_table_rows("%s/Fight 7" % fight_history_path),
-#                                     "%s/Fight 7" % fight_history_path)
-# fighter_history_path = "/Users/nathankrieger/Desktop/Projects/ufc_scraper/fighter_data_https/Fighter"
-# get_fighter_stats("%s 15" % fighter_history_path)
+    files_in_dir = []
+    for i in os.listdir():
+        files_in_dir.append(i)
+
+    print("Please confirm files to be deleted")
+    for i in files_in_dir:
+        print(i)
+
+    Keyboard_input = input("Press 'Y' to delete\n")
+
+    if str(Keyboard_input).capitalize() != 'Y':
+        print("Exiting...")
+        return
+
+    os.mkdir('update')
+    os.chdir('update')
 
 def create_file_structure():
     """
