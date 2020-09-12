@@ -2,13 +2,14 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm #progress bar from github
 import requests
 import re
-# from helpers import *
+from helpers import *
 import os
 from pathlib import Path
 import time
 
 #Constants
 DEFAULT_DIRECTORY = "ufc_scraper/src"
+
 #stores html into local directory
 def save_html(html, path):
     try:
@@ -154,7 +155,7 @@ def get_fighter_stats(http_page):
 
     #get weight--------
     weight = stat_rows_text[1]
-    weight_regex = re.compile('\d\d\d') #Create regex object for search
+    weight_regex = re.compile('\d{2,3}') #Create regex object for search
     weight = weight_regex.search(weight) #Find pattern
 
     #Assign weight if data is available
@@ -181,7 +182,7 @@ def get_fighter_stats(http_page):
 
     # get stance ... 1 or 2 ... check class def
     stance = stat_rows_text[3]
-    stance = stance[7:]
+    stance = stance[8:]
 
     if stance == "Orthodox":
         fighter.stance = 1  #orthodox
@@ -284,7 +285,7 @@ def get_fighter_stats(http_page):
 
     #Get takedown_acc
 
-    takedown_acc_regex = re.compile('TD\sAcc.:\s\d\d')
+    takedown_acc_regex = re.compile('TD\sAcc.:\s\d{1,3}')
     takedown_acc = takedown_acc_regex.search(carrer_stat_text[1])
 
     try:
@@ -298,7 +299,7 @@ def get_fighter_stats(http_page):
     fighter.career_stat.takedown_acc = takedown_acc
 
     #Get takedown_defense
-    takedown_defense_regex = re.compile('TD\sDef.:\s\d\d')
+    takedown_defense_regex = re.compile('TD\sDef.:\s\d{1,3}')
     takedown_defense = takedown_acc_regex.search(carrer_stat_text[1])
 
     try:
@@ -341,7 +342,6 @@ def get_all_a_tags(url):
 
     return href_collection
 
-
 def get_all_event_history_links():
     """From ufcstat website finds all completed fights and saves
     the http into the current working directory
@@ -361,7 +361,23 @@ def get_all_event_history_links():
 
     return links
 
+def append_used_link(link):
+    """appends a link to the txt file being used to track all links in directory
+    args:
+        link - url to the page being tracked
+    """
+    tracking_filename = 'tracker.txt'
 
+    #if tracking file does not exisit create it
+    if not os.path.exists(tracking_filename):
+        with open(tracking_filename, 'w'): pass
+
+    try:
+        with open(tracking_filename, 'a') as f:
+            f.write(link)
+            f.write('\n')
+    except Exception:
+        print("Unable to save URL to %s" % tracking_filename)
 
 def scrape_all_fights(links):
     wanted_working_dir = 'src/test'
@@ -376,16 +392,11 @@ def scrape_all_fights(links):
     for link in tqdm(links): #tqdm is open source progress bar on for loop
         try:
             get_fight_history_http(requests_url = link)
+            append_used_link(link)
         except Exception:
             print("No links found in %s" % link)
             print("Moving to next link")
             pass
-
-
-
-
-
-
 
 #Targets fight history detail links and saves each one to the directory fight_history
 def get_fight_history_http(http_page = 'None', requests_url = 'None'):
@@ -441,10 +452,14 @@ def parse_table_rows(http):
     args:
         http - fight-details http from ufcstats.com
 
-    returns: 2d list; [fighter][data row]
+    returns: 3d list; [fighter][data row][column of data row]
 
     """
-    page = open_html(http)
+    try:
+        page = open_html(http)
+    except Exception:
+        print("Error in parse_table_rows. Unable to open file %s" % http)
+        return
 
     soup = BeautifulSoup(page, 'html.parser')
 
@@ -480,8 +495,11 @@ def parse_table_rows(http):
 
         x += 1
 
-    stat_rows = [split_html_data_list(fighter_1,fighter_1[0]),
-                split_html_data_list(fighter_2,fighter_2[0])]
+    try:
+        stat_rows = [split_html_data_list(fighter_1,fighter_1[0]),
+                    split_html_data_list(fighter_2,fighter_2[0])]
+    except Exception:
+        raise
 
     return stat_rows
 
@@ -501,6 +519,7 @@ def split_html_data_list(collection, fighter_name):
             collection_of_collections[i] = collection[indices[i]:indices[i+1]]
     return collection_of_collections
 
+#!!!!!Need to figure out how to use funcition. Return? call func()?
 def organize_fight_data(fight_history_collection, http):
     """Seperate round data from "Totals" and "Significant strikes" data.
 
@@ -524,172 +543,198 @@ def organize_fight_data(fight_history_collection, http):
     fighters = len(sig_strikes)
     rows = len(sig_strikes[0])
 
-    # for fighters in range(fighters):
-        # print("===================Fighter %s===============" % totals[fighters][0][0])
-        # for rows in range(rows):
-        #     print("Round: %d------------------"% rows)
-        #     sig = assign_sig_data(sig_strikes[fighters][rows])
-        #     sig.print()
-        #
-        #
-        #
-        #     print("---------------------------\n")
     round = len(totals[0]) - 1
+    # for fighters in range(fighters):
+    #     print("===================Fighter %s===============" % totals[fighters][0][0])
+    #     for rows in range(rows):
+    #         print("Round: %d------------------"% rows)
+    #         sig = assign_sig_data(sig_strikes[fighters][rows])
+    #         sig.print()
+    #
+    #
+    #
+    #         print("---------------------------\n")
 
-def round_total_assign(totals_collection):
-    """
-    cleans and assigns a row of data from totals produced in organize_fight_data
+    def round_total_assign(totals_collection):
+        """
+        cleans and assigns a row of data from totals produced in organize_fight_data
 
-    args:
-        totals_collection - a single row or round of fight data from totals
+        args:
+            totals_collection - a single row or round of fight data from totals
 
-    return:
-        total_round_data object with all attributes entered excluding round
-        finished
-    """
-    round_data_return = total_round_data()
+        return:
+            total_round_data object with all attributes entered excluding round
+            finished
+        """
+        round_data_return = total_round_data()
 
-    #Ignore first index - this is name
+        #Ignore first index - this is name
 
-    #clean and assign knock downs
-    round_data_return.kd = int(totals_collection[1])
+        #clean and assign knock downs
+        round_data_return.kd = int(totals_collection[1])
 
-    #clean and assign sig_strike totals
-    ratio_regex = re.compile('\d{1,3}')
-    ratio = ratio_regex.findall(totals_collection[2])
-    try:
-        round_data_return.sig_stikes = (int(ratio[0]),int(ratio[1]))
-    except Exception:
-        round_data_return.sig_stikes = (-1,-1)
+        #clean and assign sig_strike totals
+        ratio_regex = re.compile('\d{1,3}')
+        ratio = ratio_regex.findall(totals_collection[2])
+        try:
+            round_data_return.sig_stikes = (int(ratio[0]),int(ratio[1]))
+        except Exception:
+            round_data_return.sig_stikes = (-1,-1)
 
-    #clean and assign sig strike percentage
-    ratio_regex = re.compile('\d{1,2}')
-    ratio = ratio_regex.search(totals_collection[3])
-    try:
-        round_data_return.sig_strikes_percentage = ratio.group()
-    except Exception:
-        round_data_return.sig_strikes_percentage = -1
+        #clean and assign sig strike percentage
+        ratio_regex = re.compile('\d{1,2}')
+        ratio = ratio_regex.search(totals_collection[3])
+        try:
+            round_data_return.sig_strikes_percentage = ratio.group()
+        except Exception:
+            round_data_return.sig_strikes_percentage = -1
 
-    #Clean and assign total strikes
-    ratio_regex = re.compile('\d{1,3}')
-    ratio = ratio_regex.findall(totals_collection[4])
-    try:
-        round_data_return.total_strikes = (int(ratio[0]), int(ratio[1]))
-    except Exception:
-        round_data_return.total_strikes = (-1,-1)
+        #Clean and assign total strikes
+        ratio_regex = re.compile('\d{1,3}')
+        ratio = ratio_regex.findall(totals_collection[4])
+        try:
+            round_data_return.total_strikes = (int(ratio[0]), int(ratio[1]))
+        except Exception:
+            round_data_return.total_strikes = (-1,-1)
 
-    #Clean and assign TD
-    ratio = ratio_regex.findall(totals_collection[5])
-    try:
-        round_data_return.take_downs = (int(ratio[0]), int(ratio[1]))
-    except Exception:
-        round_data_return.take_downs = (-1,-1)
+        #Clean and assign TD
+        ratio = ratio_regex.findall(totals_collection[5])
+        try:
+            round_data_return.take_downs = (int(ratio[0]), int(ratio[1]))
+        except Exception:
+            round_data_return.take_downs = (-1,-1)
 
-    #clean and assign take down percentage
-    ratio_regex = re.compile('\d{1,2}')
-    ratio = ratio_regex.search(totals_collection[6])
-    try:
-         round_data_return.take_down_percentage = int(ratio.group())
-    except Exception:
-         round_data_return.take_down_percentage = -1
+        #clean and assign take down percentage
+        ratio_regex = re.compile('\d{1,2}')
+        ratio = ratio_regex.search(totals_collection[6])
+        try:
+             round_data_return.take_down_percentage = int(ratio.group())
+        except Exception:
+             round_data_return.take_down_percentage = -1
 
-    #clean and assign sub attributes
-    round_data_return.sub_att = totals_collection[7]
+        #clean and assign sub attributes
+        round_data_return.sub_att = totals_collection[7]
 
-    #Clean and assign pass
-    round_data_return.passes = totals_collection[8]
+        #Clean and assign pass
+        round_data_return.passes = totals_collection[8]
 
-    #Clean and assign rev
-    round_data_return.rev = totals_collection[9]
+        #Clean and assign rev
+        round_data_return.rev = totals_collection[9]
 
-    return round_data_return
+        return round_data_return
 
-def assign_sig_data(sig_collection):
-    """cleans and assigns row of data produced by organized_fight_data
+    def assign_sig_data(sig_collection):
+        """cleans and assigns row of data produced by organized_fight_data
 
-    args: sig_collection - a single row or round of fight data from sig_strikes
+        args: sig_collection - a single row or round of fight data from sig_strikes
 
-    returns:
-        sig_strik_round_data object with all attributes entered excluding round
-        finished
-    """
-    DEFAULT_TUPLE = (-1,-1)
-    DEFAULT_VALUE = -1
-    sig_round_data = sig_strik_round_data()
+        returns:
+            sig_strik_round_data object with all attributes entered excluding round
+            finished
+        """
+        DEFAULT_TUPLE = (-1,-1)
+        DEFAULT_VALUE = -1
+        sig_round_data = sig_strik_round_data()
 
-    #clean sig strike ratio data
-    ratio_regex = re.compile('\d{1,3}')
-    ratio = ratio_regex.findall(sig_collection[1])
+        #clean sig strike ratio data
+        ratio_regex = re.compile('\d{1,3}')
+        ratio = ratio_regex.findall(sig_collection[1])
 
-    #attempt to assign data. If no pattern found assign -1
-    try:
-        sig_round_data.sig_stikes = (int(ratio[0]), int(ratio[1]))
-    except Exception:
-        sig_round_data.sig_stikes = DEFAULT_TUPLE
+        #attempt to assign data. If no pattern found assign -1
+        try:
+            sig_round_data.sig_stikes = (int(ratio[0]), int(ratio[1]))
+        except Exception:
+            sig_round_data.sig_stikes = DEFAULT_TUPLE
 
-    #clean sig strike percentage
-    percentage_regex = re.compile('\d{1,2}')
-    ratio = percentage_regex.search(sig_collection[2])
+        #clean sig strike percentage
+        percentage_regex = re.compile('\d{1,2}')
+        ratio = percentage_regex.search(sig_collection[2])
 
-    #attempt to assign percentage. if no pattern found assign -1
-    try:
-        sig_round_data.sig_strikes_percentage = ratio.group()
-    except Exception:
-        sig_strik_round_data.sig_strikes_percentage = DEFAULT_VALUE
+        #attempt to assign percentage. if no pattern found assign -1
+        try:
+            sig_round_data.sig_strikes_percentage = ratio.group()
+        except Exception:
+            sig_strik_round_data.sig_strikes_percentage = DEFAULT_VALUE
 
-    #clean head strikes ratio data
-    ratio = ratio_regex.findall(sig_collection[3])
+        #clean head strikes ratio data
+        ratio = ratio_regex.findall(sig_collection[3])
 
-    #attempt to assign
-    try:
-        sig_round_data.head = (int(ratio[0]), int(ratio[1]))
-    except Exception:
-        sig_round_data.head = DEFAULT_TUPLE
+        #attempt to assign
+        try:
+            sig_round_data.head = (int(ratio[0]), int(ratio[1]))
+        except Exception:
+            sig_round_data.head = DEFAULT_TUPLE
 
 
-    #clean body strikes ratio data
-    ratio = ratio_regex.findall(sig_collection[4])
+        #clean body strikes ratio data
+        ratio = ratio_regex.findall(sig_collection[4])
 
-    #attempt to assign
-    try:
-        sig_round_data.body = (int(ratio[0]),int(ratio[1]))
-    except Exception:
-        sig_round_data.body = DEFAULT_TUPLE
+        #attempt to assign
+        try:
+            sig_round_data.body = (int(ratio[0]),int(ratio[1]))
+        except Exception:
+            sig_round_data.body = DEFAULT_TUPLE
 
-    #clean leg ratio data
-    ratio = ratio_regex.findall(sig_collection[5])
+        #clean leg ratio data
+        ratio = ratio_regex.findall(sig_collection[5])
 
-    #attempt to assign
-    try:
-        sig_round_data.leg = (int(ratio[0]), int(ratio[1]))
-    except Exception:
-        sig_round_data.leg = DEFAULT_TUPLE
+        #attempt to assign
+        try:
+            sig_round_data.leg = (int(ratio[0]), int(ratio[1]))
+        except Exception:
+            sig_round_data.leg = DEFAULT_TUPLE
 
-    #Clean distance ratio data
-    ratio = ratio_regex.findall(sig_collection[6])
+        #Clean distance ratio data
+        ratio = ratio_regex.findall(sig_collection[6])
 
-    try:
-        sig_round_data.distance = (int(ratio[0]), int(ratio[1]))
-    except Exception:
-        sig_round_data.distance = DEFAULT_TUPLE
+        try:
+            sig_round_data.distance = (int(ratio[0]), int(ratio[1]))
+        except Exception:
+            sig_round_data.distance = DEFAULT_TUPLE
 
-    #clean clinch ratio data
-    ratio = ratio_regex.findall(sig_collection[7])
+        #clean clinch ratio data
+        ratio = ratio_regex.findall(sig_collection[7])
 
-    try:
-        sig_round_data.clinch = (int(ratio[0]), int(ratio[1]))
-    except Exception:
-        sig_round_data.clinch = DEFAULT_TUPLE
+        try:
+            sig_round_data.clinch = (int(ratio[0]), int(ratio[1]))
+        except Exception:
+            sig_round_data.clinch = DEFAULT_TUPLE
 
-    ratio = ratio_regex.findall(sig_collection[8])
+        ratio = ratio_regex.findall(sig_collection[8])
 
-    try:
-        sig_round_data.ground = (int(ratio[0]), int(ratio[1]))
-    except Exception:
-        sig_round_data.clinch = DEFAULT_TUPLE
+        try:
+            sig_round_data.ground = (int(ratio[0]), int(ratio[1]))
+        except Exception:
+            sig_round_data.clinch = DEFAULT_TUPLE
 
-    return sig_round_data
+        return sig_round_data
 
+    fighters = len(totals)
+    rows = len(totals[0])
+
+    round_objects = []
+    for fighters in range(fighters):
+        for rows in range(rows):
+            round_object = round_total_assign(totals[fighters][rows])
+            round_objects.append(round_object)
+
+
+    sig_objects = []
+    fighters = len(sig_strikes)
+    rows = len(sig_strikes[0])
+    for fighters in range(fighters):
+        for rows in range(rows):
+            sig_object = assign_sig_data(sig_strikes[fighters][rows])
+            sig_objects.append(round_object)
+
+#test for organize_fight_data
+fight = '2fd0c6d914b77205'
+passed_list = parse_table_rows(fight)
+organize_fight_data(passed_list, fight)
+
+
+
+#Helpers
 def is_dir_correct(dir):
     starting_dir = os.getcwd()
     regex = re.search(dir, str(starting_dir))
@@ -772,4 +817,16 @@ def create_file_structure():
 
     return False
 
-scrape_all_fights(get_all_event_history_links())
+# for filename in os.listdir():
+#     try:
+#         stat_rows = parse_table_rows(filename)
+#         organize_fight_data(stat_rows, filename)
+#     except:
+#         print("unable to parse %s. Moving to next file" % filename)
+
+
+
+
+
+
+# scrape_all_fights(get_all_event_history_links())
