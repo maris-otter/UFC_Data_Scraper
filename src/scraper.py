@@ -56,7 +56,7 @@ def get_fighter_links():
 
     return links
 
-def get_fighter_http():
+def get_fighter_http(dir, save_to_dir=False):
     """
     Save the html page of each fighter in get_fighter_links
 
@@ -65,19 +65,21 @@ def get_fighter_http():
     links = get_fighter_links()
     list_of_https = []
 
+    print("Getting fighter https....")
     x = 1 #tracks index of for loop below
-    for link in links:
-        print("Requesting: " + link)
+    for link in tqdm(links):
         r = requests.get(link)
         list_of_https.append(r.content)
-        print("Saving Fighter %d" % x)
-        save_html(r.content, "Fighter %d" % x)
+
+        if(save_to_dir == True):
+            save_html(r.content, "{}/Fighter {}".format(dir, x))
+
         x += 1
 
     return list_of_https
 
 #Takes a http from page and creates a fighter object with stats filled
-def get_fighter_stats(http_page):
+def get_fighter_stats(http_page='None', http_url='None'):
     """
     populates a Fighter() class object with all attributes available on given
     http_page.
@@ -91,10 +93,19 @@ def get_fighter_stats(http_page):
     #Create fighter object
     fighter = Fighter()
 
-    #Get name--------
-    page = open_html(http_page)
-    soup = BeautifulSoup(page, 'html.parser')
+    #Based on which optional argument used. Create BeautifulSoup object
+    if http_page != 'None':
+        page = open_html(http_page)
+        soup = BeautifulSoup(page, 'html.parser')
+    elif http_url != 'None':
+        page = requests.get(http_url)
+        soup = BeautifulSoup(page.content, 'html.parser')
+    else:
+        print("get_fighter_stats() used incorrectly")
+        raise
 
+
+    #Get name--------
     #Targets html tag with name of fighter
     name_target = soup.find_all("span", class_="b-content__title-highlight")
 
@@ -330,8 +341,6 @@ def get_fighter_stats(http_page):
 
     fighter.career_stat.sub_average = sub_average
 
-    fighter.print()
-
     return fighter
 
 def get_all_a_tags(url):
@@ -410,7 +419,7 @@ def get_fight_history_http(http_page = 'None', requests_url = 'None'):
     args: http_page - any fighters page from "fighter-details" site directory
         requests_url - a url to an event-details page
 
-    raise: Both optional arguments are used
+    Exception: Both optional arguments are used
     """
     if requests_url == 'None':
         page = open_html(http_page)
@@ -521,7 +530,6 @@ def split_html_data_list(collection, fighter_name):
         else:
             collection_of_collections[i] = collection[indices[i]:indices[i+1]]
     return collection_of_collections
-
 
 #!!!!!Need to figure out how to use funcition. Return? call func()?
 def assign_fight_data(fight_history_collection, http):
@@ -861,9 +869,38 @@ def create_file_structure():
     return False
 
 
+def get_all_fighters(load_from_dir = False, correct_dir=""):
+    """
+    returns a indexable list of every fighter on ufcstats. Each index is a fighter
+    object
 
-#test
-#test for organize_fight_data
-fight = 'test/fights/2fd0c6d914b77205'
-passed_list = parse_table_rows(fight)
-assign_fight_data(passed_list, fight)
+    return - fight-d
+    """
+    fighters = [] #list of fighter objects
+
+    fighter_links = get_fighter_links()
+
+    print("Parsing each fighter link.....")
+    index = 0
+    for fighter in tqdm(fighter_links):
+        try:
+            temp = get_fighter_stats(http_url=fighter)
+        except Exception as e:
+            print(e)
+            print("An exception occured on index %d. Skipping to next fighter" % index)
+            
+        fighters.append(temp)
+
+        index += 1
+
+    return fighters
+
+dir = "test/fighters"
+# get_fighter_http(dir, save_to_dir = True)
+get_all_fighters(load_from_dir = True, correct_dir=dir )
+
+# #test
+# #test for organize_fight_data
+# fight = 'test/fights/2fd0c6d914b77205'
+# passed_list = parse_table_rows(fight)
+# assign_fight_data(passed_list, fight)
