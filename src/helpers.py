@@ -61,6 +61,17 @@ class career_stats:
     takedown_defense = 0
     sub_average = 0
 
+class color:
+   PURPLE = '\033[95m'
+   CYAN = '\033[96m'
+   DARKCYAN = '\033[36m'
+   BLUE = '\033[94m'
+   GREEN = '\033[92m'
+   YELLOW = '\033[93m'
+   RED = '\033[91m'
+   BOLD = '\033[1m'
+   UNDERLINE = '\033[4m'
+   END = '\033[0m'
 
 class fight_details:
     event = ""
@@ -68,9 +79,10 @@ class fight_details:
     fighter_2 = ""
     #fight summary
     finish = "DATA NOT AVAILABLE"
+    finish_details = "DATA NOT AVAILABLE"
     round = -1
-    time = ()#################
-    ref = ""
+    fight_time = ()
+    referee = ""
     weight_class = "DATA NOT AVAILABLE"
     fighter1_round_data = [] #  "totals" round data list.
     fighter2_round_data = [] #  "totals" round data list.
@@ -78,6 +90,87 @@ class fight_details:
     #fight tracking stats
     fighter1_sig_strike_data = [] #3d [fighter][round][metrics]
     fighter1_sig_strike_data = [] #3d [fighter][round][metrics]
+
+    def print(self):
+        """
+        prints basic fight details
+        """
+        print("Event: %s" % self.event)
+        print("Fighter 1: %s" % self.fighter_1)
+        print("Fighter 2: %s" % self.fighter_2)
+        print("Finish: %s" % self.finish)
+        print("Finish Details: %s" % self.finish_details)
+        print("Round: %s" % self.round)
+        print("Time: %s" % (self.fight_time,))
+        print("Referee: %s" % (self.referee))
+        print("Weight class: %s" % self.weight_class)
+
+    def print_fighter_stats(self):
+        """
+        prints every object of fighter 1 and fighter 2 round and sig strike data
+        """
+
+        #Print round 1 round data
+        print(color.BOLD + "Fighter: %s Round Stats" % self.fighter_1 + color.END)
+        x = 0
+        for i in self.fighter1_round_data:
+            if x == 0:
+                print(color.RED + "--------------Totals-------------" + color.END)
+            else:
+                print(color.BLUE + "--------------Round %s-------------" % x + color.END)
+
+            x += 1
+            i.print()
+
+            print("\n\n")
+
+
+        #Print round 2 round data
+        print(color.BOLD + "Fighter: %s Round Stats" % self.fighter_2 + color.END)
+        x = 0
+        for i in self.fighter2_round_data:
+            if x == 0:
+                print(color.RED + "--------------Totals-------------" + color.END)
+            else:
+                print(color.BLUE + "--------------Round %s-------------" % x + color.END)
+
+            x += 1
+            i.print()
+
+            print("\n\n")
+
+        ##############################
+
+        #Print round 1 sig data
+        print(color.BOLD + "Fighter: %s Round Stats" % self.fighter_1 + color.END)
+        x = 0
+        for i in self.fighter1_sig_strike_data:
+            if x == 0:
+                print(color.RED + "--------------Sig strike-------------" + color.END)
+            else:
+                print(color.BLUE + "--------------Round %s-------------" % x + color.END)
+
+            x += 1
+            i.print()
+
+            print("\n\n")
+
+        #Print round 1 sig data
+        print(color.BOLD + "Fighter: %s Round Stats" % self.fighter_2 + color.END)
+        x = 0
+        for i in self.fighter2_sig_strike_data:
+            if x == 0:
+                print(color.RED + "--------------Sig strike-------------" + color.END)
+            else:
+                print(color.BLUE + "--------------Round %s-------------" % x + color.END)
+
+            x += 1
+            i.print()
+
+            print("\n\n")
+
+
+
 
 
 class f_history:

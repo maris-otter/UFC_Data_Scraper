@@ -7,8 +7,11 @@ import os
 from pathlib import Path
 import time
 
+# class Scraper:
+
 #Constants
 DEFAULT_DIRECTORY = "ufc_scraper/src"
+
 
 #stores html into local directory
 def save_html(html, path):
@@ -519,14 +522,18 @@ def split_html_data_list(collection, fighter_name):
             collection_of_collections[i] = collection[indices[i]:indices[i+1]]
     return collection_of_collections
 
+
 #!!!!!Need to figure out how to use funcition. Return? call func()?
-def organize_fight_data(fight_history_collection, http):
-    """Seperate round data from "Totals" and "Significant strikes" data.
+def assign_fight_data(fight_history_collection, http):
+    """Seperate round data from "Totals" and "Significant strikes" data. Then
+    scrape remaining data from http and assign to fight-details object
 
     args: fight_history_collection - list from parse_table_rows function
     http: fight stat http page in relation to collection
+
+    returns: fight_detials object
     """
-    #Get the round the fight was finished in
+    #open http page
     page = open_html(http)
     soup = BeautifulSoup(page, 'html.parser')
 
@@ -537,202 +544,238 @@ def organize_fight_data(fight_history_collection, http):
     round = round[7:]
     round = int(round)
 
+
+    #Get event
+    title_raw = soup.find(class_='b-link')
+    title = title_raw.text
+    title = " ".join(title.split())
+
+    #Get list of raw base details
+    base_fight_details_raw = soup.find_all(class_="b-fight-details__text-item")
+    base_fight_details = []
+
+    #parse raw list for attributes
+
+    #remove white space
+    for i in base_fight_details_raw:
+        temp = i.text
+        temp = " ".join(temp.split())
+        base_fight_details.append(temp)
+
+    #Get finish
+    finish = soup.find('i', class_="b-fight-details__text-item_first")
+    finish = finish.text
+    finish = " ".join(finish.split())
+    finish = finish[8:]
+
+    #get finish details
+    finish_details = soup.find_all('p', class_="b-fight-details__text")
+    finish_details = finish_details[1].text
+    finish_details = " ".join(finish_details.split())
+    finish_details = finish_details[9:]
+
+    #Get time
+    time_regex = re.search('\d:\d\d', base_fight_details[1])
+
+    try:
+        time = time_regex.group()
+        time = time.split()
+    except Exception:
+        time = (-1,-1)
+
+    #Get ref
+    referee = base_fight_details[3]
+    referee = referee[9:]
+
+    #Get weight class
+    weight_raw = soup.find(class_="b-fight-details__fight-title")
+    weight = weight_raw.text
+    weight = " ".join(weight.split())
+
+    #Split totals and sig strike data based on number of rounds
     totals = [fight_history_collection[0][0:round+1], fight_history_collection[1][0:round+1]]
     sig_strikes = [fight_history_collection[0][round+1:], fight_history_collection[1][round+1:]]
 
-    fighters = len(sig_strikes)
-    rows = len(sig_strikes[0])
+    #Assign round and sig stike data for fighter 1
+    fighter1_round_data = [round_total_assign(totals[0][i]) for i in range(len(totals[0]))]
+    fighter1_sig_strike_data = [assign_sig_data(totals[0][i]) for i in range(len(sig_strikes[0]))]
 
-    round = len(totals[0]) - 1
-    # for fighters in range(fighters):
-    #     print("===================Fighter %s===============" % totals[fighters][0][0])
-    #     for rows in range(rows):
-    #         print("Round: %d------------------"% rows)
-    #         sig = assign_sig_data(sig_strikes[fighters][rows])
-    #         sig.print()
-    #
-    #
-    #
-    #         print("---------------------------\n")
+    #Assign round and sig stike data for fighter 2
+    fighter2_round_data = [round_total_assign(totals[1][i]) for i in range(len(totals[1]))]
+    fighter2_sig_strike_data =  [assign_sig_data(totals[1][i]) for i in range(len(sig_strikes[1]))]
 
-    def round_total_assign(totals_collection):
-        """
-        cleans and assigns a row of data from totals produced in organize_fight_data
+    fight = fight_details()
 
-        args:
-            totals_collection - a single row or round of fight data from totals
-
-        return:
-            total_round_data object with all attributes entered excluding round
-            finished
-        """
-        round_data_return = total_round_data()
-
-        #Ignore first index - this is name
-
-        #clean and assign knock downs
-        round_data_return.kd = int(totals_collection[1])
-
-        #clean and assign sig_strike totals
-        ratio_regex = re.compile('\d{1,3}')
-        ratio = ratio_regex.findall(totals_collection[2])
-        try:
-            round_data_return.sig_stikes = (int(ratio[0]),int(ratio[1]))
-        except Exception:
-            round_data_return.sig_stikes = (-1,-1)
-
-        #clean and assign sig strike percentage
-        ratio_regex = re.compile('\d{1,2}')
-        ratio = ratio_regex.search(totals_collection[3])
-        try:
-            round_data_return.sig_strikes_percentage = ratio.group()
-        except Exception:
-            round_data_return.sig_strikes_percentage = -1
-
-        #Clean and assign total strikes
-        ratio_regex = re.compile('\d{1,3}')
-        ratio = ratio_regex.findall(totals_collection[4])
-        try:
-            round_data_return.total_strikes = (int(ratio[0]), int(ratio[1]))
-        except Exception:
-            round_data_return.total_strikes = (-1,-1)
-
-        #Clean and assign TD
-        ratio = ratio_regex.findall(totals_collection[5])
-        try:
-            round_data_return.take_downs = (int(ratio[0]), int(ratio[1]))
-        except Exception:
-            round_data_return.take_downs = (-1,-1)
-
-        #clean and assign take down percentage
-        ratio_regex = re.compile('\d{1,2}')
-        ratio = ratio_regex.search(totals_collection[6])
-        try:
-             round_data_return.take_down_percentage = int(ratio.group())
-        except Exception:
-             round_data_return.take_down_percentage = -1
-
-        #clean and assign sub attributes
-        round_data_return.sub_att = totals_collection[7]
-
-        #Clean and assign pass
-        round_data_return.passes = totals_collection[8]
-
-        #Clean and assign rev
-        round_data_return.rev = totals_collection[9]
-
-        return round_data_return
-
-    def assign_sig_data(sig_collection):
-        """cleans and assigns row of data produced by organized_fight_data
-
-        args: sig_collection - a single row or round of fight data from sig_strikes
-
-        returns:
-            sig_strik_round_data object with all attributes entered excluding round
-            finished
-        """
-        DEFAULT_TUPLE = (-1,-1)
-        DEFAULT_VALUE = -1
-        sig_round_data = sig_strik_round_data()
-
-        #clean sig strike ratio data
-        ratio_regex = re.compile('\d{1,3}')
-        ratio = ratio_regex.findall(sig_collection[1])
-
-        #attempt to assign data. If no pattern found assign -1
-        try:
-            sig_round_data.sig_stikes = (int(ratio[0]), int(ratio[1]))
-        except Exception:
-            sig_round_data.sig_stikes = DEFAULT_TUPLE
-
-        #clean sig strike percentage
-        percentage_regex = re.compile('\d{1,2}')
-        ratio = percentage_regex.search(sig_collection[2])
-
-        #attempt to assign percentage. if no pattern found assign -1
-        try:
-            sig_round_data.sig_strikes_percentage = ratio.group()
-        except Exception:
-            sig_strik_round_data.sig_strikes_percentage = DEFAULT_VALUE
-
-        #clean head strikes ratio data
-        ratio = ratio_regex.findall(sig_collection[3])
-
-        #attempt to assign
-        try:
-            sig_round_data.head = (int(ratio[0]), int(ratio[1]))
-        except Exception:
-            sig_round_data.head = DEFAULT_TUPLE
+    fight.event = title
+    fight.fighter_1 = totals[0][0][0]
+    fight.fighter_2 = totals[1][0][0]
+    fight.finish = finish
+    fight.finish_details = finish_details
+    fight.round = round
+    fight.fight_time = time
+    fight.referee = referee
+    fight.weight_class = weight
+    fight.fighter1_round_data = fighter1_round_data
+    fight.fighter2_round_data = fighter2_round_data
+    fight.fighter1_sig_strike_data = fighter1_sig_strike_data
+    fight.fighter2_sig_strike_data = fighter2_sig_strike_data
 
 
-        #clean body strikes ratio data
-        ratio = ratio_regex.findall(sig_collection[4])
+    fight.print_fighter_stats()
 
-        #attempt to assign
-        try:
-            sig_round_data.body = (int(ratio[0]),int(ratio[1]))
-        except Exception:
-            sig_round_data.body = DEFAULT_TUPLE
+def round_total_assign(totals_collection):
+    """
+    cleans and assigns a row of data from totals produced in organize_fight_data
 
-        #clean leg ratio data
-        ratio = ratio_regex.findall(sig_collection[5])
+    args:
+        totals_collection - a single row or round of fight data from totals
 
-        #attempt to assign
-        try:
-            sig_round_data.leg = (int(ratio[0]), int(ratio[1]))
-        except Exception:
-            sig_round_data.leg = DEFAULT_TUPLE
+    return:
+        total_round_data object with all attributes entered excluding round
+        finished
+    """
+    round_data_return = total_round_data()
 
-        #Clean distance ratio data
-        ratio = ratio_regex.findall(sig_collection[6])
+    #Ignore first index - this is name
 
-        try:
-            sig_round_data.distance = (int(ratio[0]), int(ratio[1]))
-        except Exception:
-            sig_round_data.distance = DEFAULT_TUPLE
+    #clean and assign knock downs
+    round_data_return.kd = int(totals_collection[1])
 
-        #clean clinch ratio data
-        ratio = ratio_regex.findall(sig_collection[7])
+    #clean and assign sig_strike totals
+    ratio_regex = re.compile('\d{1,3}')
+    ratio = ratio_regex.findall(totals_collection[2])
+    try:
+        round_data_return.sig_stikes = (int(ratio[0]),int(ratio[1]))
+    except Exception:
+        round_data_return.sig_stikes = (-1,-1)
 
-        try:
-            sig_round_data.clinch = (int(ratio[0]), int(ratio[1]))
-        except Exception:
-            sig_round_data.clinch = DEFAULT_TUPLE
+    #clean and assign sig strike percentage
+    ratio_regex = re.compile('\d{1,2}')
+    ratio = ratio_regex.search(totals_collection[3])
+    try:
+        round_data_return.sig_strikes_percentage = ratio.group()
+    except Exception:
+        round_data_return.sig_strikes_percentage = -1
 
-        ratio = ratio_regex.findall(sig_collection[8])
+    #Clean and assign total strikes
+    ratio_regex = re.compile('\d{1,3}')
+    ratio = ratio_regex.findall(totals_collection[4])
+    try:
+        round_data_return.total_strikes = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        round_data_return.total_strikes = (-1,-1)
 
-        try:
-            sig_round_data.ground = (int(ratio[0]), int(ratio[1]))
-        except Exception:
-            sig_round_data.clinch = DEFAULT_TUPLE
+    #Clean and assign TD
+    ratio = ratio_regex.findall(totals_collection[5])
+    try:
+        round_data_return.take_downs = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        round_data_return.take_downs = (-1,-1)
 
-        return sig_round_data
+    #clean and assign take down percentage
+    ratio_regex = re.compile('\d{1,2}')
+    ratio = ratio_regex.search(totals_collection[6])
+    try:
+         round_data_return.take_down_percentage = int(ratio.group())
+    except Exception:
+         round_data_return.take_down_percentage = -1
 
-    fighters = len(totals)
-    rows = len(totals[0])
+    #clean and assign sub attributes
+    round_data_return.sub_att = totals_collection[7]
 
-    round_objects = []
-    for fighters in range(fighters):
-        for rows in range(rows):
-            round_object = round_total_assign(totals[fighters][rows])
-            round_objects.append(round_object)
+    #Clean and assign pass
+    round_data_return.passes = totals_collection[8]
+
+    #Clean and assign rev
+    round_data_return.rev = totals_collection[9]
+
+    return round_data_return
+
+def assign_sig_data(sig_collection):
+    """cleans and assigns row of data produced by organized_fight_data
+
+    args: sig_collection - a single row or round of fight data from sig_strikes
+
+    returns:
+        sig_strik_round_data object with all attributes entered excluding round
+        finished
+    """
+    DEFAULT_TUPLE = (-1,-1)
+    DEFAULT_VALUE = -1
+    sig_round_data = sig_strik_round_data()
+
+    #clean sig strike ratio data
+    ratio_regex = re.compile('\d{1,3}')
+    ratio = ratio_regex.findall(sig_collection[1])
+
+    #attempt to assign data. If no pattern found assign -1
+    try:
+        sig_round_data.sig_stikes = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        sig_round_data.sig_stikes = DEFAULT_TUPLE
+
+    #clean sig strike percentage
+    percentage_regex = re.compile('\d{1,2}')
+    ratio = percentage_regex.search(sig_collection[2])
+
+    #attempt to assign percentage. if no pattern found assign -1
+    try:
+        sig_round_data.sig_strikes_percentage = ratio.group()
+    except Exception:
+        sig_strik_round_data.sig_strikes_percentage = DEFAULT_VALUE
+
+    #clean head strikes ratio data
+    ratio = ratio_regex.findall(sig_collection[3])
+
+    #attempt to assign
+    try:
+        sig_round_data.head = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        sig_round_data.head = DEFAULT_TUPLE
 
 
-    sig_objects = []
-    fighters = len(sig_strikes)
-    rows = len(sig_strikes[0])
-    for fighters in range(fighters):
-        for rows in range(rows):
-            sig_object = assign_sig_data(sig_strikes[fighters][rows])
-            sig_objects.append(round_object)
+    #clean body strikes ratio data
+    ratio = ratio_regex.findall(sig_collection[4])
 
-#test for organize_fight_data
-fight = '2fd0c6d914b77205'
-passed_list = parse_table_rows(fight)
-organize_fight_data(passed_list, fight)
+    #attempt to assign
+    try:
+        sig_round_data.body = (int(ratio[0]),int(ratio[1]))
+    except Exception:
+        sig_round_data.body = DEFAULT_TUPLE
 
+    #clean leg ratio data
+    ratio = ratio_regex.findall(sig_collection[5])
 
+    #attempt to assign
+    try:
+        sig_round_data.leg = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        sig_round_data.leg = DEFAULT_TUPLE
+
+    #Clean distance ratio data
+    ratio = ratio_regex.findall(sig_collection[6])
+
+    try:
+        sig_round_data.distance = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        sig_round_data.distance = DEFAULT_TUPLE
+
+    #clean clinch ratio data
+    ratio = ratio_regex.findall(sig_collection[7])
+
+    try:
+        sig_round_data.clinch = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        sig_round_data.clinch = DEFAULT_TUPLE
+
+    ratio = ratio_regex.findall(sig_collection[8])
+
+    try:
+        sig_round_data.ground = (int(ratio[0]), int(ratio[1]))
+    except Exception:
+        sig_round_data.clinch = DEFAULT_TUPLE
+
+    return sig_round_data
 
 #Helpers
 def is_dir_correct(dir):
@@ -817,16 +860,10 @@ def create_file_structure():
 
     return False
 
-# for filename in os.listdir():
-#     try:
-#         stat_rows = parse_table_rows(filename)
-#         organize_fight_data(stat_rows, filename)
-#     except:
-#         print("unable to parse %s. Moving to next file" % filename)
 
 
-
-
-
-
-# scrape_all_fights(get_all_event_history_links())
+#test
+#test for organize_fight_data
+fight = 'test/fights/2fd0c6d914b77205'
+passed_list = parse_table_rows(fight)
+assign_fight_data(passed_list, fight)
