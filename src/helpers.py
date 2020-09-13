@@ -44,8 +44,6 @@ class sig_strik_round_data: #helper class
         print("Ground: %s" % (self.ground,))
 
 
-
-
 class f_history:
     wins = -1
     loss = -1
@@ -168,9 +166,6 @@ class fight_details:
             i.print()
 
             print("\n\n")
-
-
-
 
 
 class f_history:
