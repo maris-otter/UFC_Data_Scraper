@@ -195,7 +195,6 @@ class Fighter:
     record = f_history()
     fights = [] #list of fight_details objects
 
-
     def print(self):
         print( "Fighter name: " + self.name)
         print(str(self.history.wins)  + "-" + str(self.history.loss) + "-" + str(self.history.no_contest))

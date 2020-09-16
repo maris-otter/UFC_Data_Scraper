@@ -1,11 +1,13 @@
 from bs4 import BeautifulSoup
 from tqdm import tqdm #progress bar from github
+from pathlib import Path
+
 import requests
 import re
 from helpers import *
 import os
-from pathlib import Path
 import time
+import difflib
 
 # class Scraper:
 
@@ -31,28 +33,44 @@ def get_fighter_links():
 
     return: list of fighter links
     """
-    #Get Wiki webpage of UFC fighters and save into object "r"
-    url = "http://www.ufcstats.com/statistics/fighters?char=a&page=all"
+    #create a list of each letter in alphabet
+    list_alphabet = []
 
-    r = requests.get(url)
+    alpha = 'a'
+    for i in range(0, 26):
+        list_alphabet.append(alpha)
+        alpha = chr(ord(alpha) + 1)
 
-    soup = BeautifulSoup(r.content, 'html.parser')
-
-    #Start parsing the file
-    #Target every link within each row
-    parsed_a_tags = soup.find_all('a', href=True)
-
-    #creates a list of all of the links on the page
-    href_collection = [a['href'] for a in parsed_a_tags]
-
-    #adds all links of fighter to a list
+    #Get all links to fighters by going throgh each letter in 'char=%s'
+    #Append each set of links to the oveerall links
+    print("Finding all fighter links.....")
+    index = 0
     links = []
-    for item in href_collection:
-        if "fighter-details" in item:
-            links.append(item)
+    for letters in tqdm(list_alphabet):
+        url = "http://www.ufcstats.com/statistics/fighters?char={}&page=all".format(letters)
 
-    #remove any duplicates
-    links = list(dict.fromkeys(links))
+        r = requests.get(url)
+
+
+        soup = BeautifulSoup(r.content, 'html.parser')
+
+        #Start parsing the file
+        #Target every link within each row
+        parsed_a_tags = soup.find_all('a', href=True)
+
+        #creates a list of all of the links on the page
+        href_collection = [a['href'] for a in parsed_a_tags]
+
+        #adds all links of fighter to a list
+        temp_links = []
+        for item in href_collection:
+            if "fighter-details" in item:
+                temp_links.append(item)
+
+        #remove any duplicates
+        temp_links = list(dict.fromkeys(temp_links))
+
+        links.extend(temp_links)
 
     return links
 
@@ -410,7 +428,7 @@ def scrape_all_fights(links):
             print("Moving to next link")
             pass
 
-#Targets fight history detail links and saves each one to the directory fight_history
+
 def get_fight_history_http(http_page = 'None', requests_url = 'None'):
     """
     requests and saves all https of fights a fighter has had. Takes either a url
@@ -455,6 +473,7 @@ def get_fight_history_http(http_page = 'None', requests_url = 'None'):
         r = requests.get(item)
         save_name = item[-16:]
         save_html(r.content, "%s" % save_name)
+        append_used_link(item)
         x += 1
 
 def parse_table_rows(http):
@@ -531,7 +550,6 @@ def split_html_data_list(collection, fighter_name):
             collection_of_collections[i] = collection[indices[i]:indices[i+1]]
     return collection_of_collections
 
-#!!!!!Need to figure out how to use funcition. Return? call func()?
 def assign_fight_data(fight_history_collection, http):
     """Seperate round data from "Totals" and "Significant strikes" data. Then
     scrape remaining data from http and assign to fight-details object
@@ -628,8 +646,7 @@ def assign_fight_data(fight_history_collection, http):
     fight.fighter1_sig_strike_data = fighter1_sig_strike_data
     fight.fighter2_sig_strike_data = fighter2_sig_strike_data
 
-
-    fight.print_fighter_stats()
+    return fight
 
 def round_total_assign(totals_collection):
     """
@@ -868,7 +885,6 @@ def create_file_structure():
 
     return False
 
-
 def get_all_fighters(load_from_dir = False, correct_dir=""):
     """
     returns a indexable list of every fighter on ufcstats. Each index is a fighter
@@ -881,23 +897,30 @@ def get_all_fighters(load_from_dir = False, correct_dir=""):
     fighter_links = get_fighter_links()
 
     print("Parsing each fighter link.....")
-    index = 0
+    index = 1
     for fighter in tqdm(fighter_links):
         try:
-            temp = get_fighter_stats(http_url=fighter)
+            #load fighter details from requesting or from local storage
+            if load_from_dir:
+                temp = get_fighter_stats("{}/{}".format(correct_dir, index))
+
+            else:
+                temp = get_fighter_stats(http_url=fighter)
+
         except Exception as e:
             print(e)
-            print("An exception occured on index %d. Skipping to next fighter" % index)
-            
+            print("An exception occured on index %d. Skipping to next fighter" % (index -1))
+
         fighters.append(temp)
 
         index += 1
 
     return fighters
 
-dir = "test/fighters"
+# dir = "test/fighters"
 # get_fighter_http(dir, save_to_dir = True)
-get_all_fighters(load_from_dir = True, correct_dir=dir )
+# fights = get_all_fighters(load_from_dir = True, correct_dir= dir)
+
 
 # #test
 # #test for organize_fight_data
