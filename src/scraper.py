@@ -7,7 +7,7 @@ import re
 from helpers import *
 import os
 import time
-import difflib
+
 
 # class Scraper:
 
