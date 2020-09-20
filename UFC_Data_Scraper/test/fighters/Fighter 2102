@@ -1,0 +1,3668 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8 lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Stats | UFC
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="">
+  <link rel="stylesheet" href="/blocks/main.css?ver=250228">
+  <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2855164-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body class="b-page" data-link="home">
+    <header class="b-head">
+      <div class="b-head__nav-bar">
+  <div class="l-page__container">
+    <a class="b-head__logo" href="/">
+        <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/ufc-stats-logo.png"
+             alt="">
+    </a>
+    <menu class="b-head__menu">
+      
+          <li class="b-head__item">
+            <a class="b-head__menu-link" href="/statistics/events/">
+              EVENTS & FIGHTS
+            </a>
+          </li>
+      
+      
+          <li class="b-head__item b-head__item_state_current">
+            <a class="b-head__menu-link" href="/statistics/fighters">
+              FIGHTERS
+            </a>
+          </li>
+      
+      
+          <li class="b-head__item">
+            <a class="b-head__menu-link" href="http://statleaders.ufc.com" target="_blank">
+              STAT LEADERS
+            </a>
+          </li>
+      
+    </menu>
+  </div>
+</div>
+    <div class="b-head__sub-nav">
+    </div>
+
+    </header>
+    <section class="b-statistics__section_details">
+<script type="text/javascript">
+    function doNav(url) {
+        document.location.href = url;
+
+    }
+</script>
+<div class="l-page__container">
+
+<h2 class="b-content__title">
+
+
+            <span class="b-content__title-highlight">
+                Ikuhisa Minowa
+
+            </span>
+
+            <span class="b-content__title-record">
+                Record: 60-42-8
+            </span>
+
+</h2>
+
+<p class="b-content__Nickname">
+  Minowaman
+</p>
+
+<div class="b-fight-details b-fight-details_margin-top">
+<div class="b-list__info-box b-list__info-box_style_small-width js-guide">
+  <ul class="b-list__box-list">
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Height:
+      </i>
+      5' 9"
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Weight:
+      </i>
+      181 lbs.
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Reach:
+      </i>
+      --
+    </li>
+    <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        STANCE:
+      </i>
+      Orthodox
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        DOB:
+      </i>
+      
+        Jan 12, 1976
+      
+    </li>
+  </ul>
+</div>
+<div class="b-list__info-box b-list__info-box_style_middle-width js-guide clearfix">
+
+  <div class="b-list__info-box-left clearfix">
+    <div class="b-list__info-box-left">
+      <i class="b-list__box-item-title">
+        Career statistics:
+      </i>
+      <ul class="b-list__box-list b-list__box-list_margin-top">
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            SLpM:
+          </i>
+
+          0.88
+
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Str. Acc.:
+          </i>
+          40%
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            SApM:
+          </i>
+          1.66
+        </li>
+        <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Str. Def:
+          </i>
+          49%
+        </li>
+      </ul>
+    </div>
+
+    <div class="b-list__info-box-right b-list__info-box_style-margin-right">
+      <ul class="b-list__box-list b-list__box-list_margin-top">
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_type_width">
+
+          </i>
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Avg.:
+          </i>
+          1.82
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Acc.:
+          </i>
+          41%
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Def.:
+          </i>
+          5%
+        </li>
+        <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Sub. Avg.:
+          </i>
+          1.9
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="b-list__info-box-right b-list__info-box_style_border-left b-list__info-box-right_style_middle-width">
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        SLpM -
+      </i>
+      Significant Strikes Landed per Minute
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Str. Acc. -
+      </i>
+      Significant Striking Accuracy
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        SApM -
+      </i>
+      Significant Strikes Absorbed per Minute
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Str. Def. -
+      </i>
+      Significant Strike Defence (the % of opponents strikes that did not land)
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Avg. -
+      </i>
+      Average Takedowns Landed per 15 minutes
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Acc. -
+      </i>
+      Takedown Accuracy
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Def. -
+      </i>
+      Takedown Defense (the % of opponents TD attempts that did not land)
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Sub. Avg. -
+      </i>
+      Average Submissions Attempted per 15 minutes
+    </p>
+    <i class="b-list__box-line"></i>
+  </div>
+</div>
+
+<div class="b-statistics__table-preview">
+  <i class="b-statistics__table-preview-item">
+    Click on row to see detailed stats
+  </i>
+</div>
+
+<table class="b-fight-details__table b-fight-details__table_style_margin-top b-fight-details__table_type_event-details js-fight-table" style="display: table;">
+<thead class="b-fight-details__table-head">
+<tr class="b-fight-details__table-row">
+  <th class="b-fight-details__table-col">
+    W/L
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Fighter
+  </th>
+  <th class="b-fight-details__table-col">
+    Str
+  </th>
+  <th class="b-fight-details__table-col">
+    Td
+  </th>
+  <th class="b-fight-details__table-col">
+    Sub
+  </th>
+  <th class="b-fight-details__table-col">
+    Pass
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Event
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Method
+  </th>
+  <th class="b-fight-details__table-col">
+    Round
+  </th>
+  <th class="b-fight-details__table-col">
+    Time
+  </th>
+</tr>
+</thead>
+<tbody class="b-fight-details__table-body">
+<tr class="b-statistics__table-row">
+  <td class="b-statistics__table-col_type_clear"></td>
+</tr>
+
+
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/98ee13494a8fd40f')" data-link="http://www.ufcstats.com/fight-details/98ee13494a8fd40f">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/98ee13494a8fd40f"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/848809f3986b4977">
+            Baru Harn
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/2a7afe14b3a0a058">
+            DREAM 17
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Sep. 24, 2011
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Neck Crank
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          4:39
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/c1466d3c1dd2dbb8')" data-link="http://www.ufcstats.com/fight-details/c1466d3c1dd2dbb8">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/c1466d3c1dd2dbb8"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/53e4e21f4c688801">
+            Hiroshi Izumi
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              8
+            </p>
+
+            <p class="b-fight-details__table-text">
+              28
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              5
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/d74cba8566291bfa">
+            Dynamite!! 2010
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 31, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:50
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/cb132a2a6991a9bc')" data-link="http://www.ufcstats.com/fight-details/cb132a2a6991a9bc">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/cb132a2a6991a9bc"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/c8a49ff2acb6f3c5">
+            Satoshi Ishii
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              10
+            </p>
+
+            <p class="b-fight-details__table-text">
+              7
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              9
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/7f0b4a75ef3039a3">
+            DREAM 16
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Sep. 25, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/b3e94d09541a3ad4')" data-link="http://www.ufcstats.com/fight-details/b3e94d09541a3ad4">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/b3e94d09541a3ad4"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/0802be3516ef8f66">
+            Imani Lee
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/2067a177a2842fbf">
+            DREAM 14
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          May. 29, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Rear Naked Choke
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          4:16
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/e3e9cf721368808b')" data-link="http://www.ufcstats.com/fight-details/e3e9cf721368808b">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/e3e9cf721368808b"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/c912f676692c353a">
+            Jimmy Ambriz
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              13
+            </p>
+
+            <p class="b-fight-details__table-text">
+              11
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/7d3caf0f96f1b33d">
+            DREAM 13
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Mar. 22, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Toe Hold
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:42
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/ebf548d053a2e0be')" data-link="http://www.ufcstats.com/fight-details/ebf548d053a2e0be">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/ebf548d053a2e0be"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/d1152823307d7e7c">
+            Rameau Thierry Sokoudjou
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              25
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/cbf94e4c4af4ff6d">
+            Dynamite!! 2009
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+              <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/belt.png" alt="">
+          
+          Dec. 31, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punch
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          3:29
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/862ea50197179db9')" data-link="http://www.ufcstats.com/fight-details/862ea50197179db9">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/862ea50197179db9"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/2c104b7e59a72629">
+            Hong Man Choi
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              14
+            </p>
+
+            <p class="b-fight-details__table-text">
+              13
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/d43a048a880efdff">
+            DREAM 11: Featherweight Grand Prix 2009 Final Round
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Oct. 06, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Heel Hook
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:27
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/099dbc0a13135f20')" data-link="http://www.ufcstats.com/fight-details/099dbc0a13135f20">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/099dbc0a13135f20"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/9f3d6ddef3d3cccc">
+            Bob Sapp
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/60029bcf496bd707">
+            DREAM 9: Featherweight Grand Prix 2009 2nd Round
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          May. 26, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Ankle Lock
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:15
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/28f08497ca8b5edb')" data-link="http://www.ufcstats.com/fight-details/28f08497ca8b5edb">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/28f08497ca8b5edb"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/d4da8995fc91e7ef">
+            Katsuyori Shibata
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              7
+            </p>
+
+            <p class="b-fight-details__table-text">
+              23
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/513c6f1715e547a8">
+            DREAM 8: Welterweight Grand Prix 2009 1st Round
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Apr. 05, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/f7dd231cd5865109')" data-link="http://www.ufcstats.com/fight-details/f7dd231cd5865109">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/f7dd231cd5865109"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/0aa74d04c196800c">
+            Errol Zimmerman
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/492b202d2064e7a9">
+            Dynamite!! 2008
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 31, 2008
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Toe Hold
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:01
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/cfb3647b2826d7be')" data-link="http://www.ufcstats.com/fight-details/cfb3647b2826d7be">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/cfb3647b2826d7be"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/aa3153a9941b4d44">
+            Masakatsu Funaki
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/5f2f0da6fd6a84fd">
+            DREAM 6: Middleweight Grand Prix 2008 Final Round
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Sep. 23, 2008
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Heel Hook
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          0:52
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/29fff3fca2a9f41a')" data-link="http://www.ufcstats.com/fight-details/29fff3fca2a9f41a">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/29fff3fca2a9f41a"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/c7ac79839e86ce33">
+            Taiei Kin
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              17
+            </p>
+
+            <p class="b-fight-details__table-text">
+              43
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/7e69a4b0961aa555">
+            DREAM 2: Middleweight Grand Prix 2008 1st Round
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Apr. 29, 2008
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/8ccee3b4d82d5b45')" data-link="http://www.ufcstats.com/fight-details/8ccee3b4d82d5b45">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/8ccee3b4d82d5b45"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/c0342805a1948cbb">
+            Lee Kwan Bum
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/cc300e9aa3063431">
+            DREAM 1: Lightweight Grand Prix 2008 1st Round
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Mar. 15, 2008
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Kneebar
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:25
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/8f3c4e6395c43b3a')" data-link="http://www.ufcstats.com/fight-details/8f3c4e6395c43b3a">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/8f3c4e6395c43b3a"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/30e8b4505f5ccf92">
+            Kiyoshi Tamura
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              10
+            </p>
+
+            <p class="b-fight-details__table-text">
+              9
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/0e041d43a47d2e4b">
+            PRIDE Shockwave 2006
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 31, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Kicks
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:18
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/3eb21d77e227e57a')" data-link="http://www.ufcstats.com/fight-details/3eb21d77e227e57a">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/3eb21d77e227e57a"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/3bb030257966b022">
+            Mike Polchlopek
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              20
+            </p>
+
+            <p class="b-fight-details__table-text">
+              30
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/ed73c85164a5f5a4">
+            PRIDE Bushido 13
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Nov. 05, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/4e870e58f271889a')" data-link="http://www.ufcstats.com/fight-details/4e870e58f271889a">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/4e870e58f271889a"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/0e4daed84a8f39a6">
+            Eric Esch
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              7
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/1ccf4e7caff270df">
+            PRIDE Bushido 12
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Aug. 27, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Armbar
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          4:25
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/76a7fa80c1d98279')" data-link="http://www.ufcstats.com/fight-details/76a7fa80c1d98279">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/76a7fa80c1d98279"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/c32fb8c0f6471a4d">
+            Mirko Filipovic
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              12
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/83b743fedde154fb">
+            PRIDE Total Elimination Absolute
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          May. 05, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:10
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/f3b77c91ff878099')" data-link="http://www.ufcstats.com/fight-details/f3b77c91ff878099">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/f3b77c91ff878099"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/55b8dc4e54fe2c59">
+            Paulo Cesar Silva
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/95eb112a85601a0a">
+            PRIDE Bushido 10
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Apr. 02, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Knees
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:23
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/58e18c60db720cc0')" data-link="http://www.ufcstats.com/fight-details/58e18c60db720cc0">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/58e18c60db720cc0"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/9b5b5a75523728f3">
+            Kazushi Sakuraba
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/7a359ef685a304a7">
+            PRIDE Shockwave 2005
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 31, 2005
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Kimura
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          9:59
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/ab67cc766d572ea3')" data-link="http://www.ufcstats.com/fight-details/ab67cc766d572ea3">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/ab67cc766d572ea3"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/1652f3213655b935">
+            Phil Baroni
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+
+            <p class="b-fight-details__table-text">
+              16
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              5
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/710d93f1508f7104">
+            PRIDE Bushido 9: The Tournament
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Sep. 25, 2005
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/bb37c49ab61895e2')" data-link="http://www.ufcstats.com/fight-details/bb37c49ab61895e2">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/bb37c49ab61895e2"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/85d905f7c4f5a1af">
+            Murilo Bustamante
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              14
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/710d93f1508f7104">
+            PRIDE Bushido 9: The Tournament
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Sep. 25, 2005
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Kicks
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          9:51
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/a00236d8c8e29db9')" data-link="http://www.ufcstats.com/fight-details/a00236d8c8e29db9">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/a00236d8c8e29db9"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/08ae5cd9aef7ddd3">
+            Kimo Leopoldo
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/c3ea8deeba00462b">
+            PRIDE Bushido 8
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jul. 17, 2005
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Ankle Lock
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          3:11
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/d81a62a170191c06')" data-link="http://www.ufcstats.com/fight-details/d81a62a170191c06">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/d81a62a170191c06"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/1652f3213655b935">
+            Phil Baroni
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              24
+            </p>
+
+            <p class="b-fight-details__table-text">
+              54
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              5
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/cbfd1d34356a004c">
+            PRIDE Bushido 7
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          May. 22, 2005
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Stomps
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:04
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/50e385a841d29df6')" data-link="http://www.ufcstats.com/fight-details/50e385a841d29df6">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/50e385a841d29df6"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/d29b5c4f22c6357d">
+            Gilbert Yvel
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/817e0bdf08efce2e">
+            PRIDE Bushido 6
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Apr. 03, 2005
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Toe Hold
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:10
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/b18629089b433099')" data-link="http://www.ufcstats.com/fight-details/b18629089b433099">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/b18629089b433099"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/d56bb6dff2ae77eb">
+            Stefan Leko
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/8738eacd62e82a32">
+            PRIDE Shockwave 2004
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 31, 2004
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Heel Hook
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          0:27
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/1b1445af38be4ded')" data-link="http://www.ufcstats.com/fight-details/1b1445af38be4ded">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/1b1445af38be4ded"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/bcd124bcd3d5be46">
+            Ryuki Ueyama
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              19
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/e741536153227386">
+            PRIDE Bushido 5
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Oct. 14, 2004
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          S-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/4659c64ec61991d8')" data-link="http://www.ufcstats.com/fight-details/4659c64ec61991d8">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/4659c64ec61991d8"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/9f488f520ed25bbf">
+            Kenichi Yamamoto
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              16
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/6859f67468ba8489">
+            PRIDE Bushido 4
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jul. 19, 2004
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          3:23
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/5bf0e3cca360f7ff')" data-link="http://www.ufcstats.com/fight-details/5bf0e3cca360f7ff">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/5bf0e3cca360f7ff"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/0c3838c8f7c620c2">
+            Ryan Gracie
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              12
+            </p>
+
+            <p class="b-fight-details__table-text">
+              9
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              11
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/b19fc66613dc75b9">
+            PRIDE Bushido 3
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          May. 23, 2004
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          S-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/8437a2ead16bf500')" data-link="http://www.ufcstats.com/fight-details/8437a2ead16bf500">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/8437a2ead16bf500"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/a1f6999fe57236e0">
+            Wanderlei Silva
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/12458872d6afae1b">
+            PRIDE Bushido 2
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Feb. 15, 2004
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:09
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/f6c00a5cb264f675')" data-link="http://www.ufcstats.com/fight-details/f6c00a5cb264f675">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/f6c00a5cb264f675"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ffc088e64fab57e9">
+            Quinton Jackson
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              65
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              11
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/253de74457bd6374">
+            PRIDE Shockwave 2003
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 31, 2003
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Knee
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:05
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/9397493152c0669a')" data-link="http://www.ufcstats.com/fight-details/9397493152c0669a">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/9397493152c0669a"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ce6065baef021cf3">
+            Ikuhisa Minowa
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/80e6d71e14c1d356">
+            Joe Slick
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              8
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/d2b1c1317a39f6c6">
+            UFC 25: Ultimate Japan 3
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Apr. 14, 2000
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:54
+
+        </p>
+      </td>
+    </tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+    <footer class="b-foot">
+  <div class="b-foot__inner">
+    <div class="l-page__container clearfix">
+      <div class="b-foot__right">
+        <div class="b-foot__list-inner">
+          <h4 class="b-foot__list-title">
+            Navigation
+          </h4>
+          <ul class="b-foot__list">
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="/statistics/events/">
+                Events &amp; Fights
+              </a>
+            </li>
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="/statistics/fighters">
+                Fighters
+              </a>
+            </li>
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="http://statleaders.ufc.com" target="_blank">
+                Stat Leaders
+              </a>
+            </li>
+          </ul>
+        </div>     
+      </div>
+      <div class="b-foot__logo">
+        <a href="/">
+        <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/ufc-stats-foot-logo.png" alt="">
+        </a>
+        <div class="b-foot__copy-inner">
+          &copy; All Rights Reserved |
+          <a class="b-foot__copy-link" href="https://ufc.com/terms" target="_blank">Terms of Use</a> |
+          <a class="b-foot__copy-link" href="https://ufc.com/privacy-policy" target="_blank">Privacy Policy</a>
+        </div>
+      </div>      
+    </div>
+  </div>
+</footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="/js/vendor/jquery.validate.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js?ver=250706"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+            $("#dialog").dialog({
+
+                autoOpen: false,
+                modal: true,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "fold",
+                    duration: 1000
+                }
+
+            });
+        });
+    }
+
+    );
+    $("#opener").click(function () {
+        $("#dialog").dialog("open");
+    });
+    $("#opener").click(function () {
+        var state = true;
+        if (state) {
+            $("#dialog").animate({
+                backgroundColor: "white",
+                color: "black"
+
+            }, 1000);
+        }
+    });
+
+</script>
+
+<script type="text/javascript">
+
+ /*window.onload = function (){
+     // location.pathname.split( '/' )
+     theUrl = window.location.host;
+
+
+     if(theUrl === 'hosteddb.fightmetric.com'){
+         window.location.replace("http://www.fightmetric.com/statistics/events/upcoming");
+     }
+
+     //alert(theUrl);
+  }*/
+  //window.onpaint = handleHosted;
+</script>
+</body>
+</html>

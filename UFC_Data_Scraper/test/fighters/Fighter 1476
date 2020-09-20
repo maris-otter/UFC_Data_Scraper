@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8 lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Stats | UFC
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="">
+  <link rel="stylesheet" href="/blocks/main.css?ver=677278">
+  <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2855164-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body class="b-page" data-link="home">
+    <header class="b-head">
+      <div class="b-head__nav-bar">
+  <div class="l-page__container">
+    <a class="b-head__logo" href="/">
+        <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/ufc-stats-logo.png"
+             alt="">
+    </a>
+    <menu class="b-head__menu">
+      
+          <li class="b-head__item">
+            <a class="b-head__menu-link" href="/statistics/events/">
+              EVENTS & FIGHTS
+            </a>
+          </li>
+      
+      
+          <li class="b-head__item b-head__item_state_current">
+            <a class="b-head__menu-link" href="/statistics/fighters">
+              FIGHTERS
+            </a>
+          </li>
+      
+      
+          <li class="b-head__item">
+            <a class="b-head__menu-link" href="http://statleaders.ufc.com" target="_blank">
+              STAT LEADERS
+            </a>
+          </li>
+      
+    </menu>
+  </div>
+</div>
+    <div class="b-head__sub-nav">
+    </div>
+
+    </header>
+    <section class="b-statistics__section_details">
+<script type="text/javascript">
+    function doNav(url) {
+        document.location.href = url;
+
+    }
+</script>
+<div class="l-page__container">
+
+<h2 class="b-content__title">
+
+
+            <span class="b-content__title-highlight">
+                Keith Jardine
+
+            </span>
+
+            <span class="b-content__title-record">
+                Record: 17-11-2
+            </span>
+
+</h2>
+
+<p class="b-content__Nickname">
+  The Dean of Mean
+</p>
+
+<div class="b-fight-details b-fight-details_margin-top">
+<div class="b-list__info-box b-list__info-box_style_small-width js-guide">
+  <ul class="b-list__box-list">
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Height:
+      </i>
+      6' 2"
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Weight:
+      </i>
+      185 lbs.
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Reach:
+      </i>
+      76"
+    </li>
+    <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        STANCE:
+      </i>
+      Orthodox
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        DOB:
+      </i>
+      
+        Oct 31, 1975
+      
+    </li>
+  </ul>
+</div>
+<div class="b-list__info-box b-list__info-box_style_middle-width js-guide clearfix">
+
+  <div class="b-list__info-box-left clearfix">
+    <div class="b-list__info-box-left">
+      <i class="b-list__box-item-title">
+        Career statistics:
+      </i>
+      <ul class="b-list__box-list b-list__box-list_margin-top">
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            SLpM:
+          </i>
+
+          3.25
+
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Str. Acc.:
+          </i>
+          36%
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            SApM:
+          </i>
+          2.98
+        </li>
+        <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Str. Def:
+          </i>
+          59%
+        </li>
+      </ul>
+    </div>
+
+    <div class="b-list__info-box-right b-list__info-box_style-margin-right">
+      <ul class="b-list__box-list b-list__box-list_margin-top">
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_type_width">
+
+          </i>
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Avg.:
+          </i>
+          1.18
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Acc.:
+          </i>
+          45%
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Def.:
+          </i>
+          62%
+        </li>
+        <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Sub. Avg.:
+          </i>
+          0.7
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="b-list__info-box-right b-list__info-box_style_border-left b-list__info-box-right_style_middle-width">
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        SLpM -
+      </i>
+      Significant Strikes Landed per Minute
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Str. Acc. -
+      </i>
+      Significant Striking Accuracy
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        SApM -
+      </i>
+      Significant Strikes Absorbed per Minute
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Str. Def. -
+      </i>
+      Significant Strike Defence (the % of opponents strikes that did not land)
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Avg. -
+      </i>
+      Average Takedowns Landed per 15 minutes
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Acc. -
+      </i>
+      Takedown Accuracy
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Def. -
+      </i>
+      Takedown Defense (the % of opponents TD attempts that did not land)
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Sub. Avg. -
+      </i>
+      Average Submissions Attempted per 15 minutes
+    </p>
+    <i class="b-list__box-line"></i>
+  </div>
+</div>
+
+<div class="b-statistics__table-preview">
+  <i class="b-statistics__table-preview-item">
+    Click on row to see detailed stats
+  </i>
+</div>
+
+<table class="b-fight-details__table b-fight-details__table_style_margin-top b-fight-details__table_type_event-details js-fight-table" style="display: table;">
+<thead class="b-fight-details__table-head">
+<tr class="b-fight-details__table-row">
+  <th class="b-fight-details__table-col">
+    W/L
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Fighter
+  </th>
+  <th class="b-fight-details__table-col">
+    Str
+  </th>
+  <th class="b-fight-details__table-col">
+    Td
+  </th>
+  <th class="b-fight-details__table-col">
+    Sub
+  </th>
+  <th class="b-fight-details__table-col">
+    Pass
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Event
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Method
+  </th>
+  <th class="b-fight-details__table-col">
+    Round
+  </th>
+  <th class="b-fight-details__table-col">
+    Time
+  </th>
+</tr>
+</thead>
+<tbody class="b-fight-details__table-body">
+<tr class="b-statistics__table-row">
+  <td class="b-statistics__table-col_type_clear"></td>
+</tr>
+
+
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/e2dca1df3a99c19a')" data-link="http://www.ufcstats.com/fight-details/e2dca1df3a99c19a">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/e2dca1df3a99c19a"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/a6bbd3df469c6bea">
+            Roger Gracie
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              7
+            </p>
+
+            <p class="b-fight-details__table-text">
+              35
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              5
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/237187ed9f419285">
+            Strikeforce - Rockhold vs Kennedy
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jul. 14, 2012
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/2ca03d08d37161cb')" data-link="http://www.ufcstats.com/fight-details/2ca03d08d37161cb">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/2ca03d08d37161cb"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/00e11b5c8b7bfeeb">
+            Luke Rockhold
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              14
+            </p>
+
+            <p class="b-fight-details__table-text">
+              34
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/440c9dbab63528fb">
+            Strikeforce - Rockhold vs. Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+              <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/belt.png" alt="">
+          
+          Jan. 07, 2012
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          4:26
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/2b77c918e655e435')" data-link="http://www.ufcstats.com/fight-details/2b77c918e655e435">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/2b77c918e655e435"><i class="b-flag__inner"><i class="b-flag__text">draw<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/232c582f29f8f65e">
+            Gegard Mousasi
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              18
+            </p>
+
+            <p class="b-fight-details__table-text">
+              73
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/6776260cb0aef647">
+            Strikeforce - Diaz vs. Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Apr. 09, 2011
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          M-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/13fa791f0772250c')" data-link="http://www.ufcstats.com/fight-details/13fa791f0772250c">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/13fa791f0772250c"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/98b80a717b9bda17">
+            Matt Hamill
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              65
+            </p>
+
+            <p class="b-fight-details__table-text">
+              77
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/9bcf8603ceb25680">
+            The Ultimate Fighter: Team Liddell vs Team Ortiz Finale
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jun. 19, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          M-DEC
+        <img style="padding-bottom:3px" src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/fight.png" alt="">
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/aefca2869c87eb11')" data-link="http://www.ufcstats.com/fight-details/aefca2869c87eb11">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/aefca2869c87eb11"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/c0ab242c40decc55">
+            Ryan Bader
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              15
+            </p>
+
+            <p class="b-fight-details__table-text">
+              29
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/49efbdc6c9f650c4">
+            UFC 110: Nogueira vs Velasquez
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Feb. 20, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punch
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:10
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/39f07708af6ecfc7')" data-link="http://www.ufcstats.com/fight-details/39f07708af6ecfc7">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/39f07708af6ecfc7"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/2924886ee9c4c527">
+            Thiago Silva
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              5
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/c6a33ff198aaaeeb">
+            UFC 102: Couture vs Nogueira
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Aug. 29, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punch
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:35
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/011d818ec9bb3de6')" data-link="http://www.ufcstats.com/fight-details/011d818ec9bb3de6">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/011d818ec9bb3de6"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/ffc088e64fab57e9">
+            Quinton Jackson
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              64
+            </p>
+
+            <p class="b-fight-details__table-text">
+              56
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/29b5791e51e7e832">
+            UFC 96: Jackson vs Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Mar. 07, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        <img style="padding-bottom:3px" src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/fight.png" alt="">
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/01d71345ba7ea6f9')" data-link="http://www.ufcstats.com/fight-details/01d71345ba7ea6f9">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/01d71345ba7ea6f9"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/fa315e6c77eee106">
+            Brandon Vera
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              50
+            </p>
+
+            <p class="b-fight-details__table-text">
+              48
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/312f47c3d2f83ffa">
+            UFC 89: Bisping vs Leben
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Oct. 18, 2008
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          S-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/6baa381a75582d98')" data-link="http://www.ufcstats.com/fight-details/6baa381a75582d98">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/6baa381a75582d98"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/a1f6999fe57236e0">
+            Wanderlei Silva
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              11
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/2549d63da9c456cb">
+            UFC 84: Ill Will
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          May. 24, 2008
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punch
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          0:36
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/068e118edac9e057')" data-link="http://www.ufcstats.com/fight-details/068e118edac9e057">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/068e118edac9e057"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/a390eb8a9b2df298">
+            Chuck Liddell
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              83
+            </p>
+
+            <p class="b-fight-details__table-text">
+              31
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/bad28b7b34f334de">
+            UFC 76: Knockout
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Sep. 22, 2007
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          S-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/5157988b77ca1097')" data-link="http://www.ufcstats.com/fight-details/5157988b77ca1097">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/5157988b77ca1097"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/0541480fbf719d86">
+            Houston Alexander
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              5
+            </p>
+
+            <p class="b-fight-details__table-text">
+              17
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/2e04a3b4a2011b97">
+            UFC 71: Liddell vs Jackson
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          May. 26, 2007
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punch
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          0:48
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/bb007be9f60ab3da')" data-link="http://www.ufcstats.com/fight-details/bb007be9f60ab3da">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/bb007be9f60ab3da"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/fcffee71cff5530e">
+            Forrest Griffin
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              36
+            </p>
+
+            <p class="b-fight-details__table-text">
+              17
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/ee5df903f80c6816">
+            UFC 66: Liddell vs Ortiz 2
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 30, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        <img style="padding-bottom:3px" src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/ko.png" alt="">
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          4:41
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/2168b2c814faada6')" data-link="http://www.ufcstats.com/fight-details/2168b2c814faada6">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/2168b2c814faada6"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/af5b208e97f5d382">
+            Wilson Gouveia
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              67
+            </p>
+
+            <p class="b-fight-details__table-text">
+              48
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/1dab0d1d81dd06db">
+            The Ultimate Fighter: Team Ortiz vs. Team Shamrock Finale
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jun. 24, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/d39ce3ecd3fbdadf')" data-link="http://www.ufcstats.com/fight-details/d39ce3ecd3fbdadf">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/d39ce3ecd3fbdadf"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/c6a33ff198aaaeeb">
+            Stephan Bonnar
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              64
+            </p>
+
+            <p class="b-fight-details__table-text">
+              33
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/b361180739bed4b0">
+            UFC Fight Night 4
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Apr. 06, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/a63ed5d48f00ad18')" data-link="http://www.ufcstats.com/fight-details/a63ed5d48f00ad18">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/a63ed5d48f00ad18"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/22d1e00e1aabb7c9">
+            Mike Whitehead
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              44
+            </p>
+
+            <p class="b-fight-details__table-text">
+              27
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              5
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/977081bc01197656">
+            UFC 57: Liddell vs Couture 3
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Feb. 04, 2006
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/39c4f4a1aff68189')" data-link="http://www.ufcstats.com/fight-details/39c4f4a1aff68189">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/39c4f4a1aff68189"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/030f08370fd1c2bb">
+            Kerry Schall
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              41
+            </p>
+
+            <p class="b-fight-details__table-text">
+              8
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/31ceaf0e670c1578">
+            The Ultimate Fighter: Team Hughes vs. Team Franklin Finale
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Nov. 05, 2005
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Kicks
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          3:28
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/33e44be826a1cd2a')" data-link="http://www.ufcstats.com/fight-details/33e44be826a1cd2a">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/33e44be826a1cd2a"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/1e13936d708bcff7">
+            George Allen
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              31
+            </p>
+
+            <p class="b-fight-details__table-text">
+              8
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/ad3f53c454cbbead">
+            KOTC 24: Mayhem
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jun. 14, 2003
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/6267d880047c1e20')" data-link="http://www.ufcstats.com/fight-details/6267d880047c1e20">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/6267d880047c1e20"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/56116537d71a578c">
+            Bryan Pardoe
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/427b5953ac8e3a27">
+            KOTC 20: Crossroads
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 15, 2002
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:09
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/66f4e23d9edf6402')" data-link="http://www.ufcstats.com/fight-details/66f4e23d9edf6402">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/66f4e23d9edf6402"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/6597b611f1c32555">
+            Philip Preece
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              7
+            </p>
+
+            <p class="b-fight-details__table-text">
+              8
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              13
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/fa315e6c77eee106">
+            KOTC 14
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jun. 19, 2002
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/1e0a6536f78f50be')" data-link="http://www.ufcstats.com/fight-details/1e0a6536f78f50be">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/1e0a6536f78f50be"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/b9d0fd83bb8a147a">
+            Keith Jardine
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/bc7f7f0ba3db74d2">
+            Amir Rahnavardi
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/86f582852a5b240a">
+            GC 5
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Aug. 19, 2001
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Armbar
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:29
+
+        </p>
+      </td>
+    </tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+    <footer class="b-foot">
+  <div class="b-foot__inner">
+    <div class="l-page__container clearfix">
+      <div class="b-foot__right">
+        <div class="b-foot__list-inner">
+          <h4 class="b-foot__list-title">
+            Navigation
+          </h4>
+          <ul class="b-foot__list">
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="/statistics/events/">
+                Events &amp; Fights
+              </a>
+            </li>
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="/statistics/fighters">
+                Fighters
+              </a>
+            </li>
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="http://statleaders.ufc.com" target="_blank">
+                Stat Leaders
+              </a>
+            </li>
+          </ul>
+        </div>     
+      </div>
+      <div class="b-foot__logo">
+        <a href="/">
+        <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/ufc-stats-foot-logo.png" alt="">
+        </a>
+        <div class="b-foot__copy-inner">
+          &copy; All Rights Reserved |
+          <a class="b-foot__copy-link" href="https://ufc.com/terms" target="_blank">Terms of Use</a> |
+          <a class="b-foot__copy-link" href="https://ufc.com/privacy-policy" target="_blank">Privacy Policy</a>
+        </div>
+      </div>      
+    </div>
+  </div>
+</footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="/js/vendor/jquery.validate.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js?ver=677570"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+            $("#dialog").dialog({
+
+                autoOpen: false,
+                modal: true,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "fold",
+                    duration: 1000
+                }
+
+            });
+        });
+    }
+
+    );
+    $("#opener").click(function () {
+        $("#dialog").dialog("open");
+    });
+    $("#opener").click(function () {
+        var state = true;
+        if (state) {
+            $("#dialog").animate({
+                backgroundColor: "white",
+                color: "black"
+
+            }, 1000);
+        }
+    });
+
+</script>
+
+<script type="text/javascript">
+
+ /*window.onload = function (){
+     // location.pathname.split( '/' )
+     theUrl = window.location.host;
+
+
+     if(theUrl === 'hosteddb.fightmetric.com'){
+         window.location.replace("http://www.fightmetric.com/statistics/events/upcoming");
+     }
+
+     //alert(theUrl);
+  }*/
+  //window.onpaint = handleHosted;
+</script>
+</body>
+</html>

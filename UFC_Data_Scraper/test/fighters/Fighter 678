@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8 lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Stats | UFC
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="">
+  <link rel="stylesheet" href="/blocks/main.css?ver=713117">
+  <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2855164-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body class="b-page" data-link="home">
+    <header class="b-head">
+      <div class="b-head__nav-bar">
+  <div class="l-page__container">
+    <a class="b-head__logo" href="/">
+        <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/ufc-stats-logo.png"
+             alt="">
+    </a>
+    <menu class="b-head__menu">
+      
+          <li class="b-head__item">
+            <a class="b-head__menu-link" href="/statistics/events/">
+              EVENTS & FIGHTS
+            </a>
+          </li>
+      
+      
+          <li class="b-head__item b-head__item_state_current">
+            <a class="b-head__menu-link" href="/statistics/fighters">
+              FIGHTERS
+            </a>
+          </li>
+      
+      
+          <li class="b-head__item">
+            <a class="b-head__menu-link" href="http://statleaders.ufc.com" target="_blank">
+              STAT LEADERS
+            </a>
+          </li>
+      
+    </menu>
+  </div>
+</div>
+    <div class="b-head__sub-nav">
+    </div>
+
+    </header>
+    <section class="b-statistics__section_details">
+<script type="text/javascript">
+    function doNav(url) {
+        document.location.href = url;
+
+    }
+</script>
+<div class="l-page__container">
+
+<h2 class="b-content__title">
+
+
+            <span class="b-content__title-highlight">
+                Paul Daley
+
+            </span>
+
+            <span class="b-content__title-record">
+                Record: 39-15-2
+            </span>
+
+</h2>
+
+<p class="b-content__Nickname">
+  Semtex
+</p>
+
+<div class="b-fight-details b-fight-details_margin-top">
+<div class="b-list__info-box b-list__info-box_style_small-width js-guide">
+  <ul class="b-list__box-list">
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Height:
+      </i>
+      5' 9"
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Weight:
+      </i>
+      170 lbs.
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        Reach:
+      </i>
+      76"
+    </li>
+    <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        STANCE:
+      </i>
+      Orthodox
+    </li>
+    <li class="b-list__box-list-item b-list__box-list-item_type_block">
+      <i class="b-list__box-item-title b-list__box-item-title_type_width">
+        DOB:
+      </i>
+      
+        Feb 21, 1983
+      
+    </li>
+  </ul>
+</div>
+<div class="b-list__info-box b-list__info-box_style_middle-width js-guide clearfix">
+
+  <div class="b-list__info-box-left clearfix">
+    <div class="b-list__info-box-left">
+      <i class="b-list__box-item-title">
+        Career statistics:
+      </i>
+      <ul class="b-list__box-list b-list__box-list_margin-top">
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            SLpM:
+          </i>
+
+          3.14
+
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Str. Acc.:
+          </i>
+          47%
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            SApM:
+          </i>
+          2.37
+        </li>
+        <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Str. Def:
+          </i>
+          60%
+        </li>
+      </ul>
+    </div>
+
+    <div class="b-list__info-box-right b-list__info-box_style-margin-right">
+      <ul class="b-list__box-list b-list__box-list_margin-top">
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_type_width">
+
+          </i>
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Avg.:
+          </i>
+          0.91
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Acc.:
+          </i>
+          40%
+        </li>
+        <li class="b-list__box-list-item b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            TD Def.:
+          </i>
+          64%
+        </li>
+        <li class="b-list__box-list-item  b-list__box-list-item_type_block">
+          <i class="b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width">
+            Sub. Avg.:
+          </i>
+          0.0
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="b-list__info-box-right b-list__info-box_style_border-left b-list__info-box-right_style_middle-width">
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        SLpM -
+      </i>
+      Significant Strikes Landed per Minute
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Str. Acc. -
+      </i>
+      Significant Striking Accuracy
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        SApM -
+      </i>
+      Significant Strikes Absorbed per Minute
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Str. Def. -
+      </i>
+      Significant Strike Defence (the % of opponents strikes that did not land)
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Avg. -
+      </i>
+      Average Takedowns Landed per 15 minutes
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Acc. -
+      </i>
+      Takedown Accuracy
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        TD Def. -
+      </i>
+      Takedown Defense (the % of opponents TD attempts that did not land)
+    </p>
+
+    <p class="b-list__box-content">
+      <i class="b-list__box-content_style_strong">
+        Sub. Avg. -
+      </i>
+      Average Submissions Attempted per 15 minutes
+    </p>
+    <i class="b-list__box-line"></i>
+  </div>
+</div>
+
+<div class="b-statistics__table-preview">
+  <i class="b-statistics__table-preview-item">
+    Click on row to see detailed stats
+  </i>
+</div>
+
+<table class="b-fight-details__table b-fight-details__table_style_margin-top b-fight-details__table_type_event-details js-fight-table" style="display: table;">
+<thead class="b-fight-details__table-head">
+<tr class="b-fight-details__table-row">
+  <th class="b-fight-details__table-col">
+    W/L
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Fighter
+  </th>
+  <th class="b-fight-details__table-col">
+    Str
+  </th>
+  <th class="b-fight-details__table-col">
+    Td
+  </th>
+  <th class="b-fight-details__table-col">
+    Sub
+  </th>
+  <th class="b-fight-details__table-col">
+    Pass
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Event
+  </th>
+  <th class="b-fight-details__table-col l-page_align_left">
+    Method
+  </th>
+  <th class="b-fight-details__table-col">
+    Round
+  </th>
+  <th class="b-fight-details__table-col">
+    Time
+  </th>
+</tr>
+</thead>
+<tbody class="b-fight-details__table-body">
+<tr class="b-statistics__table-row">
+  <td class="b-statistics__table-col_type_clear"></td>
+</tr>
+
+
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/90ee2e72fdbe5fd1')" data-link="http://www.ufcstats.com/fight-details/90ee2e72fdbe5fd1">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/90ee2e72fdbe5fd1"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/5e7a28f20927d64a">
+            Kazuo Misaki
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              44
+            </p>
+
+            <p class="b-fight-details__table-text">
+              43
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/baa5358456803df8">
+            Strikeforce - Tate vs. Rousey
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Mar. 03, 2012
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          S-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/81a5491ec780a380')" data-link="http://www.ufcstats.com/fight-details/81a5491ec780a380">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/81a5491ec780a380"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/effd9de9937996f8">
+            Tyron Woodley
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              21
+            </p>
+
+            <p class="b-fight-details__table-text">
+              20
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/a0b91014e9d16a76">
+            Strikeforce - Fedor vs. Henderson
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jul. 30, 2011
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/055c003466c45a37')" data-link="http://www.ufcstats.com/fight-details/055c003466c45a37">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/055c003466c45a37"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/f57a8a52ca401ed9">
+            Nick Diaz
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              20
+            </p>
+
+            <p class="b-fight-details__table-text">
+              44
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/6776260cb0aef647">
+            Strikeforce - Diaz vs. Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+              <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/belt.png" alt="">
+          
+          Apr. 09, 2011
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          4:57
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/d3734b53a2700ea5')" data-link="http://www.ufcstats.com/fight-details/d3734b53a2700ea5">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/d3734b53a2700ea5"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/3410cf010558dc8b">
+            Scott Smith
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              17
+            </p>
+
+            <p class="b-fight-details__table-text">
+              5
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/daf1b84aebd6602b">
+            Strikeforce - Henderson vs. Babalu
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Dec. 04, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punch
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:09
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/bb58aad30b58b1e4')" data-link="http://www.ufcstats.com/fight-details/bb58aad30b58b1e4">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/bb58aad30b58b1e4"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/dd37fd509af89f15">
+            Josh Koscheck
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              11
+            </p>
+
+            <p class="b-fight-details__table-text">
+              19
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              7
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/d0c29452d3272603">
+            UFC 113: Machida vs Shogun 2
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          May. 08, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          U-DEC
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          3
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          5:00
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/c99370e3e54bd5fd')" data-link="http://www.ufcstats.com/fight-details/c99370e3e54bd5fd">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/c99370e3e54bd5fd"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/a149d6bc670cdb60">
+            Dustin Hazelett
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              8
+            </p>
+
+            <p class="b-fight-details__table-text">
+              4
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/a6d8bfe9e0c8153b">
+            UFC 108: Evans vs Silva
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jan. 02, 2010
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        <img style="padding-bottom:3px" src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/ko.png" alt="">
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punch
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:24
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/acfa3a3c0d09bb57')" data-link="http://www.ufcstats.com/fight-details/acfa3a3c0d09bb57">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/acfa3a3c0d09bb57"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/8b69839f3555a67b">
+            Martin Kampmann
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              27
+            </p>
+
+            <p class="b-fight-details__table-text">
+              12
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/896c322f56b8be5a">
+            UFC 103: Franklin vs Belfort
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Sep. 19, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:31
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/ed77984f7e5e0bc5')" data-link="http://www.ufcstats.com/fight-details/ed77984f7e5e0bc5">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/ed77984f7e5e0bc5"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/06dced58ca24a6bd">
+            Junior Barata
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              21
+            </p>
+
+            <p class="b-fight-details__table-text">
+              10
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/cd12227edd3f134b">
+            WFC 8: D-Day
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Apr. 18, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Kick
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:29
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/51386d6e46d6fd0b')" data-link="http://www.ufcstats.com/fight-details/51386d6e46d6fd0b">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/51386d6e46d6fd0b"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/c1e4ae143cce7398">
+            Aurelijus Kerpe
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              13
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/3c0437fbeda06962">
+            Ultimate Gladiators
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Mar. 29, 2009
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Knee
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          1:35
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/e1c6c620e6c4636d')" data-link="http://www.ufcstats.com/fight-details/e1c6c620e6c4636d">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_bordered" href="http://www.ufcstats.com/fight-details/e1c6c620e6c4636d"><i class="b-flag__inner"><i class="b-flag__text">loss<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/fe435e440b5de0ff">
+            Jake Shields
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              17
+            </p>
+
+            <p class="b-fight-details__table-text">
+              21
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              3
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              6
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/782a2a17d3e38fdf">
+            EliteXC - Heat
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Oct. 04, 2008
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          SUB
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Armbar
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          3:47
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/4ea1a45f36221284')" data-link="http://www.ufcstats.com/fight-details/4ea1a45f36221284">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/4ea1a45f36221284"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/2067a177a2842fbf">
+            Sammy Morgan
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              9
+            </p>
+
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              2
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/1eacf73d6a0055dc">
+            EliteXC - ShoXC 4
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jan. 25, 2008
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Elbow
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          1
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          2:12
+
+        </p>
+      </td>
+    </tr>
+
+    
+    
+
+
+    <tr class="b-fight-details__table-row b-fight-details__table-row__hover js-fight-details-click" onclick="doNav('http://www.ufcstats.com/fight-details/48dc574b3da0e1c2')" data-link="http://www.ufcstats.com/fight-details/48dc574b3da0e1c2">
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          <a class="b-flag b-flag_style_green" href="http://www.ufcstats.com/fight-details/48dc574b3da0e1c2"><i class="b-flag__inner"><i class="b-flag__text">win<i class="b-flag__corner"></i><i class="b-flag__corner-substrate"></i></i></i></a>
+
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/23725c826c481e7f">
+            Paul Daley
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/fighter-details/84ac950d4c1722dd">
+            Duane Ludwig
+          </a>
+        </p>
+      </td>
+          <td class="b-fight-details__table-col">
+
+            <p class="b-fight-details__table-text">
+              21
+            </p>
+
+            <p class="b-fight-details__table-text">
+              17
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              1
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+          <td class="b-fight-details__table-col">
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+
+            <p class="b-fight-details__table-text">
+              0
+            </p>
+          </td>
+
+
+
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          <a class="b-link b-link_style_black" href="http://www.ufcstats.com/event-details/ee4b670e159f4a33">
+            Strikeforce - Shamrock vs. Baroni
+          </a>
+        </p>
+
+        <p class="b-fight-details__table-text">
+          
+          Jun. 22, 2007
+        </p>
+      </td>
+      <td class="b-fight-details__table-col l-page_align_left">
+        <p class="b-fight-details__table-text">
+          
+          
+
+          KO/TKO
+        
+        </p>
+
+        <p class="b-fight-details__table-text">
+          Punches
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+          2
+        </p>
+      </td>
+      <td class="b-fight-details__table-col">
+        <p class="b-fight-details__table-text">
+
+          
+          0:42
+
+        </p>
+      </td>
+    </tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+    <footer class="b-foot">
+  <div class="b-foot__inner">
+    <div class="l-page__container clearfix">
+      <div class="b-foot__right">
+        <div class="b-foot__list-inner">
+          <h4 class="b-foot__list-title">
+            Navigation
+          </h4>
+          <ul class="b-foot__list">
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="/statistics/events/">
+                Events &amp; Fights
+              </a>
+            </li>
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="/statistics/fighters">
+                Fighters
+              </a>
+            </li>
+            <li class="b-foot__item">
+              <a class="b-foot__link" href="http://statleaders.ufc.com" target="_blank">
+                Stat Leaders
+              </a>
+            </li>
+          </ul>
+        </div>     
+      </div>
+      <div class="b-foot__logo">
+        <a href="/">
+        <img src="http://1e49bc5171d173577ecd-1323f4090557a33db01577564f60846c.r80.cf1.rackcdn.com/ufc-stats-foot-logo.png" alt="">
+        </a>
+        <div class="b-foot__copy-inner">
+          &copy; All Rights Reserved |
+          <a class="b-foot__copy-link" href="https://ufc.com/terms" target="_blank">Terms of Use</a> |
+          <a class="b-foot__copy-link" href="https://ufc.com/privacy-policy" target="_blank">Privacy Policy</a>
+        </div>
+      </div>      
+    </div>
+  </div>
+</footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="/js/vendor/jquery.validate.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js?ver=713394"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+            $("#dialog").dialog({
+
+                autoOpen: false,
+                modal: true,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "fold",
+                    duration: 1000
+                }
+
+            });
+        });
+    }
+
+    );
+    $("#opener").click(function () {
+        $("#dialog").dialog("open");
+    });
+    $("#opener").click(function () {
+        var state = true;
+        if (state) {
+            $("#dialog").animate({
+                backgroundColor: "white",
+                color: "black"
+
+            }, 1000);
+        }
+    });
+
+</script>
+
+<script type="text/javascript">
+
+ /*window.onload = function (){
+     // location.pathname.split( '/' )
+     theUrl = window.location.host;
+
+
+     if(theUrl === 'hosteddb.fightmetric.com'){
+         window.location.replace("http://www.fightmetric.com/statistics/events/upcoming");
+     }
+
+     //alert(theUrl);
+  }*/
+  //window.onpaint = handleHosted;
+</script>
+</body>
+</html>
