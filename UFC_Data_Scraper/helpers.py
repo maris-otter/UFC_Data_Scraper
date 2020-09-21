@@ -186,9 +186,9 @@ class career_stats:
 class Fighter:
     name = ""
     height = ()
-    weight = 0
-    reach = 0
-    stance = 0 # 1 = orthodox 2 = southpaw
+    weight = -1
+    reach = -1
+    stance = -1 # 1 = orthodox 2 = southpaw 3 = Switch
     DOB = ()
     history = f_history()
     career_stat = career_stats()

@@ -6,28 +6,40 @@ import requests
 import re
 from helpers import *
 import os
-import time
 
 
 class Ufc_Data_Scraper:
     #Constants
     DEFAULT_DIRECTORY = "ufc_scraper/UFC_Data_Scraper"
 
-    def get_all_fighters(self, load_from_dir = False, correct_dir=""):
+    def get_all_fighters(self, load_from_dir = False, correct_dir = None, save_https = False):
         """
-        returns a indexable list of every fighter on ufcstats. Each index is a fighter
-        object
+        returns a indexable list of every fighter on ufcstats. Each index is a
+        fighter. Provides option to save each fighter http if not loading from
+        a directory already
 
-        return - fight-d
+
+        args:
+            load_from_dir - create the list of fighters from a directory that has
+                https of fighters saved
+
+            correct_dir - conditoinal: if load_from_dir false then correct_dir
+                represents the directory fighter https will be saved to.
+                otherwise current_dir represents which directory to load fighter
+                https from
+            save_https - optional arguement that if True will save each fighter
+                http to a directory based on correct_dir
+
+        return - list of fighter objects
         """
 
-        if not is_dir_correct(correct_dir):
-            try:
-                print("Not in correct directory for saving. Attempting to change directory.")
-                os.chdir(correct_dir)
-            except Exception:
-                print("An exception occured upon trying to change directory. Exiting...")
-                exit()
+        #handling bad function calls by displaying error and exiting function
+        if save_https and correct_dir == None:
+            print("Must provide a directory if saving fighter https")
+            return
+        if load_from_dir and (correct_dir != None or save_https != False):
+            print("If loading from directory the option to save is not available. Please call again")
+            return
 
         fighters = [] #list of fighter objects
 
@@ -41,7 +53,10 @@ class Ufc_Data_Scraper:
                 temp = get_fighter_stats("{}/{}".format(correct_dir, index))
 
             else:
-                temp = get_fighter_stats(http_url=fighter)
+                if save_https:
+                    temp = get_fighter_stats(http_url = fighter, save = True, dir = correct_dir)
+                else:
+                    temp = get_fighter_stats(http_url = fighter)
 
 
             fighters.append(temp)
@@ -50,6 +65,7 @@ class Ufc_Data_Scraper:
 
 
         return fighters
+
 
     def scrape_all_fights(self, wanted_directory='src/test'):
         """ uses all event links form get_all_event_history_links and saves all fight
@@ -158,8 +174,9 @@ def save_html(html, path):
     try:
         with open(path, 'wb') as f:
             f.write(html)
-    except Exception:
+    except Exception as e:
         print("\n\nAn Exception occured while trying to save %s" % path)
+        print(e)
 
 #opens a local html file and returns it as an object
 def open_html(path):
@@ -235,7 +252,7 @@ def get_fighter_http(dir, save_to_dir=False):
     return list_of_https
 
 #Takes a http from page and creates a fighter object with stats filled
-def get_fighter_stats(http_page='None', http_url='None'):
+def get_fighter_stats(http_page='None', http_url='None', save = False, dir = ""):
     """
     populates a Fighter() class object with all attributes available on given
     http_page.
@@ -246,6 +263,10 @@ def get_fighter_stats(http_page='None', http_url='None'):
 
     returns: Fighter object
     """
+    if save == True and dir == None:
+        print("get_fighter_stats called incorrectly. Optional arguments wrong")
+        exit()
+
     #Create fighter object
     fighter = Fighter()
 
@@ -255,6 +276,10 @@ def get_fighter_stats(http_page='None', http_url='None'):
         soup = BeautifulSoup(page, 'html.parser')
     elif http_url != 'None':
         page = requests.get(http_url)
+
+        if save:
+            save_html(page.content, f"{dir}/{http_url[-16:]}")
+
         soup = BeautifulSoup(page.content, 'html.parser')
     else:
         print("get_fighter_stats() used incorrectly")
