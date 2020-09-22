@@ -5,5 +5,5 @@ __pycache__/
 /src/backup/
 /src/test/
 /tmp_data_ignored
-UFC_Data_Scraper/fighter_data_https
-UFC_Data_Scraper/fight_history
+/ufc_data_scraper/fight_history
+/ufc_data_scraper/fighter_data_https
