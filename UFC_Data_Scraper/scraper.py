@@ -5,7 +5,7 @@ import os
 
 class Ufc_Data_Scraper:
     #Constants
-    DEFAULT_DIRECTORY = "ufc_scraper/UFC_Data_Scraper"
+    DEFAULT_DIRECTORY ="UFC_Data_Scraper/UFC_Data_Scraper"
 
     def __init__(self):
         #see if file structure is created
@@ -138,7 +138,7 @@ class Ufc_Data_Scraper:
         verify_dir = ["fight_history", "fighter_data_https"]
         missing_dir = []
         dir_exist = False
-        wanted_directory = "ufc_scraper/ufc_data_scraper"
+        wanted_directory = DEFAULT_DIRECTORY
         #check to see if fighter_data_https dir exist and fight_history dir exists
 
 
