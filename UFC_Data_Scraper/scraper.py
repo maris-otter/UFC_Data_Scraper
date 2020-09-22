@@ -138,7 +138,7 @@ class Ufc_Data_Scraper:
         verify_dir = ["fight_history", "fighter_data_https"]
         missing_dir = []
         dir_exist = False
-        wanted_directory = DEFAULT_DIRECTORY
+        wanted_directory = self.DEFAULT_DIRECTORY
         #check to see if fighter_data_https dir exist and fight_history dir exists
 
 
