@@ -16,7 +16,6 @@ class Ufc_Data_Scraper:
             print(color.RED + "\n\nUnable to create file structure \n\n" + color.END)
             raise Exception
 
-            #if not then create the correct file structure and file trackers
 
 
     def get_all_fighters(self, load_from_dir = False, correct_dir = SAVE_FIGHTER_DIR, save_https = False):
