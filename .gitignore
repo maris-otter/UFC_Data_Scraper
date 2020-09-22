@@ -7,3 +7,4 @@ __pycache__/
 /tmp_data_ignored
 /ufc_data_scraper/fight_history
 /ufc_data_scraper/fighter_data_https
+/tmp_data_ignored ufc_data_scraper
