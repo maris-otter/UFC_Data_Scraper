@@ -70,7 +70,7 @@ class Ufc_Data_Scraper:
         return fighters
 
 
-    def scrape_all_fights(self, wanted_directory='src/test'):
+    def scrape_all_fights(self, wanted_directory= SAVE_FIGHT_DIR):
         """ uses all event links form get_all_event_history_links and saves all fight
         https to wanted_working_dir.
         """

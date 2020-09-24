@@ -85,6 +85,7 @@ class fight_details:
     event = ""
     fighter_1 = ""
     fighter_2 = ""
+    winner = -2
     #fight summary
     finish = "DATA NOT AVAILABLE"
     finish_details = "DATA NOT AVAILABLE"
@@ -325,7 +326,7 @@ def get_fighter_http(dir, save_to_dir=False):
     return list_of_https
 
 #Takes a http from page and creates a fighter object with stats filled
-def get_fighter_stats(http_page='None', http_url='None', save = False, dir = ""):
+def get_fighter_stats(http_page='None', http_url='None', save = False, dir = SAVE_FIGHTER_DIR):
     """
     populates a Fighter() class object with all attributes available on given
     http_page.
@@ -848,6 +849,25 @@ def assign_fight_data(fight_history_collection, http):
     fighter2_round_data = [round_total_assign(totals[1][i]) for i in range(len(totals[1]))]
     fighter2_sig_strike_data =  [assign_sig_data(totals[1][i]) for i in range(len(sig_strikes[1]))]
 
+    #Get the winner
+    winner_raw = soup.find_all(class_ = "b-fight-details__person")
+
+    winner_clean_text = []
+    for i in winner_raw:
+        i = i.text
+        i =  ' '.join(i.split())
+        winner_clean_text.append(i)
+
+    winner = 0 #Default value
+    if winner_clean_text[0][0] == 'W':
+        winner = 1
+    elif winner_clean_text[1][0] == 'W':
+        winner = 2
+    else: #only will execute if an error occured
+        winner = -1
+
+
+
     fight = fight_details()
 
     fight.event = title
@@ -863,6 +883,7 @@ def assign_fight_data(fight_history_collection, http):
     fight.fighter2_round_data = fighter2_round_data
     fight.fighter1_sig_strike_data = fighter1_sig_strike_data
     fight.fighter2_sig_strike_data = fighter2_sig_strike_data
+    fight.winner = winner
 
     return fight
 
