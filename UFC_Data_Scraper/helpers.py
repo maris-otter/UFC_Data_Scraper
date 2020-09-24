@@ -6,7 +6,7 @@ import requests
 import re
 from helpers import *
 import os
-
+import pickle
 
 class total_round_data:#
     round = -1 #tracks the round or if the object is a total
@@ -365,7 +365,11 @@ def get_fighter_stats(http_page='None', http_url='None', save = False, dir = SAV
     name_target = soup.find_all("span", class_="b-content__title-highlight")
 
     #isolates text within tag
-    fighter_name = name_target[0].text
+    if not len(name_target) == 0:
+        fighter_name = name_target[0].text
+    else:
+        fighter_name = "UNABLE TO GET NAME"
+
     fighter_name =' '.join(fighter_name.split())
 
     # assigns name
@@ -525,7 +529,7 @@ def get_fighter_stats(http_page='None', http_url='None', save = False, dir = SAV
     fighter.career_stat.sig_absorbed = sapm
 
     #Get Significant Strike Defence
-    sig_strike_defense_regex = re.compile('Str. Def:\s\d\d')
+    sig_strike_defense_regex = re.compile('Str. Def:\s\d{1,3}')
     sig_strike_defence = sig_strike_defense_regex.search(carrer_stat_text[0])
 
     try:
@@ -568,7 +572,7 @@ def get_fighter_stats(http_page='None', http_url='None', save = False, dir = SAV
     fighter.career_stat.takedown_acc = takedown_acc
 
     #Get takedown_defense
-    takedown_defense_regex = re.compile('TD\sDef.:\s\d{1,3}')
+    takedown_defense_regex = re.compile('TD\sDef.:\s\d{1,3}%')
     takedown_defense = takedown_acc_regex.search(carrer_stat_text[1])
 
     try:
@@ -1040,3 +1044,22 @@ def assign_sig_data(sig_collection):
         sig_round_data.clinch = DEFAULT_TUPLE
 
     return sig_round_data
+
+
+
+def pickle_list(some_list, name_of_save):
+    try:
+        with open(name_of_save, 'wb') as f:
+            pickle.dump(f)
+    except Exception:
+        print(color.RED + "\nUNABLE TO SAVE. PLEASE TRY AGAIN\n" + color.END)
+
+def load_pickle(name_of_pickle):
+    try:
+        with open(name_of_pickle, 'rb') as f:
+            temp = pickle.load(f)
+    except Exception as e:
+        print(e)
+        print(color.RED + "\n\nUNABLE TO READ. PLEASE TRY AGAIN\n\n" + color.END)
+
+    return temp

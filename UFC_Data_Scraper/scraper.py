@@ -51,20 +51,23 @@ class Ufc_Data_Scraper:
         print("Parsing each fighter link.....")
         index = 1
         for fighter in tqdm(fighter_links):
-            #load fighter details from requesting or from local storage
-            if load_from_dir:
-                temp = get_fighter_stats("{}/{}".format(correct_dir, index))
+            try:
+                #load fighter details from requesting or from local storage
+                if load_from_dir:
+                    temp = get_fighter_stats("{}/{}".format(correct_dir, index))
 
-            else:
-                if save_https:
-                    temp = get_fighter_stats(http_url = fighter, save = True, dir = correct_dir)
                 else:
-                    temp = get_fighter_stats(http_url = fighter)
+                    if save_https:
+                        temp = get_fighter_stats(http_url = fighter, save = True, dir = correct_dir)
+                    else:
+                        temp = get_fighter_stats(http_url = fighter)
 
 
-            fighters.append(temp)
+                fighters.append(temp)
 
-            index += 1
+                index += 1
+            except Exception:
+                pass
 
 
         return fighters
@@ -85,7 +88,6 @@ class Ufc_Data_Scraper:
             except Exception:
                 exit("Incorrect starting directory. Exiting...")
 
-        input()
         #for every event find all of the fights in that event and save the html of
         #that fight to the cwd
         for link in tqdm(links): #tqdm is open source progress bar on for loop
@@ -185,12 +187,6 @@ class Ufc_Data_Scraper:
             print(color.GREEN + "\n\nAll set!!!\n\n" + color.END)
             return True
         return False
-
-
-
-
-
-
 
 
 
