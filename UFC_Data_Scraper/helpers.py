@@ -633,27 +633,40 @@ def get_all_event_history_links():
 
     return links
 
-def append_used_link(link):
+def append_used_link(link, tracker = False, link_error = False):
     """appends a link to the txt file being used to track all links in directory
     args:
         link - url to the page being tracked
     """
-    tracking_filename = 'tracker.txt'
+    tracking_filename = 'saved_http_tracker.txt'
+    error_filename = 'error_tracker.txt'
 
     #if tracking file does not exisit create it
-    if not os.path.exists(tracking_filename):
-        with open(tracking_filename, 'w'): pass
+    if tracker:
+        if not os.path.exists(tracking_filename):
+            with open(tracking_filename, 'w'): pass
 
-    try:
-        with open(tracking_filename, 'a') as f:
-            f.write(link)
-            f.write('\n')
-    except Exception:
-        print("Unable to save URL to %s" % tracking_filename)
+        try:
+            with open(tracking_filename, 'a') as f:
+                f.write(link)
+                f.write('\n')
+        except Exception:
+            print("Unable to save URL to %s" % tracking_filename)
+    elif link_error:
+        if not os.path.exists(error_tracker):
+            with open(error_filename, 'w'): pass
 
+        try:
+            with open(error_filename, 'a') as f:
+                f.write(link)
+                f.write('\n')
+        except Exception:
+            print("Unable to save URL to %s" % error_filename)
+    else:
+        raise
 
 # TODO: See if append_used_link is being used twice here and above func
-def get_fight_history_http(http_page = 'None', requests_url = 'None'):
+def get_fight_history_http(http_page = 'None', requests_url = 'None', save = False):
     """
     requests and saves all https of fights a fighter has had. Takes either a url
     or a http page file path
@@ -661,8 +674,13 @@ def get_fight_history_http(http_page = 'None', requests_url = 'None'):
     args: http_page - any fighters page from "fighter-details" site directory
         requests_url - a url to an event-details page
 
+    kwargs: save - if save is true each http will be saved to directory
+
     Exception: Both optional arguments are used
+
+    returns: list of https
     """
+
     if requests_url == 'None':
         page = open_html(http_page)
         soup = BeautifulSoup(page, 'html.parser')
@@ -690,15 +708,21 @@ def get_fight_history_http(http_page = 'None', requests_url = 'None'):
     if len(links) == 0:
         raise
 
+    https = []
     #Removes duplicate links
     links = list(dict.fromkeys(links))
     x = 0
     for item in links:
         r = requests.get(item)
-        save_name = item[-16:]
-        save_html(r.content, "%s" % save_name)
-        append_used_link(item)
+        if save:
+            save_name = item[-16:]
+            save_html(r.content, "%s" % save_name)
+            append_used_link(item, tracker = True)
+        else:
+            https.append(r.content)
         x += 1
+
+    return https
 
 def parse_table_rows(http):
     """
@@ -1064,5 +1088,6 @@ def load_pickle(name_of_pickle):
     except Exception as e:
         print(e)
         print(color.RED + "\n\nUNABLE TO READ. PLEASE TRY AGAIN\n\n" + color.END)
+        return
 
     return temp

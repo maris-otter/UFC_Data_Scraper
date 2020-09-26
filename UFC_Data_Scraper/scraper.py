@@ -1,8 +1,8 @@
 from tqdm import tqdm #progress bar from github
 from helpers import *
 import os
-
-
+import threading
+import time
 class Ufc_Data_Scraper:
     #Constants
     DEFAULT_DIRECTORY ="UFC_Data_Scraper/UFC_Data_Scraper"
@@ -54,7 +54,7 @@ class Ufc_Data_Scraper:
             try:
                 #load fighter details from requesting or from local storage
                 if load_from_dir:
-                    temp = get_fighter_stats("{}/{}".format(correct_dir, index))
+                    temp = get_fighter_stats(f"{correct_dir}/{index}")
 
                 else:
                     if save_https:
@@ -89,17 +89,26 @@ class Ufc_Data_Scraper:
 
         #if a directory to load https is not given
         if not load_from_dir:
-            #for every event find all of the fights in that event and save the html of
-            #that fight to the cwd
+
+            #for each link create new thread and call get_fight_history_http
+
+            threads = []
             links = get_all_event_history_links()
             for link in tqdm(links): #tqdm is open source progress bar on for loop
                 try:
-                    get_fight_history_http(requests_url = link)
-                    append_used_link(link)
+                    t = threading.Thread(target=get_fight_history_http, kwargs={'requests_url': link, 'save': True})
+                    time.sleep(1)
+                    t.start()
+                    threads.append(t)
                 except Exception:
-                    print(f"No links found in {link}")
+                #Track error in file. Print to console. move to next link
+                    append_used_link(link, link_error = True)
+                    print(f"An Exception occured for {link}")
                     print("Moving to next link")
                     pass
+
+            for thread in threads:
+                thread.join()
 
         fights = []
         files = os.listdir()
@@ -116,6 +125,7 @@ class Ufc_Data_Scraper:
                 print(e)
                 print(f"\nError parsing file: ({file}) please check exception.\n")
 
+        #try to pickle the list of fighters. on exception print to console
         try:
             pickle_list(fights, 'fights.pickle')
             print("List has been pickled")
@@ -128,7 +138,6 @@ class Ufc_Data_Scraper:
         return fights
 
 
-    # TODO: See if it is useful to call this with constructor
     def create_file_structure(self):
         """
         sees if program has correct structure if so returns true.
@@ -186,3 +195,18 @@ class Ufc_Data_Scraper:
             print(color.GREEN + "\n\nAll set!!!\n\n" + color.END)
             return True
         return False
+
+
+
+
+# thread = [threading.Thread(target=get_fight_history_http(), kwargs={'requests_url': link}) for link in links]
+
+
+
+
+
+
+
+
+
+#spacing comment
