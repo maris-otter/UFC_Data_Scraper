@@ -73,61 +73,60 @@ class Ufc_Data_Scraper:
         return fighters
 
 
-    def scrape_all_fights(self, wanted_directory= SAVE_FIGHT_DIR):
+    def scrape_all_fights(self, wanted_directory= SAVE_FIGHT_DIR, load_from_dir = True):
         """ uses all event links form get_all_event_history_links and saves all fight
         https to wanted_working_dir.
         """
+        original_dir = os.getcwd()
 
-
-        links = get_all_event_history_links()
-
+        #Make sure current directory is wanted directory. Change otherwise
         if not is_dir_correct(wanted_directory):
             try:
-                print("Changing directory to {}".format(wanted_directory))
+                print(f"Changing directory to {wanted_directory}")
                 os.chdir(wanted_directory)
             except Exception:
                 exit("Incorrect starting directory. Exiting...")
 
-        #for every event find all of the fights in that event and save the html of
-        #that fight to the cwd
-        for link in tqdm(links): #tqdm is open source progress bar on for loop
+        #if a directory to load https is not given
+        if not load_from_dir:
+            #for every event find all of the fights in that event and save the html of
+            #that fight to the cwd
+            links = get_all_event_history_links()
+            for link in tqdm(links): #tqdm is open source progress bar on for loop
+                try:
+                    get_fight_history_http(requests_url = link)
+                    append_used_link(link)
+                except Exception:
+                    print(f"No links found in {link}")
+                    print("Moving to next link")
+                    pass
+
+        fights = []
+        files = os.listdir()
+        print("Creating list of fights...")
+        files = list(dict.fromkeys(files))#Remove duplicates
+
+        #for each saved http of a fight: parse the data and create a object
+        for file in tqdm(files):
             try:
-                get_fight_history_http(requests_url = link)
-                append_used_link(link)
-            except Exception:
-                print("No links found in %s" % link)
-                print("Moving to next link")
-                pass
+                parsed_http = parse_table_rows(file)
+                temp_fight = assign_fight_data(parsed_http, file)
+                fights.append(temp_fight)
+            except Exception as e:
+                print(e)
+                print(f"\nError parsing file: ({file}) please check exception.\n")
 
-    def update_fight_history(self):
-        """Deletes all old fight history https in dir and re requests
-        saves new updated ones from site
-        """
-        verify_dir = ["fight_history", "fighter_data_https"]
-        #only update if in current file structure
+        try:
+            pickle_list(fights, 'fights.pickle')
+            print("List has been pickled")
+        except Exception as e:
+            print(e)
+            print("An exception occured while pickling....")
 
-        if not is_dir_correct(DEFAULT_DIRECTORY):
-            exit("File structure incorrect. Exiting Program.")
+        os.chdir(original_dir)
 
-        os.chdir('..')#Go back one Directory
-        os.chdir('fight_history')
+        return fights
 
-        files_in_dir = []
-        for i in os.listdir():
-            files_in_dir.append(i)
-
-        print("Please confirm files to be deleted")
-        for i in files_in_dir:
-            print(i)
-
-        Keyboard_input = input("Press 'Y' to delete\n")
-
-        if str(Keyboard_input).capitalize() != 'Y':
-            print("Exiting...")
-            return
-
-        os.mkdir('update')
-        os.chdir('update')
 
     # TODO: See if it is useful to call this with constructor
     def create_file_structure(self):
@@ -187,16 +186,3 @@ class Ufc_Data_Scraper:
             print(color.GREEN + "\n\nAll set!!!\n\n" + color.END)
             return True
         return False
-
-
-
-# dir = "test/fighters"
-# get_fighter_http(dir, save_to_dir = True)
-# fights = get_all_fighters(load_from_dir = True, correct_dir= dir)
-
-
-# #test
-# #test for organize_fight_data
-# fight = 'test/fights/2fd0c6d914b77205'
-# passed_list = parse_table_rows(fight)
-# assign_fight_data(passed_list, fight)

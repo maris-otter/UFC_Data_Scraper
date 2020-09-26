@@ -107,6 +107,7 @@ class fight_details:
         print("Event: %s" % self.event)
         print("Fighter 1: %s" % self.fighter_1)
         print("Fighter 2: %s" % self.fighter_2)
+        print(f"Winner: Fighter {self.winner}")
         print("Finish: %s" % self.finish)
         print("Finish Details: %s" % self.finish_details)
         print("Round: %s" % self.round)
@@ -1050,9 +1051,11 @@ def assign_sig_data(sig_collection):
 def pickle_list(some_list, name_of_save):
     try:
         with open(name_of_save, 'wb') as f:
-            pickle.dump(f)
-    except Exception:
+            pickle.dump(name_of_save, f)
+    except Exception as e:
+        print(e)
         print(color.RED + "\nUNABLE TO SAVE. PLEASE TRY AGAIN\n" + color.END)
+        raise
 
 def load_pickle(name_of_pickle):
     try:
