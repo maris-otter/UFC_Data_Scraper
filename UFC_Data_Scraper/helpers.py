@@ -1,12 +1,14 @@
 from tqdm import tqdm #progress bar from github
 from bs4 import BeautifulSoup
 from pathlib import Path
+from datetime import date
 
 import requests
 import re
 from helpers import *
 import os
 import pickle
+import csv
 
 class total_round_data:#
     round = -1 #tracks the round or if the object is a total
@@ -196,6 +198,7 @@ class career_stats:
     sub_average = 0
 
 class Fighter:
+    date = date.today()
     name = ""
     height = ()
     weight = -1
@@ -215,15 +218,66 @@ class Fighter:
         print("Reach: " + str(self.reach))
         print("Stance: " + str(self.stance))
         print(self.DOB)
-        print("Sig strike per minute: " + self.career_stat.splm)
+        print("Sig strike per minute: " + str(self.career_stat.splm))
         print("Sig strike acc: " + str(self.career_stat.sig_acc))
         print("Sig strike absorbed: " + str(self.career_stat.sig_absorbed))
         print("Sig strike defense: " + str(self.career_stat.sig_strike_defense))
-        print("Average Takedowns: " + self.career_stat.average_takedown)
+        print("Average Takedowns: " + str(self.career_stat.average_takedown))
         print("Takedown acc: " + str(self.career_stat.takedown_acc))
         print("Takedown defense: " + str(self.career_stat.takedown_defense))
-        print("Sub average: " + self.career_stat.sub_average)
+        print("Sub average: " + str(self.career_stat.sub_average))
         print("---------------------------------\n")
+
+
+    def to_csv(self, filename):
+        """
+        turns local object into a csv file
+        """
+        try:
+            with open(filename, 'w') as f:
+                writer = csv.writer(f)
+                writer.writerow(
+                        [fighter.date, fighter.name, str(fighter.height), fighter.weight, fighter.reach,
+                        fighter.stance, str(fighter.DOB), fighter.f_history.wins,
+                        fighter.f_history.loss, fighter.f_history.no_contest,
+                        fighter.career_stat.splm, fighter.career_stat.sig_acc,
+                         fighter.career_stat.sig_absorbed, fighter.career_stat.sig_strike_defense,
+                         fighter.career_stat.average_takedown, fighter.career_stat.takedown_acc,
+                         fighter.career_stat.takedown_defense, fighter.career_stat.sub_average
+                        ])
+
+        except Exception as e:
+            print(f"An exception occured creating csv: {e}")
+            raise
+
+
+    @staticmethod
+    def make_csv(fighter_collection, filename):
+        try:
+            with open(filename, 'w') as f:
+                writer = csv.writer(f)
+                writer.writerow
+                ([
+                    "name", "height", "weight", "reach", "stance", "DOB", "win",
+                    "loss", "no contest", "splm", "sig_acc", "sig_absorbed",
+                    "sig_strike_defense", "average_takedown", "takedown_acc",
+                    "takedown_defense", "sub_average"
+                ])
+                for fighter in fighter_collection:
+                    writer.writerow(
+                        [fighter.name, str(fighter.height), fighter.weight, fighter.reach,
+                        fighter.stance, str(fighter.DOB), fighter.history.wins,
+                        fighter.history.loss, fighter.history.no_contest,
+                        fighter.career_stat.splm, fighter.career_stat.sig_acc,
+                         fighter.career_stat.sig_absorbed, fighter.career_stat.sig_strike_defense,
+                         fighter.career_stat.average_takedown, fighter.career_stat.takedown_acc,
+                         fighter.career_stat.takedown_defense, fighter.career_stat.sub_average
+                        ])
+        except Exception as e:
+            print(f"An exception occured: {e}")
+            raise
+
+
 #begin helper funcitions
 #Helpers
 
@@ -315,12 +369,7 @@ def get_fighter_http(dir, save_to_dir=False):
         list_of_https.append(r.content)
 
         if(save_to_dir == True):
-            save_html(r.content,
-
-
-
-
-            "{}/Fighter {}".format(dir, x))
+            save_html(r.content, f"{dir}/Fighter {x}")
 
         x += 1
 
@@ -358,7 +407,7 @@ def get_fighter_stats(http_page='None', http_url='None', save = False, dir = SAV
         soup = BeautifulSoup(page.content, 'html.parser')
     else:
         print("get_fighter_stats() used incorrectly")
-        raise
+        raiseS
 
 
     #Get name--------
@@ -653,7 +702,7 @@ def append_used_link(link, tracker = False, link_error = False):
         except Exception:
             print("Unable to save URL to %s" % tracking_filename)
     elif link_error:
-        if not os.path.exists(error_tracker):
+        if not os.path.exists(error_filename):
             with open(error_filename, 'w'): pass
 
         try:
@@ -663,6 +712,21 @@ def append_used_link(link, tracker = False, link_error = False):
         except Exception:
             print("Unable to save URL to %s" % error_filename)
     else:
+        raise
+
+def parsing_error_tracker(error, error_file, filename='parsing_error.txt'):
+    if not os.path.exists(filename):
+        with open(filename, 'w'): pass
+
+    try:
+        with open(filename, 'a') as f:
+            f.write(str(error))
+            f.write('\n')
+            f.write(error_file)
+            f.write('\n\n')
+    except Exception as e:
+        print(e)
+        print(f"An error occured appending ({error}) to {filename}")
         raise
 
 # TODO: See if append_used_link is being used twice here and above func
@@ -805,7 +869,7 @@ def assign_fight_data(fight_history_collection, http):
     args: fight_history_collection - list from parse_table_rows function
     http: fight stat http page in relation to collection
 
-    returns: fight_detials object
+    returns: fight_details object
     """
     #open http page
     page = open_html(http)
@@ -1071,7 +1135,6 @@ def assign_sig_data(sig_collection):
     return sig_round_data
 
 
-
 def pickle_list(some_list, name_of_save):
     try:
         with open(name_of_save, 'wb') as f:
@@ -1088,6 +1151,7 @@ def load_pickle(name_of_pickle):
     except Exception as e:
         print(e)
         print(color.RED + "\n\nUNABLE TO READ. PLEASE TRY AGAIN\n\n" + color.END)
+        raise
         return
 
     return temp

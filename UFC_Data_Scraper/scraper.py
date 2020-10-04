@@ -3,6 +3,7 @@ from helpers import *
 import os
 import threading
 import time
+
 class Ufc_Data_Scraper:
     #Constants
     DEFAULT_DIRECTORY ="UFC_Data_Scraper/UFC_Data_Scraper"
@@ -40,42 +41,68 @@ class Ufc_Data_Scraper:
         """
 
         #handling bad function calls by displaying error and exiting function
-        if load_from_dir and (correct_dir != None or save_https != False):
+        if load_from_dir and save_https != False:
             print("If loading from directory the option to save is not available. Please call again")
             return
 
         fighters = [] #list of fighter objects
 
-        fighter_links = get_fighter_links()
 
-        print("Parsing each fighter link.....")
-        index = 1
-        for fighter in tqdm(fighter_links):
-            try:
-                #load fighter details from requesting or from local storage
-                if load_from_dir:
-                    temp = get_fighter_stats(f"{correct_dir}/{index}")
 
-                else:
+
+        #Either load from directory and parse data or request each link and parse
+        if load_from_dir:
+            starting_dir = os.getcwd()
+
+            os.chdir(correct_dir)
+            files = os.listdir()
+
+            print("Parsing fighter https....")
+            for file in tqdm(files):
+                try:
+                    temp = get_fighter_stats(file)
+                    fighters.append(temp)
+                except Exception as e:
+                    print(f"An exception occured for file {file}")
+                    append_used_link(f"Exception: {e} file: {file}", link_error = True)
+                    
+            os.chdir(starting_dir)
+
+        else:
+            fighter_links = get_fighter_links()
+
+            print("Parsing each fighter link.....")
+            for fighter in tqdm(fighter_links):
+                try:
+
                     if save_https:
                         temp = get_fighter_stats(http_url = fighter, save = True, dir = correct_dir)
                     else:
                         temp = get_fighter_stats(http_url = fighter)
 
 
-                fighters.append(temp)
+                    fighters.append(temp)
 
-                index += 1
-            except Exception:
-                pass
+
+                except Exception:
+                    pass
 
 
         return fighters
 
 
     def scrape_all_fights(self, wanted_directory= SAVE_FIGHT_DIR, load_from_dir = True):
-        """ uses all event links form get_all_event_history_links and saves all fight
-        https to wanted_working_dir.
+        """
+        scrapes fight history by either requesting the site locally or parsing data
+        from previously scrapped htmls in wanted_directory. Flow of function determined
+        by optional load_from_dir.
+
+        kwargs:
+            wanted_directory - directory the program should be operating in.
+                        IMPORTANT: do to the function deleting files in dir
+                                you must be careful selecting wanted_directory
+            load_from_dir - if html of fights are already available you can provide
+                            a directory and function will parse each file
         """
         original_dir = os.getcwd()
 
@@ -86,6 +113,28 @@ class Ufc_Data_Scraper:
                 os.chdir(wanted_directory)
             except Exception:
                 exit("Incorrect starting directory. Exiting...")
+
+        #make sure directory is clean before getting fight https
+        if not load_from_dir:
+            if len(os.listdir()) > 0:
+                print(f"Directory not clean: {os.getcwd()}")
+
+                directory_files = os.listdir()
+                #if the directory is relativly small force manual deletion for safety
+                if len(directory_files) < 50:
+                    print(color.RED + "This directory is small. For safety delete manually" + color.END)
+                    return
+                else:
+                    input("Cleaning Directory. Please press enter to continue")
+
+                    for file in directory_files:
+                        os.system(f"rm {file}")
+
+                    print("Directory has been cleaned.")
+
+        elif len(os.listdir()) == 0:
+            print("Directory is empty. Unable to load from directory")
+            return
 
         #if a directory to load https is not given
         if not load_from_dir:
@@ -122,8 +171,7 @@ class Ufc_Data_Scraper:
                 temp_fight = assign_fight_data(parsed_http, file)
                 fights.append(temp_fight)
             except Exception as e:
-                print(e)
-                print(f"\nError parsing file: ({file}) please check exception.\n")
+                parsing_error_tracker(e, file)
 
         #try to pickle the list of fighters. on exception print to console
         try:
@@ -195,6 +243,7 @@ class Ufc_Data_Scraper:
             print(color.GREEN + "\n\nAll set!!!\n\n" + color.END)
             return True
         return False
+
 
 
 
