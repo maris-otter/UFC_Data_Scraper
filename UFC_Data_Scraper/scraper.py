@@ -2,7 +2,7 @@ from tqdm import tqdm #progress bar from github
 from helpers import *
 import os
 import threading
-import time
+import json
 
 class Ufc_Data_Scraper:
     #Constants
@@ -26,7 +26,7 @@ class Ufc_Data_Scraper:
         a directory already
 
 
-        args:
+        kwargs:
             load_from_dir - create the list of fighters from a directory that has
                 https of fighters saved
 
@@ -47,12 +47,9 @@ class Ufc_Data_Scraper:
 
         fighters = [] #list of fighter objects
 
-
-
-
         #Either load from directory and parse data or request each link and parse
         if load_from_dir:
-            starting_dir = os.getcwd()
+            starting_dir = os.getcwd()#track starting dir to return after call
 
             os.chdir(correct_dir)
             files = os.listdir()
@@ -60,13 +57,13 @@ class Ufc_Data_Scraper:
             print("Parsing fighter https....")
             for file in tqdm(files):
                 try:
-                    temp = get_fighter_stats(file)
+                    temp = get_fighter_stats(http_page = file)
                     fighters.append(temp)
-                except Exception as e:
+                except Exception as e: #print and log exception then continue
                     print(f"An exception occured for file {file}")
                     append_used_link(f"Exception: {e} file: {file}", link_error = True)
-                    
-            os.chdir(starting_dir)
+
+            os.chdir(starting_dir)#return to original directory
 
         else:
             fighter_links = get_fighter_links()
@@ -173,13 +170,6 @@ class Ufc_Data_Scraper:
             except Exception as e:
                 parsing_error_tracker(e, file)
 
-        #try to pickle the list of fighters. on exception print to console
-        try:
-            pickle_list(fights, 'fights.pickle')
-            print("List has been pickled")
-        except Exception as e:
-            print(e)
-            print("An exception occured while pickling....")
 
         os.chdir(original_dir)
 
@@ -243,6 +233,69 @@ class Ufc_Data_Scraper:
             print(color.GREEN + "\n\nAll set!!!\n\n" + color.END)
             return True
         return False
+
+    @staticmethod
+    def fights_to_Json(collection_fights):
+        """
+        iterates through a collection of fight_details objects and categorizes
+        them by event into a dictionary.
+        """
+        fight_json = {}
+
+        #for all the fights that match the same event add them to a single dict for that event
+        #do this for all of the fights
+        tracker_dict = {}
+
+        x = 0
+        for i in collection_fights:
+
+            if i.event in fight_json:
+                #get last numbered fight from tracker_dict
+                index = tracker_dict[i.event]
+
+                fight_json[i.event].update({index+1: i.as_json()})
+                tracker_dict[i.event] += 1
+            else:
+                fight_json[i.event] = {1: i.as_json()}
+                tracker_dict[i.event] = 1
+
+
+        return fight_json
+
+    @staticmethod
+    def fighter_to_Json(collection_fighters):
+        """
+        Take a collection of Fighter objects and converts into a dictionary
+        args: list of Fighter objects
+        return: dictionary of fighter objects
+        """
+        fighter_dict = {}
+
+        #for every fighter create a new dict entry with name of fighter as key
+        # and fighter json as value
+        for fighter in collection_fighters:
+            fighter_dict[fighter.name] = fighter.as_json()
+
+        return fighter_dict
+
+
+    @staticmethod
+    def save_json(filename, fights_dict):
+        with open(f"{filename}.json", "w") as outfile:
+             json.dump(fights_dict, outfile)
+
+
+
+    # @staticmethod
+    # def fights_to_CSV(collection_fights):
+    #     try:
+    #         with open(filename, 'w') as f:
+    #             writer = csv.writer(f)
+    #             writer.writerow
+    #             (["event, fighter_1_name, fighter_2_name, winner, finish, finish_details, round, fight_time, referee, weight_class, "
+    #             ])
+    #
+
 
 
 

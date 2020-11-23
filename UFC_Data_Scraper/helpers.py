@@ -22,6 +22,24 @@ class total_round_data:#
     passes = -1
     rev = -1
 
+    def as_json(self):
+        """
+        creates dictionary out of values stored in class
+        """
+        dict = {
+                "kd": self.kd, "sig_strikes": self.sig_stikes,
+                "total_strikes": self.total_strikes,
+                "sig_strikes_percentage": self.sig_strikes_percentage,
+                "take_downs": self.take_downs,
+                "take_down_percentage": self.take_down_percentage,
+                "sub_att": self.sub_att, "passes": self.passes, "rev": self.rev
+                }
+        return dict
+    # def csv(self):
+    #     return f"{self.round},{self.kd},{(self.sig_strikes,)},{(self.total_strikes,)}, {self.sig_strikes_percentage}, {(self.take_downs,)},{(self.take_down_percentage,)}, {self.sub_att}, {self.passes}, {self.rev}"
+
+
+
     def print(self):
 
         # print(self.round)
@@ -45,6 +63,9 @@ class sig_strik_round_data: #helper class
     clinch = ()
     ground = ()
 
+    def csv(self):
+        return f"{(self.sig_stikes,)},{self.sig_strikes_percentage},{(self.head,)},{(self.body,)},{(self.leg,)},{(self.distance,)},{(self.clinch,)},{(self.ground,)}"
+
     def print(self):
         print("Sig Strikes: %s" % (self.sig_stikes,))
         print("Sig Strike %%: %s%%" % (self.sig_strikes_percentage,))
@@ -55,6 +76,18 @@ class sig_strik_round_data: #helper class
         print("Clinch: %s" % (self.clinch,))
         print("Ground: %s" % (self.ground,))
 
+    def as_json(self):
+        """
+        creates dictionary out of values stored in class
+        """
+        dict = {
+                "sig_stikes": self.sig_stikes,
+                "sig_strikes_percentage": self.sig_strikes_percentage,
+                "head": self.head, "body": self.body, "leg": self.leg,
+                "distance": self.distance, "clinch": self.clinch,
+                "ground": self.ground
+                }
+        return dict
 
 class f_history:
     wins = -1
@@ -71,7 +104,7 @@ class career_stats:
     takedown_defense = 0
     sub_average = 0
 
-class color:
+class color:#taken from Stack overflow
    PURPLE = '\033[95m'
    CYAN = '\033[96m'
    DARKCYAN = '\033[36m'
@@ -99,8 +132,8 @@ class fight_details:
     fighter2_round_data = [] #  "totals" round data list.
 
     #fight tracking stats
-    fighter1_sig_strike_data = [] #3d [fighter][round][metrics]
-    fighter1_sig_strike_data = [] #3d [fighter][round][metrics]
+    fighter1_sig_strike_data = [] #list of sig_strik_round_data objects
+    fighter2_sig_strike_data = [] #list of sig_strik_round_data objects
 
     def print(self):
         """
@@ -123,7 +156,7 @@ class fight_details:
         """
 
         #Print round 1 round data
-        print(color.BOLD + "Fighter: %s Round Stats" % self.fighter_1 + color.END)
+        print(color.BOLD + f"Fighter: {self.fighter_1} Round Stats"  + color.END)
         x = 0
         for i in self.fighter1_round_data:
             if x == 0:
@@ -138,7 +171,7 @@ class fight_details:
 
 
         #Print round 2 round data
-        print(color.BOLD + "Fighter: %s Round Stats" % self.fighter_2 + color.END)
+        print(color.BOLD + f"Fighter: {self.fighter_2} Round Stats"  + color.END)
         x = 0
         for i in self.fighter2_round_data:
             if x == 0:
@@ -154,7 +187,7 @@ class fight_details:
         ##############################
 
         #Print round 1 sig data
-        print(color.BOLD + "Fighter: %s Round Stats" % self.fighter_1 + color.END)
+        print(color.BOLD + f"Fighter: {self.fighter_1} Round Stats"  + color.END)
         x = 0
         for i in self.fighter1_sig_strike_data:
             if x == 0:
@@ -168,7 +201,7 @@ class fight_details:
             print("\n\n")
 
         #Print round 1 sig data
-        print(color.BOLD + "Fighter: %s Round Stats" % self.fighter_2 + color.END)
+        print(color.BOLD + f"Fighter: {self.fighter_2} Round Stats" + color.END)
         x = 0
         for i in self.fighter2_sig_strike_data:
             if x == 0:
@@ -180,6 +213,48 @@ class fight_details:
             i.print()
 
             print("\n\n")
+
+    def as_json(self):
+        """
+        iterates through round_data and fight_data list and creates and returns
+        Json
+        """
+        fighter1_json = {}
+        fighter2_json = {}
+        totals1_json = {}
+        totals2_json = {}
+        sig1_json = {}
+        sig2_json = {}
+
+        #iteratae through list and create sub dictionaries in above dicts
+        index = 0
+        for round in range(len(self.fighter1_round_data)):
+            #first round will be denotes with 'overall'
+            if round == 0:
+                totals1_json['overall'] = self.fighter1_round_data[round].as_json()
+                totals2_json['overall'] = self.fighter2_round_data[round].as_json()
+                sig1_json['overall'] = self.fighter1_sig_strike_data[round].as_json()
+                sig2_json['overall'] = self.fighter2_sig_strike_data[round].as_json()
+            else:
+                totals1_json[round] = self.fighter1_round_data[round].as_json()
+                totals2_json[round] = self.fighter2_round_data[round].as_json()
+                sig1_json[round] = self.fighter1_sig_strike_data[round].as_json()
+                sig2_json[round] = self.fighter2_sig_strike_data[round].as_json()
+
+        fighter1_json = {'Totals': totals1_json, 'Significant': sig1_json}
+        fighter2_json = {'Totals': totals2_json, 'Significant': sig2_json}
+
+        fight_details_json = {
+                            'event': self.event, 'fighter1': self.fighter_1,
+                            'fighter2': self.fighter_2, 'winner': self.winner,
+                            'finish': self.finish, 'finish_details': self.finish_details,
+                            "rounds": self.round, "fight_time": self.fight_time,
+                            "referee": self.referee, "weight_class": self.weight_class,
+                            'Fighter_1': fighter1_json, 'Fighter_2': fighter2_json
+                            }
+
+        return fight_details_json
+
 
 
 class f_history:
@@ -198,7 +273,6 @@ class career_stats:
     sub_average = 0
 
 class Fighter:
-    date = date.today()
     name = ""
     height = ()
     weight = -1
@@ -228,54 +302,78 @@ class Fighter:
         print("Sub average: " + str(self.career_stat.sub_average))
         print("---------------------------------\n")
 
+    def as_json(self):
 
-    def to_csv(self, filename):
-        """
-        turns local object into a csv file
-        """
-        try:
-            with open(filename, 'w') as f:
-                writer = csv.writer(f)
-                writer.writerow(
-                        [fighter.date, fighter.name, str(fighter.height), fighter.weight, fighter.reach,
-                        fighter.stance, str(fighter.DOB), fighter.f_history.wins,
-                        fighter.f_history.loss, fighter.f_history.no_contest,
-                        fighter.career_stat.splm, fighter.career_stat.sig_acc,
-                         fighter.career_stat.sig_absorbed, fighter.career_stat.sig_strike_defense,
-                         fighter.career_stat.average_takedown, fighter.career_stat.takedown_acc,
-                         fighter.career_stat.takedown_defense, fighter.career_stat.sub_average
-                        ])
+        dict = {
+                "name": self.name, "height": self.height, "weight": self.weight,
+                "reach": self.reach, "stance": self.stance, "DOB": self.DOB,
+                "wins": self.history.wins, "loss": self.history.loss,
+                "no_contest": self.history.no_contest, "splm": self.career_stat.splm,
+                "sig_acc": self.career_stat.sig_acc,
+                "sig_absorbed": self.career_stat.sig_absorbed,
+                "sig_strike_defense": self.career_stat.sig_strike_defense,
+                "average_takedown": self.career_stat.average_takedown,
+                "takedown_acc": self.career_stat.takedown_acc,
+                "takedown_defense": self.career_stat.takedown_defense,
+                "sub_average": self.career_stat.sub_average
 
-        except Exception as e:
-            print(f"An exception occured creating csv: {e}")
-            raise
+                }
+        return dict
 
 
-    @staticmethod
-    def make_csv(fighter_collection, filename):
-        try:
-            with open(filename, 'w') as f:
-                writer = csv.writer(f)
-                writer.writerow
-                ([
-                    "name", "height", "weight", "reach", "stance", "DOB", "win",
-                    "loss", "no contest", "splm", "sig_acc", "sig_absorbed",
-                    "sig_strike_defense", "average_takedown", "takedown_acc",
-                    "takedown_defense", "sub_average"
-                ])
-                for fighter in fighter_collection:
-                    writer.writerow(
-                        [fighter.name, str(fighter.height), fighter.weight, fighter.reach,
-                        fighter.stance, str(fighter.DOB), fighter.history.wins,
-                        fighter.history.loss, fighter.history.no_contest,
-                        fighter.career_stat.splm, fighter.career_stat.sig_acc,
-                         fighter.career_stat.sig_absorbed, fighter.career_stat.sig_strike_defense,
-                         fighter.career_stat.average_takedown, fighter.career_stat.takedown_acc,
-                         fighter.career_stat.takedown_defense, fighter.career_stat.sub_average
-                        ])
-        except Exception as e:
-            print(f"An exception occured: {e}")
-            raise
+
+
+
+
+    # def to_csv(self, filename):
+    #     """
+    #     turns local object into a csv file
+    #     """
+    #     try:
+    #         with open(filename, 'w') as f:
+    #             writer = csv.writer(f)
+    #             writer.writerow(
+    #                 [self.name, str(self.height), self.weight, self.reach,
+    #                 self.stance, str(self.DOB), self.history.wins,
+    #                 self.history.loss, self.history.no_contest,
+    #                 self.career_stat.splm, self.career_stat.sig_acc,
+    #                  self.career_stat.sig_absorbed, self.career_stat.sig_strike_defense,
+    #                  self.career_stat.average_takedown, self.career_stat.takedown_acc,
+    #                  self.career_stat.takedown_defense, self.career_stat.sub_average
+    #                 ])
+    #
+    #     except Exception as e:
+    #         print(f"An exception occured creating csv: {e}")
+    #         raise
+
+
+    # @staticmethod
+    # def make_csv(fighter_collection, filename):
+    #     try:
+    #         with open(filename, 'w') as f:
+    #             writer = csv.writer(f)
+    #             writer.writerow
+    #             ([
+    #                 "name", "height", "weight", "reach", "stance", "DOB", "win",
+    #                 "loss", "no contest", "splm", "sig_acc", "sig_absorbed",
+    #                 "sig_strike_defense", "average_takedown", "takedown_acc",
+    #                 "takedown_defense", "sub_average"
+    #             ])
+    #             for fighter in fighter_collection:
+    #                 writer.writerow(
+    #                     [fighter.name, str(fighter.height), fighter.weight, fighter.reach,
+    #                     fighter.stance, str(fighter.DOB), fighter.history.wins,
+    #                     fighter.history.loss, fighter.history.no_contest,
+    #                     fighter.career_stat.splm, fighter.career_stat.sig_acc,
+    #                      fighter.career_stat.sig_absorbed, fighter.career_stat.sig_strike_defense,
+    #                      fighter.career_stat.average_takedown, fighter.career_stat.takedown_acc,
+    #
+    #                      fighter.career_stat.takedown_defense, fighter.career_stat.sub_average
+    #                     ])
+    #                 input('check')
+    #     except Exception as e:
+    #         print(f"An exception occured: {e}")
+    #         raise
 
 
 #begin helper funcitions
@@ -936,11 +1034,11 @@ def assign_fight_data(fight_history_collection, http):
 
     #Assign round and sig stike data for fighter 1
     fighter1_round_data = [round_total_assign(totals[0][i]) for i in range(len(totals[0]))]
-    fighter1_sig_strike_data = [assign_sig_data(totals[0][i]) for i in range(len(sig_strikes[0]))]
+    fighter1_sig_strike_data = [assign_sig_data(sig_strikes[0][i]) for i in range(len(sig_strikes[0]))]
 
     #Assign round and sig stike data for fighter 2
     fighter2_round_data = [round_total_assign(totals[1][i]) for i in range(len(totals[1]))]
-    fighter2_sig_strike_data =  [assign_sig_data(totals[1][i]) for i in range(len(sig_strikes[1]))]
+    fighter2_sig_strike_data =  [assign_sig_data(sig_strikes[1][i]) for i in range(len(sig_strikes[1]))]
 
     #Get the winner
     winner_raw = soup.find_all(class_ = "b-fight-details__person")
@@ -979,6 +1077,7 @@ def assign_fight_data(fight_history_collection, http):
     fight.winner = winner
 
     return fight
+
 
 def round_total_assign(totals_collection):
     """
@@ -1057,7 +1156,7 @@ def assign_sig_data(sig_collection):
         sig_strik_round_data object with all attributes entered excluding round
         finished
     """
-    DEFAULT_TUPLE = (-1,-1)
+    DEFAULT_TUPLE = (-2,-2)
     DEFAULT_VALUE = -1
     sig_round_data = sig_strik_round_data()
 
@@ -1135,23 +1234,38 @@ def assign_sig_data(sig_collection):
     return sig_round_data
 
 
-def pickle_list(some_list, name_of_save):
-    try:
-        with open(name_of_save, 'wb') as f:
-            pickle.dump(name_of_save, f)
-    except Exception as e:
-        print(e)
-        print(color.RED + "\nUNABLE TO SAVE. PLEASE TRY AGAIN\n" + color.END)
-        raise
 
-def load_pickle(name_of_pickle):
-    try:
-        with open(name_of_pickle, 'rb') as f:
-            temp = pickle.load(f)
-    except Exception as e:
-        print(e)
-        print(color.RED + "\n\nUNABLE TO READ. PLEASE TRY AGAIN\n\n" + color.END)
-        raise
-        return
+# import json
+# # Debugging
+# os.chdir('fight_history')
+# collection_arg = parse_table_rows('d97970009fbfca30')
+# sig_obj_test = assign_fight_data(collection_arg, 'd97970009fbfca30')
+#
+# dict_to_json = sig_obj_test.as_json()
+#
 
-    return temp
+# with open('data.json', 'w') as outfile:
+#      json.dump(dict_to_json, outfile)
+
+
+#
+# def pickle_list(some_list, name_of_save):
+#     try:
+#         with open(name_of_save, 'wb') as f:
+#             pickle.dump(name_of_save, f)
+#     except Exception as e:
+#         print(e)
+#         print(color.RED + "\nUNABLE TO SAVE. PLEASE TRY AGAIN\n" + color.END)
+#         raise
+#
+# def load_pickle(name_of_pickle):
+#     try:
+#         with open(name_of_pickle, 'rb') as f:
+#             temp = pickle.load(f)
+#     except Exception as e:
+#         print(e)
+#         print(color.RED + "\n\nUNABLE TO READ. PLEASE TRY AGAIN\n\n" + color.END)
+#         raise
+#         return
+#
+#     return temp
