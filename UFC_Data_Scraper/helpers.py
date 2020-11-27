@@ -1,11 +1,12 @@
+#third party imports
 from tqdm import tqdm #progress bar from github
 from bs4 import BeautifulSoup
+
+#Std library imports 
 from pathlib import Path
 from datetime import date
-
 import requests
 import re
-from helpers import *
 import os
 import pickle
 import csv
@@ -303,7 +304,7 @@ class Fighter:
         print("---------------------------------\n")
 
     def as_json(self):
-
+#chagned self.record to self.history
         dict = {
                 "name": self.name, "height": self.height, "weight": self.weight,
                 "reach": self.reach, "stance": self.stance, "DOB": self.DOB,
@@ -319,61 +320,6 @@ class Fighter:
 
                 }
         return dict
-
-
-
-
-
-
-    # def to_csv(self, filename):
-    #     """
-    #     turns local object into a csv file
-    #     """
-    #     try:
-    #         with open(filename, 'w') as f:
-    #             writer = csv.writer(f)
-    #             writer.writerow(
-    #                 [self.name, str(self.height), self.weight, self.reach,
-    #                 self.stance, str(self.DOB), self.history.wins,
-    #                 self.history.loss, self.history.no_contest,
-    #                 self.career_stat.splm, self.career_stat.sig_acc,
-    #                  self.career_stat.sig_absorbed, self.career_stat.sig_strike_defense,
-    #                  self.career_stat.average_takedown, self.career_stat.takedown_acc,
-    #                  self.career_stat.takedown_defense, self.career_stat.sub_average
-    #                 ])
-    #
-    #     except Exception as e:
-    #         print(f"An exception occured creating csv: {e}")
-    #         raise
-
-
-    # @staticmethod
-    # def make_csv(fighter_collection, filename):
-    #     try:
-    #         with open(filename, 'w') as f:
-    #             writer = csv.writer(f)
-    #             writer.writerow
-    #             ([
-    #                 "name", "height", "weight", "reach", "stance", "DOB", "win",
-    #                 "loss", "no contest", "splm", "sig_acc", "sig_absorbed",
-    #                 "sig_strike_defense", "average_takedown", "takedown_acc",
-    #                 "takedown_defense", "sub_average"
-    #             ])
-    #             for fighter in fighter_collection:
-    #                 writer.writerow(
-    #                     [fighter.name, str(fighter.height), fighter.weight, fighter.reach,
-    #                     fighter.stance, str(fighter.DOB), fighter.history.wins,
-    #                     fighter.history.loss, fighter.history.no_contest,
-    #                     fighter.career_stat.splm, fighter.career_stat.sig_acc,
-    #                      fighter.career_stat.sig_absorbed, fighter.career_stat.sig_strike_defense,
-    #                      fighter.career_stat.average_takedown, fighter.career_stat.takedown_acc,
-    #
-    #                      fighter.career_stat.takedown_defense, fighter.career_stat.sub_average
-    #                     ])
-    #                 input('check')
-    #     except Exception as e:
-    #         print(f"An exception occured: {e}")
-    #         raise
 
 
 #begin helper funcitions
@@ -788,8 +734,9 @@ def append_used_link(link, tracker = False, link_error = False):
     tracking_filename = 'saved_http_tracker.txt'
     error_filename = 'error_tracker.txt'
 
-    #if tracking file does not exisit create it
+    #for parsing links
     if tracker:
+        #if tracking file does not exisit create it
         if not os.path.exists(tracking_filename):
             with open(tracking_filename, 'w'): pass
 
@@ -1232,40 +1179,3 @@ def assign_sig_data(sig_collection):
         sig_round_data.clinch = DEFAULT_TUPLE
 
     return sig_round_data
-
-
-
-# import json
-# # Debugging
-# os.chdir('fight_history')
-# collection_arg = parse_table_rows('d97970009fbfca30')
-# sig_obj_test = assign_fight_data(collection_arg, 'd97970009fbfca30')
-#
-# dict_to_json = sig_obj_test.as_json()
-#
-
-# with open('data.json', 'w') as outfile:
-#      json.dump(dict_to_json, outfile)
-
-
-#
-# def pickle_list(some_list, name_of_save):
-#     try:
-#         with open(name_of_save, 'wb') as f:
-#             pickle.dump(name_of_save, f)
-#     except Exception as e:
-#         print(e)
-#         print(color.RED + "\nUNABLE TO SAVE. PLEASE TRY AGAIN\n" + color.END)
-#         raise
-#
-# def load_pickle(name_of_pickle):
-#     try:
-#         with open(name_of_pickle, 'rb') as f:
-#             temp = pickle.load(f)
-#     except Exception as e:
-#         print(e)
-#         print(color.RED + "\n\nUNABLE TO READ. PLEASE TRY AGAIN\n\n" + color.END)
-#         raise
-#         return
-#
-#     return temp

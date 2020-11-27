@@ -1,8 +1,14 @@
+#third party imports
 from tqdm import tqdm #progress bar from github
-from helpers import *
+
+#std imports
 import os
 import threading
 import json
+
+#local imports
+from helpers import *
+
 
 class Ufc_Data_Scraper:
     #Constants
@@ -283,32 +289,3 @@ class Ufc_Data_Scraper:
     def save_json(filename, fights_dict):
         with open(f"{filename}.json", "w") as outfile:
              json.dump(fights_dict, outfile)
-
-
-
-    # @staticmethod
-    # def fights_to_CSV(collection_fights):
-    #     try:
-    #         with open(filename, 'w') as f:
-    #             writer = csv.writer(f)
-    #             writer.writerow
-    #             (["event, fighter_1_name, fighter_2_name, winner, finish, finish_details, round, fight_time, referee, weight_class, "
-    #             ])
-    #
-
-
-
-
-
-
-# thread = [threading.Thread(target=get_fight_history_http(), kwargs={'requests_url': link}) for link in links]
-
-
-
-
-
-
-
-
-
-#spacing comment
