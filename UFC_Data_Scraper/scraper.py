@@ -77,18 +77,16 @@ class Ufc_Data_Scraper:
             print("Parsing each fighter link.....")
             for fighter in tqdm(fighter_links):
                 try:
-
                     if save_https:
                         temp = get_fighter_stats(http_url = fighter, save = True, dir = correct_dir)
+                        fighters.append(temp)
                     else:
                         temp = get_fighter_stats(http_url = fighter)
-
-
-                    fighters.append(temp)
-
+                        fighters.append(temp)
 
                 except Exception:
                     pass
+
 
 
         return fighters
@@ -219,7 +217,7 @@ class Ufc_Data_Scraper:
 
 
         if len(missing_dir) == 0:
-            print(color.GREEN + "\n\nFile structure already created. ALl set!!!\n\n" + color.END)
+            print(color.GREEN + "\n\nFile structure already created. All set!!!\n\n" + color.END)
             return True
         else:
             dir_exist = False

@@ -2,7 +2,7 @@
 from tqdm import tqdm #progress bar from github
 from bs4 import BeautifulSoup
 
-#Std library imports 
+#Std library imports
 from pathlib import Path
 from datetime import date
 import requests
@@ -22,6 +22,22 @@ class total_round_data:#
     sub_att = -1
     passes = -1
     rev = -1
+
+    def __new__(cls):
+        instance = super(total_round_data, cls).__new__(cls)
+        return instance
+
+    def __init__(self):
+        self.round = -1
+        self.kd = -1
+        self.sig_strikes = ()
+        self.total_strikes = ()
+        self.sig_strikes_percentage = -1
+        self.take_downs = ()
+        self.take_down_percentage = ()
+        self.sub_att = -1
+        self.passes = -1
+        self.rev = -1
 
     def as_json(self):
         """
@@ -64,6 +80,20 @@ class sig_strik_round_data: #helper class
     clinch = ()
     ground = ()
 
+    def __init__(self):
+        self.sig_stikes = ()
+        self.sig_strikes_percentage = -1
+        self.head = ()
+        self.body = ()
+        self.leg = ()
+        self.distance = ()
+        self.clink = ()
+        self.ground = ()
+
+    def __new__(cls):
+        instance = super(sig_strik_round_data, cls).__new__(cls)
+        return instance
+
     def csv(self):
         return f"{(self.sig_stikes,)},{self.sig_strikes_percentage},{(self.head,)},{(self.body,)},{(self.leg,)},{(self.distance,)},{(self.clinch,)},{(self.ground,)}"
 
@@ -95,6 +125,15 @@ class f_history:
     loss = -1
     no_contest = -1
 
+    def __new__(cls):
+        instance = super(f_history, cls).__new__(cls)
+        return instance
+
+    def __init__(self):
+        self.wins = -1
+        self.loss = -1
+        self.no_contest = -1
+
 class career_stats:
     splm = 0
     sig_acc = 0
@@ -104,6 +143,20 @@ class career_stats:
     takedown_acc = 0
     takedown_defense = 0
     sub_average = 0
+
+    def __new__(cls):
+        instance = super(career_stats, cls).__new__(cls)
+        return instance
+
+    def __init__(self):
+        self.splm = 0
+        self.sig_acc = 0
+        self.sig_absorbed = 0
+        self.sig_strike_defense = 0
+        self.average_takedown = 0
+        self.takedown_acc = 0
+        self.takedown_defense = 0
+        self.sub_average = 0
 
 class color:#taken from Stack overflow
    PURPLE = '\033[95m'
@@ -135,6 +188,25 @@ class fight_details:
     #fight tracking stats
     fighter1_sig_strike_data = [] #list of sig_strik_round_data objects
     fighter2_sig_strike_data = [] #list of sig_strik_round_data objects
+
+    def __new__(cls):
+        instance = super(fight_details, cls).__new__(cls)
+        return instance
+
+    def __init__(self):
+        self.event = ""
+        self.fighter_1 = ""
+        self.fighter_2 = ""
+        self.winner = -2
+        self.finish = ""
+        self.finish_details = ""
+        self.round = -1
+        self.fight_time = ()
+        self.referee = ""
+        self.weight_class = ""
+        self.fighter1_round_data = []
+        self.fighter2_round_data = []
+
 
     def print(self):
         """
@@ -257,22 +329,6 @@ class fight_details:
         return fight_details_json
 
 
-
-class f_history:
-    wins = -1
-    loss = -1
-    no_contest = -1
-
-class career_stats:
-    splm = 0
-    sig_acc = 0
-    sig_absorbed = 0
-    sig_strike_defense = 0
-    average_takedown = 0
-    takedown_acc = 0
-    takedown_defense = 0
-    sub_average = 0
-
 class Fighter:
     name = ""
     height = ()
@@ -284,6 +340,22 @@ class Fighter:
     career_stat = career_stats()
     record = f_history()
     fights = [] #list of fight_details objects
+
+    def __new__(cls):
+        instance = super(Fighter, cls).__new__(cls)
+        return instance
+
+    def __init__(self):
+        self.name = ""
+        self.height = ()
+        self.weight = -1
+        self.reach = -1
+        self.stance = -1
+        self.DOB = ()
+        self.history = f_history()
+        self.career_stat = career_stats()
+        self.record = f_history()
+        self.fights = []
 
     def print(self):
         print( "Fighter name: " + self.name)
