@@ -24,9 +24,10 @@ or
 `list_of_fights =  s.Ufc_Data_Scraper().scrape_all_fights()`
 ### Step 3
 Convert from list of fighter or fight objects into list of dictionaries
+
 `json_fighter_list = s.Ufc_Data_Scraper().fighter_to_Json(list_of_fighters)`
  or
- `json_fights_list = s.Ufc_Data_Scraper().fights_to_Json(list_of_fights)`
+`json_fights_list = s.Ufc_Data_Scraper().fights_to_Json(list_of_fights)`
 
 ### Step 4
 Save dictionaries into Json
