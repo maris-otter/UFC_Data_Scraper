@@ -3,12 +3,9 @@ from tqdm import tqdm #progress bar from github
 from bs4 import BeautifulSoup
 
 #Std library imports
-from pathlib import Path
-from datetime import date
 import requests
 import re
 import os
-import pickle
 import csv
 
 class total_round_data:#
@@ -87,7 +84,7 @@ class sig_strik_round_data: #helper class
         self.body = ()
         self.leg = ()
         self.distance = ()
-        self.clink = ()
+        self.clinch = ()
         self.ground = ()
 
     def __new__(cls):
@@ -389,7 +386,6 @@ class Fighter:
                 "takedown_acc": self.career_stat.takedown_acc,
                 "takedown_defense": self.career_stat.takedown_defense,
                 "sub_average": self.career_stat.sub_average
-
                 }
         return dict
 
@@ -1096,7 +1092,6 @@ def assign_fight_data(fight_history_collection, http):
     fight.winner = winner
 
     return fight
-
 
 def round_total_assign(totals_collection):
     """

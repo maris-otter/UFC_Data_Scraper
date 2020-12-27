@@ -9,10 +9,10 @@ __pycache__/
 /ufc_data_scraper/fighter_data_https
 /tmp_data_ignored ufc_data_scraper
 /env
-/UFC_Data_Scraper/Kriegernathan1.egg-info
+Kriegernathan1.egg-info
 /UFC_Data_Scraper/MISC
-/UFC_Data_Scraper/build
-/UFC_Data_Scraper/dist
+build
+dist
 /UFC_Data_Scraper/fight_history
 /UFC_Data_Scraper/fighter_data_https
 /UFC_Data_Scraper/pickles
