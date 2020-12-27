@@ -1,0 +1,18 @@
+{
+  "name" : "<fighter name>",
+  "height": "<fighter height",
+  "weight": "<fighter weight>",
+  "reach": "<fighter reach> (int)",
+  "stance": "<stance (int)>",
+  "DOB": "<DOB fighter array> [0] - month [1] - day [2] - year",
+  "wins": "<string (int)>",
+  "loss": "string (int)",
+  "no_contest": "string (int)",
+  "splm": "string (int) Significant Strikes Landed per Minute",
+  "sig_acc": "string (int) Significant Striking Accuracy",
+  "sig_absorbed": "string (int) Significant Strikes Absorbed per Minute",
+  "sig_strike_defense": "string (int)  Significant Strike Defence",
+  "average_takedown": "string (int) Average Takedowns",
+  "takedown_acc": "string (int)  Takedown Accuracy",
+  "takedown_defense": "Takedown Defense percentage"
+}

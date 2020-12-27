@@ -1,0 +1,10 @@
+{
+  "kd": "<kd>",
+  "sig_strikes": "<sig_strikes",
+  "total_strikes": "<total_strikes",
+  "sig_strikes_percentage": "<sig_strikes_percentage",
+  "take_downs": "<take_downs",
+  "take_down_percentage": "<take_down_percentage>",
+  "sub_att": "<submissions attempted",
+  "rev": "<reversal or sweep>"
+}

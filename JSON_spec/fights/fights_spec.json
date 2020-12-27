@@ -1,0 +1,36 @@
+{
+
+"event": "<event name>",
+"fighter1": "<fighter1 name>",
+"fighter2": "<fighter2 name>"
+"event": "<event name>",
+"fighter1": "<fighter1 name>",
+"fighter2": "<fighter2 name>",
+"winner" : "<name of winner>",
+"finish" : "<name of finish>",
+"finish_details": "<string of finish>",
+"rounds": "<number of rounds>",
+"fight_time": "<time fight ended>",
+"referee": "<name of referee>",
+"weight_class": "<name of weight_class>",
+"Fighter_1": {
+							"Totals" : "<totals_json>",
+	             "Significant": "<significant_json>"
+						 },
+ "Fighter_2": {
+ 							"Totals" : "<totals_json>",
+ 	            "Significant": "<significant_json>"
+						 },
+
+
+	
+
+
+
+
+
+
+
+
+
+}

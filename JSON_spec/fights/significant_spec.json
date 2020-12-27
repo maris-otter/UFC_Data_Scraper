@@ -1,0 +1,11 @@
+{
+  "sig_stikes" : "<sig strikes>",
+  "sig_strikes_percentage": "<percentage of strikes>",
+  "head": "<(landed) to (attempted)>",
+  "body": "<(landed) to (attempted)>",
+  "leg": "<(landed) to (attempted)>",
+  "distance": "<(landed) to (attempted)>",
+  "clinch": "<(landed) to (attempted)>",
+  "ground": "<(landed) to (attempted)>"
+
+}
