@@ -15,23 +15,30 @@ Usage
 -----
 
 ### Step 1
-Create instance of Ufc_Data_Scraper class
+Create instance of Ufc_Data_Scraper class:  
 `scraper = s.Ufc_Data_Scraper()`
 ### Step 2
-Choose class method for getting fighter or Fights data
+Choose class method for getting fighter or Fights data:
+
 `list_of_fighters = scraper.get_all_fighters()`
+
 or
-`list_of_fights =  s.Ufc_Data_Scraper().scrape_all_fights()`
+
+`list_of_fights =  scraper.scrape_all_fights()`
+
 ### Step 3
-Convert from list of fighter or fight objects into list of dictionaries
+Convert from list of fighter or fight objects into list of dictionaries:
 
 `json_fighter_list = s.Ufc_Data_Scraper().fighter_to_Json(list_of_fighters)`
+
  or
+ 
 `json_fights_list = s.Ufc_Data_Scraper().fights_to_Json(list_of_fights)`
 
 ### Step 4
-Save dictionaries into Json
-`s.Ufc_Data_Scraper().save_json("fighters", json_fighter_list)`
+Save dictionaries into Json:
+
+`s.Ufc_Data_Scraper().save_json("<name of JSON file>", json_fighter_list)`
 
 JSON Format
 ------------
