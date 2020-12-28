@@ -15,7 +15,7 @@ Usage
 -----
 
 ### Step 1
-Create instance of Ufc_Data_Scraper class:  
+Create instance of Ufc_Data_Scraper object:  
 `scraper = s.Ufc_Data_Scraper()`
 ### Step 2
 Choose class method for getting fighter or Fights data:
