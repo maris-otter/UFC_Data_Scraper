@@ -33,12 +33,11 @@ class Ufc_Data_Scraper:
         fighter. Provides option to save each fighter http if not loading from
         a directory already
 
-
         kwargs:
             load_from_dir - create the list of fighters from a directory that has
                 https of fighters saved
 
-            correct_dir - conditoinal: if load_from_dir false then correct_dir
+            correct_dir - conditional: if load_from_dir false then correct_dir
                 represents the directory fighter https will be saved to.
                 otherwise current_dir represents which directory to load fighter
                 https from
@@ -224,8 +223,8 @@ class Ufc_Data_Scraper:
 
         regex = re.search(wanted_directory, current_dir)
 
-        if regex is None:
-            exit(f"Fatal error. Current working directory ({current_dir}) is not correct.")
+        # if regex is None:
+        #     exit(f"Fatal error. Current working directory ({current_dir}) is not correct.")
 
         for i in verify_dir:
             if not os.path.isdir(i):

@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Kriegernathan1",
-    version="1.0.1",
+    name="UFC_Data_Scraper",
+    version="1.0.0",
     author="Nathan Krieger",
     author_email="kriegerdevelopment@gmail.com",
     description="Packages uses BeautifulSoup API to scrape historical data from ufcstat.com",
@@ -19,7 +19,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-         'tqdm', 'requests', 'bs4'
+         'tqdm', 'requests', 'beautifulsoup4'
      ],
     python_requires='>=3.6',
 )

@@ -398,6 +398,12 @@ SAVE_FIGHT_DIR = "fight_history"
 SAVE_FIGHTER_DIR = "fighter_data_https"
 
 def is_dir_correct(dir):
+    """
+    check if the current working directory is dir passed as argument
+
+    True: current directory is the directory passed
+    False: current directory is not the directory passed
+    """
     starting_dir = os.getcwd()
     regex = re.search(dir, str(starting_dir))
 
