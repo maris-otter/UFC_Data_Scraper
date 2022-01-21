@@ -344,11 +344,11 @@ class Fighter:
 
     def __init__(self):
         self.name = ""
-        self.height = ()
+        self.height = ""
         self.weight = -1
         self.reach = -1
         self.stance = -1
-        self.DOB = ()
+        self.DOB = ""
         self.history = f_history()
         self.career_stat = career_stats()
         self.record = f_history()

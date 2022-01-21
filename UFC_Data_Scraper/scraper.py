@@ -54,6 +54,8 @@ class Ufc_Data_Scraper:
 
         fighters = [] #list of fighter objects
 
+        starting_dir = os.getcwd()
+
         #Either load from directory and parse data or request each link and parse
         if load_from_dir:
             starting_dir = os.getcwd()#track starting dir to return after call
