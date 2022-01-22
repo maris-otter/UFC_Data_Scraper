@@ -1,4 +1,5 @@
 #third party imports
+import traceback
 from tqdm import tqdm #progress bar from github
 
 #std imports
@@ -17,7 +18,15 @@ class Ufc_Data_Scraper:
     SAVE_FIGHT_DIR = "fight_history"
     SAVE_FIGHTER_DIR = "fighter_data_https"
 
-    def __init__(self):
+    
+    TEST_RUN_MAX = 25
+    
+    test_run = False #If test run, only process small amount of records
+
+    def __init__(self, _test_run):
+        if _test_run is True:
+            test_run = True
+            print("Test Run!")
         #see if file structure is created
             #if so then continue
         if self.create_file_structure():
@@ -55,6 +64,7 @@ class Ufc_Data_Scraper:
         fighters = [] #list of fighter objects
 
         starting_dir = os.getcwd()
+        test_run_count = 0
 
         #Either load from directory and parse data or request each link and parse
         if load_from_dir:
@@ -68,9 +78,13 @@ class Ufc_Data_Scraper:
                 try:
                     temp = helpers.get_fighter_stats(http_page = file)
                     fighters.append(temp)
+                    test_run_count += 1
                 except Exception as e: #print and log exception then continue
                     print(f"An exception occured for file {file}")
-                    append_used_link(f"Exception: {e} file: {file}", link_error = True)
+                    helpers.append_used_link(f"Exception: {e} file: {file}", link_error = True)
+                if test_run_count > self.TEST_RUN_MAX:
+                    print("Max reached for test run, stopping....")
+                    break
 
             os.chdir(starting_dir)#return to original directory
 
@@ -83,12 +97,17 @@ class Ufc_Data_Scraper:
                     if save_https:
                         temp = helpers.get_fighter_stats(http_url = fighter, save = True, dir = correct_dir)
                         fighters.append(temp)
+                        test_run_count += 1
                     else:
                         temp = helpers.get_fighter_stats(http_url = fighter)
                         fighters.append(temp)
-
+                        test_run_count += 1
                 except Exception:
                     pass
+                
+                if test_run_count > self.TEST_RUN_MAX:
+                    print("Max reached for test run, stopping....")
+                    break
 
 
         os.chdir(starting_dir)
@@ -134,8 +153,8 @@ class Ufc_Data_Scraper:
                     os.chdir(original_dir)
                     exit()
                 else:
-                    input( helpers.color.RED + f"\n\nCleaning Directory. All files in {os.getcwd()} will be deleted press enter to continue or ctr+c to cancel" + helpers.color.END)
-
+                    #input( helpers.color.RED + f"\n\nCleaning Directory. All files in {os.getcwd()} will be deleted press enter to continue or ctr+c to cancel" + helpers.color.END)
+                    print("Cleaning Directory")
                     for file in directory_files:
                         os.remove(file)
 
@@ -156,7 +175,8 @@ class Ufc_Data_Scraper:
                 except Exception as e:
                     helpers.append_used_link(link, link_error = True)
                     print(f"An Exception occured for {link}")
-                    print(f"Exception {e}")
+                    print(f"Exception {Exception, e}")
+                    print(traceback.format_exc())
                     print("Moving to next link\n\n")
                     pass
 

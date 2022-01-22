@@ -592,7 +592,7 @@ def get_fighter_stats(http_page='None', http_url='None', save = False, dir = SAV
 
 
     #Assign height to fighter object
-    fighter.height = height_clean.split()
+    fighter.height = height_clean
 
     #get weight--------
     weight = stat_rows_text[1]
